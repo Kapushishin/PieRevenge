@@ -7,5 +7,7 @@ public class WarriorCharacter : Character
     private void Update()
     {
         Run();
+        Jump();
+        Debug.Log($"coord: {transform.position.y}");
     }
 }
