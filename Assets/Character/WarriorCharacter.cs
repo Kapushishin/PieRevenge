@@ -6,14 +6,12 @@ public class WarriorCharacter : Character
 {
     private void Update()
     {
-        Jump();
-        HighJump();
-        DoubleJump();
-        Flip();
+
+
     }
 
     private void FixedUpdate()
     {
-        Run();
+
     }
 }

@@ -4,9 +4,9 @@ using UnityEngine;
 public class Character : MonoBehaviour
 {
     private Rigidbody2D _rb;
-    private CapsuleCollider2D _collider;
     [SerializeField] private Transform groundCheck; 
     [SerializeField] private LayerMask groundLayer;
+    private TrailRenderer _tr;
 
     private float runHorizontal;
     [SerializeField] private float speed;
@@ -19,15 +19,47 @@ public class Character : MonoBehaviour
     private float jumpBufferCounter;
 
     private float jumpCurrent;
-    [SerializeField] private float jumpMax;
-
+    [SerializeField] private float stockJumps = 1f;
     private bool isJumping;
+    [SerializeField] private float jumpCooldown = 0.4f;
+
     private bool isFacingRight;
+
+    private bool canDash = true;
+    private bool isDashing;
+    [SerializeField] private float dashingForce = 24f;
+    [SerializeField] private float dashingTime = 0.2f;
+    [SerializeField] private float dashingCooldown = 1f;
 
 
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _tr = GetComponent<TrailRenderer>();
+    }
+
+    private void Update()
+    {
+        if (isDashing) // если персонаж находится в дэше, то ничего другого не прожать
+        {
+            return;
+        }
+
+        Jump();
+        HighJump();
+        MultyJump();
+        Dash();
+        Flip();
+    }
+
+    private void FixedUpdate()
+    {
+        if (isDashing) // если персонаж находится в дэше, то ничего другого не прожать
+        {
+            return;
+        }
+
+        Run();
     }
 
     public void Run()
@@ -46,7 +78,7 @@ public class Character : MonoBehaviour
         if (IsGrounded()) 
         {
             coyoteTimeCounter = coyoteTime;
-            jumpCurrent = jumpMax;
+            jumpCurrent = stockJumps;
         }
         else
         {
@@ -79,12 +111,20 @@ public class Character : MonoBehaviour
         }
     }
 
-    public void DoubleJump()
+    public void MultyJump()
     {
         if (Input.GetButtonDown("Jump") && jumpCurrent > 0)
         {
             _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
-            jumpCurrent -= 1f;
+            jumpCurrent--;
+        }
+    }
+
+    public void Dash()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        {
+            StartCoroutine(DashCoroutine());
         }
     }
 
@@ -92,8 +132,8 @@ public class Character : MonoBehaviour
     {
         if (isFacingRight && runHorizontal < 0f || !isFacingRight && runHorizontal > 0f)
         {
-            isFacingRight = !isFacingRight;
             Vector3 _localScale = transform.localScale;
+            isFacingRight = !isFacingRight;
             _localScale.x *= -1f;
             transform.localScale = _localScale;
         }
@@ -102,7 +142,23 @@ public class Character : MonoBehaviour
     private IEnumerator JumpCooldown() //если очень быстро жать пробел, то делает двойной прыжок, так не надо
     {
         isJumping = true;
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(jumpCooldown);
         isJumping = false;
+    }
+
+    private IEnumerator DashCoroutine()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = _rb.gravityScale;
+        _rb.gravityScale = 0f; // отключаем гравитацию, чтобы персонаж не двигался наискосок
+        _rb.velocity = new Vector2(runHorizontal * dashingForce, 0f); //берем направление персонажа по х
+        _tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        _tr.emitting = false;
+        _rb.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
     }
 }
