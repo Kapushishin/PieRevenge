@@ -18,10 +18,10 @@ public class Character : MonoBehaviour
     private float jumpBufferTime = 0.2f; //буфер прыжка, который позволяет прыгнуть, когда персонаж еще не приземлился
     private float jumpBufferCounter;
 
-    private float jumpCurrent;
+    [SerializeField] private float jumpCurrent;
     [SerializeField] private float stockJumps = 1f;
-    private bool isJumping;
-    [SerializeField] private float jumpCooldown = 0.4f;
+    //private bool isJumping;
+    //[SerializeField] private float jumpCooldown = 0.4f;
 
     private bool isFacingRight;
 
@@ -31,6 +31,10 @@ public class Character : MonoBehaviour
     [SerializeField] private float dashingTime = 0.2f;
     [SerializeField] private float dashingCooldown = 1f;
 
+    private bool IsGrounded() //для проверки находится ли персонаж на земле, создав в ногах круглый коллайдер
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+    }
 
     private void Start()
     {
@@ -40,37 +44,25 @@ public class Character : MonoBehaviour
 
     private void Update()
     {
-        if (isDashing) // если персонаж находится в дэше, то ничего другого не прожать
+        Jump();
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
-            return;
+            StartCoroutine(DashCoroutine());
         }
 
-        Jump();
-        HighJump();
-        MultyJump();
-        Dash();
         Flip();
     }
 
     private void FixedUpdate()
     {
-        if (isDashing) // если персонаж находится в дэше, то ничего другого не прожать
+        if (isDashing) // когда персонаж находится в дэше, механика бега не будет его перебивать
         {
             return;
         }
 
-        Run();
-    }
-
-    public void Run()
-    {
         runHorizontal = Input.GetAxisRaw("Horizontal");
         _rb.velocity = new Vector2(runHorizontal * speed, _rb.velocity.y);
-    }
-
-    private bool IsGrounded() //для проверки находится ли персонаж на земле, создав в ногах круглый коллайдер
-    {
-        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
     public void Jump()
@@ -79,6 +71,7 @@ public class Character : MonoBehaviour
         {
             coyoteTimeCounter = coyoteTime;
             jumpCurrent = stockJumps;
+            //isJumping = false;
         }
         else
         {
@@ -94,37 +87,18 @@ public class Character : MonoBehaviour
             jumpBufferCounter -= Time.deltaTime;
         }
 
-        if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f && !isJumping)
+        if (coyoteTimeCounter > 0f && jumpBufferCounter > 0f || Input.GetButtonDown("Jump") && jumpCurrent > 0 && !IsGrounded())
         {
             _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
             jumpBufferCounter = 0f;
-            StartCoroutine(JumpCooldown());
+            jumpCurrent--;
+            //StartCoroutine(JumpCooldown());
         }
-    }
 
-    public void HighJump()
-    {
         if (Input.GetButtonUp("Jump") && _rb.velocity.y > 0f)
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.5f);
             coyoteTimeCounter = 0f;
-        }
-    }
-
-    public void MultyJump()
-    {
-        if (Input.GetButtonDown("Jump") && jumpCurrent > 0)
-        {
-            _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
-            jumpCurrent--;
-        }
-    }
-
-    public void Dash()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
-        {
-            StartCoroutine(DashCoroutine());
         }
     }
 
@@ -139,12 +113,12 @@ public class Character : MonoBehaviour
         }
     }
 
-    private IEnumerator JumpCooldown() //если очень быстро жать пробел, то делает двойной прыжок, так не надо
+    /*private IEnumerator JumpCooldown() //если очень быстро жать пробел, то делает двойной прыжок, так не надо
     {
         isJumping = true;
         yield return new WaitForSeconds(jumpCooldown);
         isJumping = false;
-    }
+    }*/
 
     private IEnumerator DashCoroutine()
     {
@@ -152,7 +126,7 @@ public class Character : MonoBehaviour
         isDashing = true;
         float originalGravity = _rb.gravityScale;
         _rb.gravityScale = 0f; // отключаем гравитацию, чтобы персонаж не двигался наискосок
-        _rb.velocity = new Vector2(runHorizontal * dashingForce, 0f); //берем направление персонажа по х
+        _rb.velocity = new Vector2(-_rb.transform.localScale.x * dashingForce, 0f); //берем направление персонажа по х
         _tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);
         _tr.emitting = false;

@@ -386,6 +386,7 @@ MonoBehaviour:
     m_Bits: 64
   speed: 4
   jumpForce: 16
+  jumpCurrent: 0
   stockJumps: 1
   jumpCooldown: 0.4
   dashingForce: 24
@@ -516,7 +517,8 @@ MonoBehaviour:
     m_Bits: 64
   speed: 4
   jumpForce: 16
-  stockJumps: 1
+  jumpCurrent: 0
+  stockJumps: 2
   jumpCooldown: 0.4
   dashingForce: 24
   dashingTime: 0.2
