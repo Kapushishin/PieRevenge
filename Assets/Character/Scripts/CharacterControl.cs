@@ -36,6 +36,7 @@ public class CharacterControl : MonoBehaviour
         Crouching();
         Flip();
         WallSliding();
+        //Landing();
     }
 
     private void FixedUpdate()
@@ -53,7 +54,7 @@ public class CharacterControl : MonoBehaviour
         }
 
         // если скорость меньше нуля, то включается анимация падения
-        if (_rb.velocity.y < 0)
+        if (_rb.velocity.y < 0 && !isWallSliding)
         {
             isFalling = true;
             _animator.SetBool("IsFalling", true);
@@ -105,7 +106,7 @@ public class CharacterControl : MonoBehaviour
             if (isGrounded)
             {
                 _animator.SetBool("IsCrouching", true);
-                //_animator.Play("Player1_Crouch");
+                _animator.Play("Player1_Crouch");
                 isCrouching = true;
             }
         }
@@ -242,7 +243,7 @@ public class CharacterControl : MonoBehaviour
 
     [SerializeField] private float speedWallSliding = -1f;
     private bool isWallSliding = false;
-    [SerializeField] private float distanceToWall = 2f;
+    [SerializeField] private float distanceToWall;
 
     private void WallSliding()
     {
@@ -250,18 +251,36 @@ public class CharacterControl : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * transform.localScale.x, distanceToWall);
         if (hit.collider != null)
         {
-            if (_rb.velocity.y < speedWallSliding)
+            if (!isGrounded && _rb.velocity.y < speedWallSliding)
             {
-                if (!isGrounded && hit.collider.CompareTag("Wall"))
+                if (hit.collider.CompareTag("Wall"))
                 {
                     _rb.velocity = new Vector2(0, speedWallSliding);
                     isWallSliding = true;
                 }
             }
+            else
+                isWallSliding = false;
         }
     }
-
     #endregion
+
+    /*[SerializeField] private float distanceToGround;
+    private void Landing()
+    {
+        Physics2D.queriesStartInColliders = false;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, distanceToGround);
+        if (hit.collider != null)
+        {
+            if (hit.distance > 1.5f)
+            {
+                _animator.Play("Player1_Landing");
+                Debug.Log("landing");
+            }
+        }
+    }*/
+
+    
 
 
 

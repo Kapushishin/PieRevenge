@@ -21,7 +21,7 @@ public class UISystem : MonoBehaviour
         for (int i = 0; i < hearts.Length; i++)
         {
             if (i < currentHealth)
-                hearts[i].sprite = fullHeart;
+                hearts[i].sprite = fullHeart;   
             else
                 hearts[i].sprite = emptyHeart;
 
