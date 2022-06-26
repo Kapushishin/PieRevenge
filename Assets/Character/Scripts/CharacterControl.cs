@@ -8,41 +8,12 @@ public class CharacterControl : MonoBehaviour
     [SerializeField] private Transform ceilingCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask platformLayer;
-    [SerializeField] private Collider2D topBodyCollider;
     private TrailRenderer _tr;
     private Animator _animator;
 
-    private float runHorizontal;
-    [SerializeField] private float speed;
-
-    private float coyoteTime = 0.2f; //время, которое дается на то, что бы нажать прыжок сойдя с платформы
-    private float coyoteTimeCounter;
-
-    [SerializeField] private float jumpForce;
-    private float jumpBufferTime = 0.2f; //буфер прыжка, который позволяет прыгнуть, когда персонаж еще не приземлился
-    private float jumpBufferCounter;
-    [SerializeField] private float jumpCooldown = 0.4f;
-
-    private bool isFacingRight;
-
-    [SerializeField] private float dashingForce = 24f;
-    [SerializeField] private float dashingTime = 0.2f;
-    [SerializeField] private float dashingCooldown = 1f;
-
-    [SerializeField] private bool isJumping;
-    [SerializeField] private bool canDoubleJump;
-    [SerializeField] private bool isCrouching;
-    [SerializeField] private bool isDashing;
-    [SerializeField] private bool canDash = true;
     [SerializeField] private bool isGrounded;
     private bool isFalling;
     
-
-    private int playerLayerMask, platformLayerMask;
-    [SerializeField] private float ignorelLayerTime;
-
-    
-
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -64,6 +35,7 @@ public class CharacterControl : MonoBehaviour
         Jump();
         Crouching();
         Flip();
+        WallSliding();
     }
 
     private void FixedUpdate()
@@ -93,6 +65,13 @@ public class CharacterControl : MonoBehaviour
         }
     }
 
+    #region Movement
+    [Header("Movement")]
+
+    [SerializeField] private float speed;
+    private float runHorizontal;
+    private bool isFacingRight;
+
     private void Run(float speed)
     {
         if (isDashing) // когда персонаж находится в дэше, механика бега не будет его перебивать
@@ -102,6 +81,23 @@ public class CharacterControl : MonoBehaviour
         _animator.SetFloat("Speed", Mathf.Abs(runHorizontal));
     }
 
+    public void Flip() //чтобы персонаж поворачивался по направлению движения
+    {
+        if (isFacingRight && runHorizontal > 0f || !isFacingRight && runHorizontal < 0f)
+        {
+            Vector3 _localScale = transform.localScale;
+            isFacingRight = !isFacingRight;
+            _localScale.x *= -1f;
+            transform.localScale = _localScale;
+        }
+    }
+    #endregion
+
+    #region Crouching
+
+    [Header("Crouch")]
+
+    private bool isCrouching;
     private void Crouching() // присед
     {
         if (Input.GetButtonDown("Crouch"))
@@ -124,15 +120,27 @@ public class CharacterControl : MonoBehaviour
         }
     }
 
-    private void IgnoreLayerOff()
-    {
-        Physics2D.IgnoreLayerCollision(playerLayerMask, platformLayerMask, false);
-        isCrouching = false;
-    }
+    #endregion
+
+    #region Jumping
+    [Header("Jump")]
+
+    [SerializeField] private float jumpForce;
+    private float coyoteTime = 0.2f; //время, которое дается на то, что бы нажать прыжок сойдя с платформы
+    private float coyoteTimeCounter;
+    private float jumpBufferTime = 0.2f; //буфер прыжка, который позволяет прыгнуть, когда персонаж еще не приземлился
+    private float jumpBufferCounter;
+    private float jumpCooldown = 0.4f;
+    private bool isJumping;
+    private bool canDoubleJump;
+
+    private int playerLayerMask, platformLayerMask;
+    private float ignoreLayerTime = 0.2f;
+    private float cantCrouchingJump = 0.5f;
 
     private void Jump()
     {
-        if (isGrounded && !isCrouching  ) 
+        if (isGrounded && !isCrouching) 
         {
             coyoteTimeCounter = coyoteTime;
             isJumping = false;
@@ -172,20 +180,35 @@ public class CharacterControl : MonoBehaviour
         {
             Physics2D.IgnoreLayerCollision(playerLayerMask, platformLayerMask, true);
             _animator.SetBool("IsJumping", isJumping);
-            Invoke("IgnoreLayerOff", ignorelLayerTime);
+            Invoke("IgnoreLayerOff", ignoreLayerTime);
+            Invoke("CantCrouchingJump", cantCrouchingJump);
         }
+    }
+    private IEnumerator JumpCooldown() //если очень быстро жать пробел, то делает двойной прыжок, так не надо
+    {
+        isJumping = true;
+        yield return new WaitForSeconds(jumpCooldown);
+        isJumping = false;
+    }
+    private void IgnoreLayerOff()
+    {
+        Physics2D.IgnoreLayerCollision(playerLayerMask, platformLayerMask, false);
+    }
+    private void CantCrouchingJump()
+    {
+        isCrouching = false;
     }
 
-    public void Flip() //чтобы персонаж поворачивался по направлению движения
-    {
-        if (isFacingRight && runHorizontal > 0f || !isFacingRight && runHorizontal < 0f)
-        {
-            Vector3 _localScale = transform.localScale;
-            isFacingRight = !isFacingRight;
-            _localScale.x *= -1f;
-            transform.localScale = _localScale;
-        }
-    }
+    #endregion
+
+    #region Dashing
+    [Header("Dash")]
+
+    [SerializeField] private float dashingForce = 24f;
+    [SerializeField] private float dashingTime = 0.2f;
+    [SerializeField] private float dashingCooldown = 1f;
+    private bool isDashing;
+    private bool canDash = true;
 
     private void Dashing()
     {
@@ -198,21 +221,12 @@ public class CharacterControl : MonoBehaviour
             _rb.velocity = new Vector2(_rb.transform.localScale.x * dashingForce, 0f); //берем направление персонажа по х
         }
     }
-
-    private IEnumerator JumpCooldown() //если очень быстро жать пробел, то делает двойной прыжок, так не надо
-    {
-        isJumping = true;
-        yield return new WaitForSeconds(jumpCooldown);
-        isJumping = false;
-    }
-
     private IEnumerator DashCoroutine()
     {
         canDash = false;
         isDashing = true;
         float originalGravity = _rb.gravityScale;
         _rb.gravityScale = 0f; // отключаем гравитацию, чтобы персонаж не двигался наискосок
-        
         _tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);
         _tr.emitting = false;
@@ -221,4 +235,34 @@ public class CharacterControl : MonoBehaviour
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
     }
+    #endregion
+
+    #region Walls sliding
+    [Header("Wall slide")]
+
+    [SerializeField] private float speedWallSliding = -1f;
+    private bool isWallSliding = false;
+    [SerializeField] private float distanceToWall = 2f;
+
+    private void WallSliding()
+    {
+        Physics2D.queriesStartInColliders = false;
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * transform.localScale.x, distanceToWall);
+        if (hit.collider != null)
+        {
+            if (_rb.velocity.y < speedWallSliding)
+            {
+                if (!isGrounded && hit.collider.CompareTag("Wall"))
+                {
+                    _rb.velocity = new Vector2(0, speedWallSliding);
+                    isWallSliding = true;
+                }
+            }
+        }
+    }
+
+    #endregion
+
+
+
 }
