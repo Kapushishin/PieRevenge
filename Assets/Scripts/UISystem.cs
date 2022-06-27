@@ -5,40 +5,16 @@ using UnityEngine.UI;
 
 public class UISystem : MonoBehaviour
 {
-    [SerializeField] private int currentHealth;
-    [SerializeField] private int maximumHealth;
-    private int damage = 1;
+    [SerializeField] private HealthBehavior playerHealth;
+    [SerializeField] private Image totalHealthBar;
+    [SerializeField] private Image currentHealthBar;
 
-    [SerializeField] private Image[] hearts;
-    [SerializeField] private Sprite fullHeart;
-    [SerializeField] private Sprite emptyHeart;
-
+    private void Start()
+    {
+        totalHealthBar.fillAmount = playerHealth.currentHealth / 10;
+    }
     private void Update()
     {
-        if (currentHealth > maximumHealth)
-            currentHealth = maximumHealth;
-
-        for (int i = 0; i < hearts.Length; i++)
-        {
-            if (i < currentHealth)
-                hearts[i].sprite = fullHeart;   
-            else
-                hearts[i].sprite = emptyHeart;
-
-            if (i < maximumHealth)
-                hearts[i].enabled = true;
-            else
-                hearts[i].enabled = false;
-        }
-
-        if (Input.GetMouseButtonDown(0))
-        {
-            currentHealth -= damage;
-        }
-    }
-
-    public void GetDamaged()
-    {
-        currentHealth -= damage;
+        currentHealthBar.fillAmount = playerHealth.currentHealth / 10;
     }
 }

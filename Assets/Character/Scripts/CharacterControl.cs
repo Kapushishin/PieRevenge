@@ -13,7 +13,9 @@ public class CharacterControl : MonoBehaviour
 
     [SerializeField] private bool isGrounded;
     private bool isFalling;
-    
+
+    private int playerLayerMask, platformLayerMask;
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -135,7 +137,6 @@ public class CharacterControl : MonoBehaviour
     private bool isJumping;
     private bool canDoubleJump;
 
-    private int playerLayerMask, platformLayerMask;
     private float ignoreLayerTime = 0.2f;
     private float cantCrouchingJump = 0.5f;
 
