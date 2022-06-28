@@ -45,3 +45,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 2012837009
+    locked: 0
+  - name: Walls
+    uniqueID: 4186932595
+    locked: 0

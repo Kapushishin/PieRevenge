@@ -36,14 +36,12 @@ public class CharacterControl : MonoBehaviour
         Dashing();
         Jump();
         Crouching();
-        Flip();
         WallSliding();
         //Landing();
     }
 
     private void FixedUpdate()
     {
-        //IsGrounded();
         isGrounded = false;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, 0.2f, groundLayer);
         for (int i = 0; i < colliders.Length; i++)
@@ -56,7 +54,7 @@ public class CharacterControl : MonoBehaviour
         }
 
         // если скорость меньше нуля, то включается анимация падения
-        if (_rb.velocity.y < 0 && !isWallSliding)
+        if (_rb.velocity.y < 0 && !isWallSliding && !isGrounded)
         {
             isFalling = true;
             _animator.SetBool("IsFalling", true);
@@ -79,13 +77,12 @@ public class CharacterControl : MonoBehaviour
     {
         if (isDashing) // когда персонаж находится в дэше, механика бега не будет его перебивать
             return;
+
         runHorizontal = Input.GetAxisRaw("Horizontal");
         _rb.velocity = new Vector2(runHorizontal * speed, _rb.velocity.y);
+        Debug.Log(transform.localScale.ToString());
         _animator.SetFloat("Speed", Mathf.Abs(runHorizontal));
-    }
 
-    public void Flip() //чтобы персонаж поворачивался по направлению движения
-    {
         if (isFacingRight && runHorizontal > 0f || !isFacingRight && runHorizontal < 0f)
         {
             Vector3 _localScale = transform.localScale;
