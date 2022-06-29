@@ -38,6 +38,9 @@ public class CharacterControl : MonoBehaviour
         Crouching();
         WallSliding();
         //Landing();
+
+        _animator.SetBool("IsJumping", isJumping);
+        _animator.SetBool("IsFalling", isFalling);
     }
 
     private void FixedUpdate()
@@ -49,6 +52,7 @@ public class CharacterControl : MonoBehaviour
             if (colliders[i].gameObject != gameObject)
             {
                 isGrounded = true;
+                //isJumping = false;
                 isFalling = false;
             }
         }
@@ -57,13 +61,15 @@ public class CharacterControl : MonoBehaviour
         if (_rb.velocity.y < 0 && !isWallSliding && !isGrounded)
         {
             isFalling = true;
-            _animator.SetBool("IsFalling", true);
-            _animator.SetBool("IsJumping", false);
+            isJumping = false;
+
         }
-        else
+        else if (_rb.velocity.y > 0 && !isGrounded)
         {
-            _animator.SetBool("IsFalling", false);
+            isJumping = true;
+            isFalling = false;
         }
+            
     }
 
     #region Movement
@@ -79,8 +85,7 @@ public class CharacterControl : MonoBehaviour
             return;
 
         runHorizontal = Input.GetAxisRaw("Horizontal");
-        _rb.velocity = new Vector2(runHorizontal * speed, _rb.velocity.y);
-        Debug.Log(transform.localScale.ToString());
+        _rb.velocity = new Vector2(runHorizontal * speed, _rb.velocity.y);;
         _animator.SetFloat("Speed", Mathf.Abs(runHorizontal));
 
         if (isFacingRight && runHorizontal > 0f || !isFacingRight && runHorizontal < 0f)
@@ -110,8 +115,9 @@ public class CharacterControl : MonoBehaviour
             }
         }
 
-        if (isFalling)
+        if (isJumpingOff) //прыжки в приоритете
             return;
+
         else if (Input.GetButtonUp("Crouch"))
         {
             _animator.SetBool("IsCrouching", false);
@@ -132,7 +138,8 @@ public class CharacterControl : MonoBehaviour
     private float jumpBufferCounter;
     private float jumpCooldown = 0.4f;
     private bool isJumping;
-    private bool canDoubleJump;
+    private bool isJumpingOff;
+    [SerializeField] private bool canDoubleJump;
 
     private float ignoreLayerTime = 0.2f;
     private float cantCrouchingJump = 0.5f;
@@ -144,6 +151,7 @@ public class CharacterControl : MonoBehaviour
             coyoteTimeCounter = coyoteTime;
             isJumping = false;
             canDoubleJump = true;
+            isJumpingOff = false;
         }
         else
         {
@@ -165,9 +173,7 @@ public class CharacterControl : MonoBehaviour
             jumpBufferCounter = 0f; // для прыжков в воздухе
             canDoubleJump = false;
             isJumping = true;
-            isGrounded = false;
-            _animator.SetBool("IsJumping", true);
-            StartCoroutine(JumpCooldown());
+            //StartCoroutine(JumpCooldown());
         }
 
         if (Input.GetButtonUp("Jump") && _rb.velocity.y > 0f && !isCrouching) // высокий прыжок
@@ -175,10 +181,11 @@ public class CharacterControl : MonoBehaviour
             _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.5f);
             coyoteTimeCounter = 0f;
         }
+
         if (isCrouching && Input.GetButtonDown("Jump") && isGrounded)
         {
+            isJumpingOff = true;
             Physics2D.IgnoreLayerCollision(playerLayerMask, platformLayerMask, true);
-            _animator.SetBool("IsJumping", isJumping);
             Invoke("IgnoreLayerOff", ignoreLayerTime);
             Invoke("CantCrouchingJump", cantCrouchingJump);
         }

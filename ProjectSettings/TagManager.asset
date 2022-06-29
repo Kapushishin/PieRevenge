@@ -51,3 +51,15 @@ TagManager:
   - name: Walls
     uniqueID: 4186932595
     locked: 0
+  - name: Grass
+    uniqueID: 2651197361
+    locked: 0
+  - name: Props
+    uniqueID: 209397053
+    locked: 0
+  - name: Other
+    uniqueID: 3546073199
+    locked: 0
+  - name: Water
+    uniqueID: 1484059721
+    locked: 0
