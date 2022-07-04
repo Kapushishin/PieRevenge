@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - Wall
   - Trap
+  - CanCollect
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Ground
   - Platform
   - Trap
-  - 
+  - CanCollect
   - 
   - 
   - 
@@ -62,4 +63,10 @@ TagManager:
     locked: 0
   - name: Water
     uniqueID: 1484059721
+    locked: 0
+  - name: Player
+    uniqueID: 301403889
+    locked: 0
+  - name: UI
+    uniqueID: 3793400397
     locked: 0
