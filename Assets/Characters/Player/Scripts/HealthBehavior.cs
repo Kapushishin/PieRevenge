@@ -42,8 +42,7 @@ public class HealthBehavior : MonoBehaviour
                     //isDead = true;
                     _animator.SetTrigger("IsDead");
                     Instantiate(deathParticles, transform.position, transform.rotation);
-                    GetComponent<CharacterControl>().enabled = false;
-                    Debug.Log("dead");
+                    gameObject.SetActive(false);
                 }
             }
         }
@@ -52,7 +51,6 @@ public class HealthBehavior : MonoBehaviour
     private IEnumerator Invulnerability()
     {
         Physics2D.IgnoreLayerCollision(playerLayerMask, trapLayerMask, true);
-        Debug.Log("collision ignored");
         isInvul = true;
         for (int i = 0; i < flashesCount; i++)
         {
@@ -63,6 +61,5 @@ public class HealthBehavior : MonoBehaviour
         }
         Physics2D.IgnoreLayerCollision(playerLayerMask, trapLayerMask, false);
         isInvul = false;
-        Debug.Log("collision turn on");
     }
 }

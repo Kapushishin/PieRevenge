@@ -15,7 +15,6 @@ public class BankSystem : MonoBehaviour
     private void peachUp()
     {
         peachCounter++;
-        Debug.Log("+1 peach");
         GetComponent<Text>().text = peachCounter.ToString();
     }
 }

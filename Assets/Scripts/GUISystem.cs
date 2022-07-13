@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UISystem : MonoBehaviour
+public class GUISystem : MonoBehaviour
 {
     [SerializeField] private HealthBehavior playerHealth;
     [SerializeField] private Image totalHealthBar;
