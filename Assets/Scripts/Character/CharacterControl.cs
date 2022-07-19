@@ -33,6 +33,7 @@ public class CharacterControl : MonoBehaviour
         else
             Run(speed);
 
+        Attacking();
         Dashing();
         Jump();
         Crouching();
@@ -41,6 +42,8 @@ public class CharacterControl : MonoBehaviour
 
         _animator.SetBool("IsJumping", isJumping);
         _animator.SetBool("IsFalling", isFalling);
+        _animator.SetBool("IsWallSliding", isWallSliding);
+        _animator.SetBool("IsDashing", isDashing);
     }
 
     private void FixedUpdate()
@@ -54,6 +57,7 @@ public class CharacterControl : MonoBehaviour
                 isGrounded = true;
                 //isJumping = false;
                 isFalling = false;
+                isWallSliding = false;
             }
         }
 
@@ -81,7 +85,8 @@ public class CharacterControl : MonoBehaviour
 
     private void Run(float speed)
     {
-        if (isDashing) // когда персонаж находится в дэше, механика бега не будет его перебивать
+        // когда персонаж находится в дэше, механика бега не будет его перебивать
+        if (isDashing) 
             return;
 
         runHorizontal = Input.GetAxisRaw("Horizontal");
@@ -103,7 +108,7 @@ public class CharacterControl : MonoBehaviour
     [Header("Crouch")]
 
     private bool isCrouching;
-    private void Crouching() // присед
+    private void Crouching() 
     {
         if (Input.GetButtonDown("Crouch"))
         {
@@ -115,7 +120,8 @@ public class CharacterControl : MonoBehaviour
             }
         }
 
-        if (isJumpingOff) //прыжки в приоритете
+        //прыжки в приоритете
+        if (isJumpingOff) 
             return;
 
         else if (Input.GetButtonUp("Crouch"))
@@ -132,9 +138,11 @@ public class CharacterControl : MonoBehaviour
     [Header("Jump")]
 
     [SerializeField] private float jumpForce;
-    private float coyoteTime = 0.2f; //время, которое дается на то, что бы нажать прыжок сойдя с платформы
+    //время, которое дается на то, что бы нажать прыжок сойдя с платформы
+    private float coyoteTime = 0.2f; 
     private float coyoteTimeCounter;
-    private float jumpBufferTime = 0.2f; //буфер прыжка, который позволяет прыгнуть, когда персонаж еще не приземлился
+    //буфер прыжка, который позволяет прыгнуть, когда персонаж еще не совсем приземлился
+    private float jumpBufferTime = 0.2f; 
     private float jumpBufferCounter;
     private float jumpCooldown = 0.4f;
     private bool isJumping;
@@ -170,13 +178,15 @@ public class CharacterControl : MonoBehaviour
         if ((coyoteTimeCounter > 0f && jumpBufferCounter > 0f || Input.GetButtonDown("Jump") && canDoubleJump && !isGrounded) && !isCrouching) // прыжок
         {
             _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
-            jumpBufferCounter = 0f; // для прыжков в воздухе
+            // для прыжков в воздухе
+            jumpBufferCounter = 0f; 
             canDoubleJump = false;
             isJumping = true;
             //StartCoroutine(JumpCooldown());
         }
 
-        if (Input.GetButtonUp("Jump") && _rb.velocity.y > 0f && !isCrouching) // высокий прыжок
+        // высокий прыжок
+        if (Input.GetButtonUp("Jump") && _rb.velocity.y > 0f && !isCrouching) 
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.5f);
             coyoteTimeCounter = 0f;
@@ -190,7 +200,8 @@ public class CharacterControl : MonoBehaviour
             Invoke("CantCrouchingJump", cantCrouchingJump);
         }
     }
-    private IEnumerator JumpCooldown() //если очень быстро жать пробел, то делает двойной прыжок, так не надо
+    //если очень быстро жать пробел, то делает двойной прыжок, так не надо
+    private IEnumerator JumpCooldown() 
     {
         isJumping = true;
         yield return new WaitForSeconds(jumpCooldown);
@@ -218,13 +229,14 @@ public class CharacterControl : MonoBehaviour
 
     private void Dashing()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        if (Input.GetButtonDown("Dash") && canDash)
         {
             StartCoroutine(DashCoroutine());
         }
         if (isDashing)
         {
-            _rb.velocity = new Vector2(_rb.transform.localScale.x * dashingForce, 0f); //берем направление персонажа по х
+            //берем направление персонажа по х * силу рывка
+            _rb.velocity = new Vector2(_rb.transform.localScale.x * dashingForce, 0f); 
         }
     }
     private IEnumerator DashCoroutine()
@@ -232,7 +244,8 @@ public class CharacterControl : MonoBehaviour
         canDash = false;
         isDashing = true;
         float originalGravity = _rb.gravityScale;
-        _rb.gravityScale = 0f; // отключаем гравитацию, чтобы персонаж не двигался наискосок
+        // отключаем гравитацию, чтобы персонаж не двигался наискосок
+        _rb.gravityScale = 0f; 
         _tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);
         _tr.emitting = false;
@@ -256,16 +269,15 @@ public class CharacterControl : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * transform.localScale.x, distanceToWall);
         if (hit.collider != null)
         {
-            if (!isGrounded && _rb.velocity.y < speedWallSliding)
+            if (!isGrounded && _rb.velocity.y < 0.01f)
             {
                 if (hit.collider.CompareTag("Wall"))
                 {
                     _rb.velocity = new Vector2(0, speedWallSliding);
                     isWallSliding = true;
+                    
                 }
-            }
-            else
-                isWallSliding = false;
+            }                
         }
     }
     #endregion
@@ -285,8 +297,27 @@ public class CharacterControl : MonoBehaviour
         }
     }*/
 
-    
+    private bool canAttack = true;
+    private bool isAttacking = false;
+    private float attackCooldown;
+    private float attackTime;
 
+    private void Attacking()
+    {
+        if (Input.GetButtonDown("Attack") && canAttack)
+        {
+            _animator.SetTrigger("IsAttacking");
+            StartCoroutine(AttackCoroutine());
+        }
+    }
 
-
+    private IEnumerator AttackCoroutine()
+    {
+        canAttack = false;
+        isAttacking = true;
+        yield return new WaitForSeconds(attackTime);
+        isAttacking = false;
+        yield return new WaitForSeconds(attackCooldown);
+        canAttack = true;
+    }
 }

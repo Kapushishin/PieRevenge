@@ -1,7 +1,22 @@
 fileFormatVersion: 2
-guid: 0f0cc1009ffcc674e91224a60598fcb3
+guid: 2ba5dac62a2343f42ad7bcdea2004dce
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7458534921035355700
+    second: run turnaround-Sheet_0
+  - first:
+      213: 8062544492445698541
+    second: run turnaround-Sheet_1
+  - first:
+      213: -2905485855583277949
+    second: run turnaround-Sheet_2
+  - first:
+      213: 296766927481082589
+    second: run turnaround-Sheet_3
+  - first:
+      213: -5163311143740369286
+    second: run turnaround-Sheet_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,9 +56,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -125,7 +140,112 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: run turnaround-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10
+        width: 80
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43698216ef9028760800000000000000
+      internalID: 7458534921035355700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run turnaround-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 10
+        width: 80
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9020aaf79e3ef60800000000000000
+      internalID: 8062544492445698541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run turnaround-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 10
+        width: 80
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c690e1204ada7d0800000000000000
+      internalID: -2905485855583277949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run turnaround-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 10
+        width: 80
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2189db2f35e1400800000000000000
+      internalID: 296766927481082589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: run turnaround-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 10
+        width: 80
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a761a840fdb3858b0800000000000000
+      internalID: -5163311143740369286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

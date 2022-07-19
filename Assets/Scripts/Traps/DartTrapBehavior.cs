@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DartTrapBehavior : DamageBehavior
+public class DartTrapBehavior : MonoBehaviour
 {
     [SerializeField] private float _speed;
 
@@ -16,9 +16,8 @@ public class DartTrapBehavior : DamageBehavior
         transform.Translate(0, _speed, 0);
     }
 
-    protected override void OnTriggerEnter2D(Collider2D collision)
+    protected void OnTriggerEnter2D(Collider2D collision)
     {
-        base.OnTriggerEnter2D(collision);
         gameObject.SetActive(false);
     }
 }

@@ -11,10 +11,12 @@ GameObject:
   - component: {fileID: 83424506967525394}
   - component: {fileID: 83424506967525393}
   - component: {fileID: 83424506967525392}
+  - component: {fileID: 9141329375637016393}
   - component: {fileID: 83424506967525423}
+  - component: {fileID: 8774976534587286620}
   - component: {fileID: 83424506967525395}
   - component: {fileID: 9101320282497221596}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shroom Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -31,7 +33,10 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 7232719089088813127}
+  - {fileID: 4714738939113640548}
+  - {fileID: 2885627025573937591}
   m_Father: {fileID: 83424507413779087}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -95,11 +100,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 83424506967525422}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8816d9dcbc4f71740b86d9e098181e4f, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.13221908}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -110,8 +115,24 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.875, y: 0.9375}
+  m_Size: {x: 0.72800696, y: 0.67306185}
   m_EdgeRadius: 0
+--- !u!58 &9141329375637016393
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83424506967525422}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 9a9f9fd015bc36e4ab3d855d573af6fc, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.15}
+  serializedVersion: 2
+  m_Radius: 0.3683939
 --- !u!114 &83424506967525423
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,8 +145,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c919e8daee8bea24ebf5426fd924ad1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundCheck: {fileID: 4714738939113640548}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 192
+  _speed: 3.5
+  _range: 5
+  _health: 1
   _point1: {fileID: 83424507368864375}
   _point2: {fileID: 83424508300747477}
+  _sporeAttackParticles: {fileID: 4066516003264889484}
+  _sporeAttackCooldown: 2
+  _sporeAttackTime: 1
+  _attackingZone: {fileID: 3861654271959368937}
+--- !u!114 &8774976534587286620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83424506967525422}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b8784e9470fc7f48bbf85cbc9b41f85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _damage: 1
 --- !u!50 &83424506967525395
 Rigidbody2D:
   serializedVersion: 4
@@ -138,12 +183,12 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 1000
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
   m_Material: {fileID: 0}
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
@@ -175,7 +220,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 83424507368864375}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point 1
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -205,7 +250,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 83424507413779087}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Shroom Red Pref
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +283,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 83424508300747477}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point 2
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -259,3 +304,169 @@ Transform:
   m_Father: {fileID: 83424507413779087}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &3861654271959368937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2885627025573937591}
+  - component: {fileID: 3413701994826626286}
+  m_Layer: 10
+  m_Name: Spores Attack Zone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &2885627025573937591
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3861654271959368937}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 83424506967525394}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &3413701994826626286
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3861654271959368937}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.00000059604645, y: 0.008930832}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.875, y: 0.9375}
+    newSize: {x: 0.875, y: 0.9375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.78, y: 1.8049974}
+  m_EdgeRadius: 0
+--- !u!1 &7836127943425372438
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4714738939113640548}
+  m_Layer: 10
+  m_Name: Ground Check
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4714738939113640548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7836127943425372438}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.54, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 83424506967525394}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2961890738865487363
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 83424506967525394}
+    m_Modifications:
+    - target: {fileID: 1258075692794592399, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_Name
+      value: Particle Spores
+      objectReference: {fileID: 0}
+    - target: {fileID: 1258075692794592399, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.6666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.17999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+--- !u!1 &4066516003264889484 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1258075692794592399, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+  m_PrefabInstance: {fileID: 2961890738865487363}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7232719089088813127 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5567988867099518532, guid: 4207f8ffc286eca4487a61316f49fd03, type: 3}
+  m_PrefabInstance: {fileID: 2961890738865487363}
+  m_PrefabAsset: {fileID: 0}

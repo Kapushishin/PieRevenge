@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthBehavior : MonoBehaviour
+public class HealthBehavior : MonoBehaviour, IDamaging
 {
-    private SpriteRenderer _spriteRend;
+    [SerializeField] private SpriteRenderer _spriteRend;
     private Animator _animator;
 
     [SerializeField] private float startingHealth;
-    public float currentHealth { get; private set; }
+    public float currentHealth;
     //private bool isDead = false;
     private bool isInvul = false;
     private int playerLayerMask, trapLayerMask;
@@ -19,33 +19,11 @@ public class HealthBehavior : MonoBehaviour
 
     private void Awake()
     {
-        _spriteRend = GetComponent<SpriteRenderer>();
         _animator = GetComponent<Animator>();
 
         currentHealth = startingHealth;
         playerLayerMask = LayerMask.NameToLayer("Player");
         trapLayerMask = LayerMask.NameToLayer("Trap");
-    }
-
-    public void GetDamaged(float damage)
-    {
-        if (!isInvul)
-        {
-            if (currentHealth > 0)
-            {
-                currentHealth = Mathf.Clamp(currentHealth - damage, 0, startingHealth);
-                Debug.Log(currentHealth.ToString());
-                _animator.SetTrigger("IsHurt");
-                StartCoroutine(Invulnerability());
-                if (currentHealth == 0)
-                {
-                    //isDead = true;
-                    _animator.SetTrigger("IsDead");
-                    Instantiate(deathParticles, transform.position, transform.rotation);
-                    gameObject.SetActive(false);
-                }
-            }
-        }
     }
 
     private IEnumerator Invulnerability()
@@ -61,5 +39,25 @@ public class HealthBehavior : MonoBehaviour
         }
         Physics2D.IgnoreLayerCollision(playerLayerMask, trapLayerMask, false);
         isInvul = false;
+    }
+
+    public void GetDamaged(DamageBehavior enemy, float damage)
+    {
+        if (!isInvul)
+        {
+            if (currentHealth > 0)
+            {
+                currentHealth = currentHealth - damage;
+                _animator.SetTrigger("IsHurt");
+                StartCoroutine(Invulnerability());
+                if (currentHealth == 0)
+                {
+                    //isDead = true;
+                    _animator.SetTrigger("IsDead");
+                    Instantiate(deathParticles, transform.position, transform.rotation);
+                    gameObject.SetActive(false);
+                }
+            }
+        }
     }
 }

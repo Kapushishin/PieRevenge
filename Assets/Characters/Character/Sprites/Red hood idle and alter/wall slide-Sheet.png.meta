@@ -1,7 +1,19 @@
 fileFormatVersion: 2
-guid: 200bce6d7e5b70947ae371d7c8bd6d90
+guid: 11eac560ff39f6c43981503de202ed7f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -7884500813294232107
+    second: wall slide-Sheet_0
+  - first:
+      213: 6175753893711283928
+    second: wall slide-Sheet_1
+  - first:
+      213: -7419936850262487930
+    second: wall slide-Sheet_2
+  - first:
+      213: 2551236678621099814
+    second: wall slide-Sheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,9 +53,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 0
+  spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -125,7 +137,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: wall slide-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 80
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd9150c840a49290800000000000000
+      internalID: -7884500813294232107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall slide-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 15
+        width: 80
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d685ee127fa4b550800000000000000
+      internalID: 6175753893711283928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall slide-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 15
+        width: 80
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c06484fb6170990800000000000000
+      internalID: -7419936850262487930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall slide-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 15
+        width: 80
+        height: 34
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 627782ffd30d76320800000000000000
+      internalID: 2551236678621099814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

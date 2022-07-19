@@ -20,7 +20,7 @@ TagManager:
   - Platform
   - Trap
   - CanCollect
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -43,29 +43,29 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Props
+    uniqueID: 209397053
+    locked: 0
+  - name: Water
+    uniqueID: 1484059721
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Ground
     uniqueID: 2012837009
     locked: 0
-  - name: Walls
-    uniqueID: 4186932595
-    locked: 0
-  - name: Grass
-    uniqueID: 2651197361
-    locked: 0
-  - name: Props
-    uniqueID: 209397053
-    locked: 0
   - name: Other
     uniqueID: 3546073199
     locked: 0
-  - name: Water
-    uniqueID: 1484059721
+  - name: Walls
+    uniqueID: 4186932595
     locked: 0
   - name: Player
     uniqueID: 301403889
+    locked: 0
+  - name: Grass
+    uniqueID: 2651197361
     locked: 0
   - name: UI
     uniqueID: 3793400397
