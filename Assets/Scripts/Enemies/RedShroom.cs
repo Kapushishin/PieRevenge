@@ -39,7 +39,7 @@ public class RedShroom : EnemyBehavior
             _rb.velocity = new Vector2(_moveDistance.x, 0f) * _speed;
         }
 
-        else if (Vector2.Distance(transform.position, _target.position) < 1.3f)
+        else if (Vector2.Distance(transform.position, _target.position) < 1.1f)
         {
             _rb.velocity = new Vector2(0f, 0f);
         }
@@ -47,10 +47,13 @@ public class RedShroom : EnemyBehavior
 
     private IEnumerator SporeAttackCoroutine()
     {
+        _animator.SetTrigger("IsAttacking");
+        _rb.velocity = new Vector2(0f, 0f);
         _canAttack = false;
         _isAttacking = true;
-        _rb.velocity = new Vector2(0f, 0f);
-        _sporeAttackParticles.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        //_rb.WakeUp();
+        _sporeAttackParticles.SetActive(true);  
         _attackingZone.SetActive(true);
         yield return new WaitForSeconds(_sporeAttackTime);
         _isAttacking = false;

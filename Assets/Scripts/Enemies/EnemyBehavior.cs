@@ -20,8 +20,8 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamaging
     protected Transform _target;
     protected Animator _animator;
 
-    protected bool _canAttack = true;
-    protected bool _isAttacking = false;
+    [SerializeField] protected bool _canAttack = true;
+    [SerializeField] protected bool _isAttacking = false;
 
     protected void Start()
     {

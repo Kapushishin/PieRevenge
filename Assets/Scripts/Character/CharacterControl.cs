@@ -33,11 +33,12 @@ public class CharacterControl : MonoBehaviour
         else
             Run(speed);
 
-        Attacking();
+        
         Dashing();
         Jump();
         Crouching();
         WallSliding();
+        //Attacking();
         //Landing();
 
         _animator.SetBool("IsJumping", isJumping);
@@ -149,7 +150,7 @@ public class CharacterControl : MonoBehaviour
     private bool isJumpingOff;
     [SerializeField] private bool canDoubleJump;
 
-    private float ignoreLayerTime = 0.2f;
+    private float ignoreLayerTime = 0.3f;
     private float cantCrouchingJump = 0.5f;
 
     private void Jump()
@@ -299,15 +300,31 @@ public class CharacterControl : MonoBehaviour
 
     private bool canAttack = true;
     private bool isAttacking = false;
-    private float attackCooldown;
-    private float attackTime;
+    [SerializeField] private float attackCooldown;
+    [SerializeField] private float attackTime;
+    private int attackAnimCondition = 0;
 
     private void Attacking()
     {
         if (Input.GetButtonDown("Attack") && canAttack)
         {
-            _animator.SetTrigger("IsAttacking");
             StartCoroutine(AttackCoroutine());
+            if (attackAnimCondition == 0)
+            {
+                _animator.Play("Player1_Attack1");
+                attackAnimCondition++;
+            }
+            else if (attackAnimCondition == 1)
+            {
+                _animator.Play("Player1_Attack2");
+                attackAnimCondition++;
+            }
+            else if (attackAnimCondition == 2)
+            {
+                _animator.Play("Player1_Attack3");
+                attackAnimCondition = 0;
+            }
+
         }
     }
 

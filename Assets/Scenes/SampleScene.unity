@@ -7049,7 +7049,6 @@ GameObject:
   - component: {fileID: 409484973}
   - component: {fileID: 409484971}
   - component: {fileID: 409484976}
-  - component: {fileID: 409484969}
   - component: {fileID: 409484972}
   m_Layer: 3
   m_Name: Character
@@ -7079,22 +7078,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!58 &409484969
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 409484967}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.22396772
 --- !u!4 &409484970
 Transform:
   m_ObjectHideFlags: 0
@@ -7293,7 +7276,9 @@ MonoBehaviour:
   dashingTime: 0.2
   dashingCooldown: 0.7
   speedWallSliding: -1
-  distanceToWall: 0.3
+  distanceToWall: 0.4
+  attackCooldown: 0.15
+  attackTime: 0.15
 --- !u!70 &409484976
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -90655,6 +90640,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 83424506967525393, guid: 308e4f224b8bddd4896e8137539aa489, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 83424507413779086, guid: 308e4f224b8bddd4896e8137539aa489, type: 3}
       propertyPath: m_Name
       value: Shroom Red Pref
@@ -90703,7 +90692,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3861654271959368937, guid: 308e4f224b8bddd4896e8137539aa489, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 83424506967525393, guid: 308e4f224b8bddd4896e8137539aa489, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 308e4f224b8bddd4896e8137539aa489, type: 3}
 --- !u!1001 &1276225241078749125
 PrefabInstance:

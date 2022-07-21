@@ -16,4 +16,17 @@ public class DamageBehavior : MonoBehaviour
             _target.GetDamaged(this, _damage);
         }
     }
+
+    protected void OnTriggerStay2D(Collider2D collision)
+    {
+        Debug.Log("pupupu");
+        if (collision.CompareTag("Player"))
+        {
+            Debug.Log("hes here!");
+            _target = collision.GetComponent<IDamaging>();
+            _target.GetDamaged(this, _damage);
+        }
+    }
+
+
 }
