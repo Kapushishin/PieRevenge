@@ -2,16 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthBehavior : MonoBehaviour, IDamaging
+public class HealthBehavior : MonoBehaviour, IDamageToPlayer
 {
     [SerializeField] private SpriteRenderer _spriteRend;
     private Animator _animator;
 
-    [SerializeField] private float startingHealth;
+    [SerializeField] public float startingHealth;
     public float currentHealth;
     //private bool isDead = false;
     private bool isInvul = false;
-    private int playerLayerMask, trapLayerMask;
+    private int playerLayerMask, trapLayerMask, enemyLayerMask;
     [SerializeField] private float framesDuration;
     [SerializeField] private int flashesCount;
     [SerializeField] private GameObject deathParticles;
@@ -24,11 +24,14 @@ public class HealthBehavior : MonoBehaviour, IDamaging
         currentHealth = startingHealth;
         playerLayerMask = LayerMask.NameToLayer("Player");
         trapLayerMask = LayerMask.NameToLayer("Trap");
+        enemyLayerMask = LayerMask.NameToLayer("Enemy");
     }
 
+    // Неуязвимость на короткое время после получения урона
     private IEnumerator Invulnerability()
     {
         Physics2D.IgnoreLayerCollision(playerLayerMask, trapLayerMask, true);
+        Physics2D.IgnoreLayerCollision(playerLayerMask, enemyLayerMask, true);
         isInvul = true;
         for (int i = 0; i < flashesCount; i++)
         {
@@ -38,18 +41,23 @@ public class HealthBehavior : MonoBehaviour, IDamaging
             yield return new WaitForSeconds(framesDuration / (flashesCount * 2));
         }
         Physics2D.IgnoreLayerCollision(playerLayerMask, trapLayerMask, false);
+        Physics2D.IgnoreLayerCollision(playerLayerMask, enemyLayerMask, false);
         isInvul = false;
     }
 
-    public void GetDamaged(DamageBehavior enemy, float damage)
+    // Реализация интерфейса IDamaging. Поведение при получении урона от врага
+    public void GetDamaged(EnemyDamageBehavior enemy, float damage)
     {
         if (!isInvul)
         {
+            // Получение урона
             if (currentHealth > 0)
             {
                 currentHealth = currentHealth - damage;
                 _animator.SetTrigger("IsHurt");
                 StartCoroutine(Invulnerability());
+
+                // Смерть
                 if (currentHealth == 0)
                 {
                     //isDead = true;

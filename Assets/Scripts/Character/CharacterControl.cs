@@ -28,7 +28,8 @@ public class CharacterControl : MonoBehaviour
 
     private void Update()
     {
-        if (isCrouching) // чтобы не бегал во время приседа
+        // чтобы не бегал во время приседа
+        if (isCrouching) 
             Run(0f);
         else
             Run(speed);
@@ -38,7 +39,7 @@ public class CharacterControl : MonoBehaviour
         Jump();
         Crouching();
         WallSliding();
-        //Attacking();
+        Attacking();
         //Landing();
 
         _animator.SetBool("IsJumping", isJumping);
@@ -49,6 +50,7 @@ public class CharacterControl : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Проверка на землю и платформы
         isGrounded = false;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, 0.2f, groundLayer);
         for (int i = 0; i < colliders.Length; i++)
@@ -94,6 +96,7 @@ public class CharacterControl : MonoBehaviour
         _rb.velocity = new Vector2(runHorizontal * speed, _rb.velocity.y);;
         _animator.SetFloat("Speed", Mathf.Abs(runHorizontal));
 
+        // Поворот по направлению движения
         if (isFacingRight && runHorizontal > 0f || !isFacingRight && runHorizontal < 0f)
         {
             Vector3 _localScale = transform.localScale;
@@ -111,6 +114,7 @@ public class CharacterControl : MonoBehaviour
     private bool isCrouching;
     private void Crouching() 
     {
+        // Анимация приседания
         if (Input.GetButtonDown("Crouch"))
         {
             if (isGrounded)
@@ -139,7 +143,7 @@ public class CharacterControl : MonoBehaviour
     [Header("Jump")]
 
     [SerializeField] private float jumpForce;
-    //время, которое дается на то, что бы нажать прыжок сойдя с платформы
+    //время, которое дается на то, что бы нажать прыжок после того как сошел с платформы
     private float coyoteTime = 0.2f; 
     private float coyoteTimeCounter;
     //буфер прыжка, который позволяет прыгнуть, когда персонаж еще не совсем приземлился
@@ -157,6 +161,7 @@ public class CharacterControl : MonoBehaviour
     {
         if (isGrounded && !isCrouching) 
         {
+            // Счетчик, пока на земле, равен отведенному времени на прыжок койота
             coyoteTimeCounter = coyoteTime;
             isJumping = false;
             canDoubleJump = true;
@@ -164,22 +169,26 @@ public class CharacterControl : MonoBehaviour
         }
         else
         {
+            // Если игрок в воздухе, то значение счетчика уменьшается на 1 кадр до нуля, пока возможность прыгнуть не станет невозможной
             coyoteTimeCounter -= Time.deltaTime;
         }
 
         if (Input.GetButtonDown("Jump"))
         {
+            // Как только нажали на прыжок, счетчик становится равен отведенному времени на буфер прыжка
             jumpBufferCounter = jumpBufferTime;
         }
         else
         {
+            // Пока мы не нажимаем прыжок, уменьшается счетчик на 1 кадр
             jumpBufferCounter -= Time.deltaTime;
         }
 
-        if ((coyoteTimeCounter > 0f && jumpBufferCounter > 0f || Input.GetButtonDown("Jump") && canDoubleJump && !isGrounded) && !isCrouching) // прыжок
+        if ((coyoteTimeCounter > 0f && jumpBufferCounter > 0f || 
+            Input.GetButtonDown("Jump") && canDoubleJump && !isGrounded) && !isCrouching) // прыжок
         {
             _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
-            // для прыжков в воздухе
+            // для прыжков в воздухе, счетчик сбрасывается
             jumpBufferCounter = 0f; 
             canDoubleJump = false;
             isJumping = true;
@@ -190,18 +199,23 @@ public class CharacterControl : MonoBehaviour
         if (Input.GetButtonUp("Jump") && _rb.velocity.y > 0f && !isCrouching) 
         {
             _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.5f);
+            // Счетчик сбрасывается, как только отпускается кнопка прыжка
             coyoteTimeCounter = 0f;
         }
 
+        // Спрыгивание с платформы, после приседания
         if (isCrouching && Input.GetButtonDown("Jump") && isGrounded)
         {
             isJumpingOff = true;
+            // Отключение колизий платформ и игрока
             Physics2D.IgnoreLayerCollision(playerLayerMask, platformLayerMask, true);
+            // Включение колизий платформ и игрока
             Invoke("IgnoreLayerOff", ignoreLayerTime);
+            // Запрет на спрыгивание на некоторое время
             Invoke("CantCrouchingJump", cantCrouchingJump);
         }
     }
-    //если очень быстро жать пробел, то делает двойной прыжок, так не надо
+    // если очень быстро жать пробел, то делает двойной прыжок, так не надо
     private IEnumerator JumpCooldown() 
     {
         isJumping = true;
@@ -230,6 +244,7 @@ public class CharacterControl : MonoBehaviour
 
     private void Dashing()
     {
+        // рывок
         if (Input.GetButtonDown("Dash") && canDash)
         {
             StartCoroutine(DashCoroutine());
@@ -266,6 +281,9 @@ public class CharacterControl : MonoBehaviour
 
     private void WallSliding()
     {
+        // Скольжение по стенам
+        // Проверка горизонтальным лучом заданной длины, есть ли перед игроком стена
+        // Если да, то замедлять скорость падения
         Physics2D.queriesStartInColliders = false;
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * transform.localScale.x, distanceToWall);
         if (hit.collider != null)
@@ -298,17 +316,44 @@ public class CharacterControl : MonoBehaviour
         }
     }*/
 
+    #region Attack
+    [Header("Attack")]
+
+    [SerializeField] private Transform attackCheck;
+    [SerializeField] private LayerMask attackLayer;
     private bool canAttack = true;
     private bool isAttacking = false;
     [SerializeField] private float attackCooldown;
     [SerializeField] private float attackTime;
+    // Для разной анимации атаки, чтобы делать последовательное комбо
     private int attackAnimCondition = 0;
+    [SerializeField] private float damage;
+    [SerializeField] private float radiusAttack;
+    IDamageToEnemy target;
 
     private void Attacking()
     {
+        Collider2D[] attackColliders = Physics2D.OverlapCircleAll(attackCheck.position, radiusAttack, attackLayer);
+
         if (Input.GetButtonDown("Attack") && canAttack)
         {
+
+            if (attackColliders.Length > 0 && canAttack)
+            {
+                target = attackColliders[0].GetComponent<IDamageToEnemy>();
+                target.EnemyGetDamaged(this, damage);
+            }
+
+            else
+            {
+                if (target != null)
+                {
+                    target = null;
+                }
+            }
+
             StartCoroutine(AttackCoroutine());
+
             if (attackAnimCondition == 0)
             {
                 _animator.Play("Player1_Attack1");
@@ -324,7 +369,6 @@ public class CharacterControl : MonoBehaviour
                 _animator.Play("Player1_Attack3");
                 attackAnimCondition = 0;
             }
-
         }
     }
 
@@ -337,4 +381,12 @@ public class CharacterControl : MonoBehaviour
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
     }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(attackCheck.position, radiusAttack);
+    }
+
+    #endregion
 }

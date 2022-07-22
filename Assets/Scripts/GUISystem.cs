@@ -11,10 +11,12 @@ public class GUISystem : MonoBehaviour
 
     private void Start()
     {
-        totalHealthBar.fillAmount = playerHealth.currentHealth / 10;
+        // Картинка с 10 сердцами в ряд. Закрашивание лишних сердец в зависимости от максимального количества здоровья игрока
+        totalHealthBar.fillAmount = playerHealth.startingHealth / 10;
     }
     private void Update()
     {
+        // Картинка с 10 сердцами в ряд. Закрашивание лишних сердец в зависимости от текущего количества здоровья игрока
         currentHealthBar.fillAmount = playerHealth.currentHealth / 10;
     }
 }

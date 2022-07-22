@@ -99,10 +99,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 192
   _speed: 3.5
-  _range: 5
-  _health: 1
-  _canAttack: 1
-  _isAttacking: 0
+  _rangeToChasing: 5
+  _rangeToSrandingNearPlayer: 0.9
+  _health: 3
   _point1: {fileID: 83424507368864375}
   _point2: {fileID: 83424508300747477}
   _sporeAttackParticles: {fileID: 4066516003264889484}
