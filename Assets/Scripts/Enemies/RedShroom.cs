@@ -4,46 +4,28 @@ using UnityEngine;
 
 public class RedShroom : EnemyBehavior
 {
-    [SerializeField] public Transform _point1;
-    [SerializeField] public Transform _point2;
-    private Transform _myPoint;
-
     [SerializeField] private GameObject _sporeAttackParticles;
     [SerializeField] private float _sporeAttackCooldown;
     [SerializeField] private float _sporeAttackTime;
     [SerializeField] private GameObject _attackingZone;
 
-    private void Awake()
-    {
-        // Ќачальна€ точка, куда пойдет патрулировать.
-        _myPoint = _point1;
-    }
-
-    protected override void Move()
+    public override void Move()
     {
         base.Move();
-
-        // ≈сли дистанци€ до игрока больше заданного значени€,
-        if (Vector2.Distance(transform.position, _target.position) > _rangeToChasing)
+        //  огда дистанци€ от врага до игрока станет меньше заданного значени€, враг побежит за игроком
+        if (Vector2.Distance(transform.position, _target.position) < _rangeToChasing &&
+            Vector2.Distance(transform.position, _target.position) > _rangeToSrandingNearPlayer)
         {
-            // “о враг будет патрулировать между 2 точками:
-            // ќтмер€€ дистанцию до выбранной точки. ≈сли она меньше какого-то значени€,
-            // “о мен€ть цель на вторую точку и идти к ней. » так бесконечно.
-            if (Vector2.Distance(transform.position, _point1.position) < 0.5f)
-            {
-                _myPoint = _point2;
-            }
-            if (Vector2.Distance(transform.position, _point2.position) < 0.5f)
-            {
-                _myPoint = _point1;
-            }
-            // ƒистанцию до точки привести к значению близкому к 1.
-            // ќно может быть положительным и отрицательным.
-            // “аким образом задаетс€ направление движени€ по оси х.
-            Vector3 _range = (_myPoint.position - transform.position).normalized;
-            _moveDistance = _range;
-            // » умножаетс€ на скорость.
+            Vector3 _distance = (_target.position - transform.position).normalized;
+            _moveDistance = _distance;
             _rb.velocity = new Vector2(_moveDistance.x, 0f) * _speed;
+        }
+
+        // ≈сли рассто€ние до игрока меньше заданного значени€,
+        // “о враг встанет. —делано, чтобы враг не толкал рб игрока.
+        else if (Vector2.Distance(transform.position, _target.position) < _rangeToSrandingNearPlayer)
+        {
+            _rb.velocity = new Vector2(0f, 0f);
         }
     }
 

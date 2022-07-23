@@ -94,14 +94,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c919e8daee8bea24ebf5426fd924ad1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundCheck: {fileID: 4714738939113640548}
-  groundLayer:
+  _groundCheck: {fileID: 4714738939113640548}
+  _groundLayer:
     serializedVersion: 2
     m_Bits: 192
   _speed: 3.5
   _rangeToChasing: 5
   _rangeToSrandingNearPlayer: 0.9
-  _health: 3
+  HealthEnemy: 2
+  _framesDuration: 1
+  _flashesCount: 1
+  _spriteRend: {fileID: 4677998540524303433}
+  _deathTimer: 0.8
   _point1: {fileID: 83424507368864375}
   _point2: {fileID: 83424508300747477}
   _sporeAttackParticles: {fileID: 4066516003264889484}

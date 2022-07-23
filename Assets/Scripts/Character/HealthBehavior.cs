@@ -7,8 +7,8 @@ public class HealthBehavior : MonoBehaviour, IDamageToPlayer
     [SerializeField] private SpriteRenderer _spriteRend;
     private Animator _animator;
 
-    [SerializeField] public float startingHealth;
-    public float currentHealth;
+    [SerializeField] public float StartingHealthPlayer;
+    public float CurrentHealthPlayer;
     //private bool isDead = false;
     private bool isInvul = false;
     private int playerLayerMask, trapLayerMask, enemyLayerMask;
@@ -21,7 +21,7 @@ public class HealthBehavior : MonoBehaviour, IDamageToPlayer
     {
         _animator = GetComponent<Animator>();
 
-        currentHealth = startingHealth;
+        CurrentHealthPlayer = StartingHealthPlayer;
         playerLayerMask = LayerMask.NameToLayer("Player");
         trapLayerMask = LayerMask.NameToLayer("Trap");
         enemyLayerMask = LayerMask.NameToLayer("Enemy");
@@ -51,14 +51,14 @@ public class HealthBehavior : MonoBehaviour, IDamageToPlayer
         if (!isInvul)
         {
             // Получение урона
-            if (currentHealth > 0)
+            if (CurrentHealthPlayer > 0)
             {
-                currentHealth = currentHealth - damage;
+                CurrentHealthPlayer = CurrentHealthPlayer - damage;
                 _animator.SetTrigger("IsHurt");
                 StartCoroutine(Invulnerability());
 
                 // Смерть
-                if (currentHealth == 0)
+                if (CurrentHealthPlayer == 0)
                 {
                     //isDead = true;
                     _animator.SetTrigger("IsDead");

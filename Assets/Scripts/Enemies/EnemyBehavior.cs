@@ -4,15 +4,21 @@ using UnityEngine;
 
 public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
 {
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Transform _groundCheck;
+    [SerializeField] private LayerMask _groundLayer;
     protected bool _isGrounded;
 
+    [SerializeField] protected Transform _point1;
+    [SerializeField] protected Transform _point2;
+    protected Transform _myPoint;
     [SerializeField] protected float _speed;
     [SerializeField] protected float _rangeToChasing;
     [SerializeField] protected float _rangeToSrandingNearPlayer;
 
-    [SerializeField] public float _health;
+    [SerializeField] public float HealthEnemy;
+    [SerializeField] private float _framesDuration;
+    [SerializeField] private int _flashesCount;
+    private bool _isDead = false;
 
     private bool _isFacingRight;
     protected Vector2 _moveDistance;
@@ -20,9 +26,17 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
     protected Rigidbody2D _rb;
     protected Transform _target;
     protected Animator _animator;
+    [SerializeField] private SpriteRenderer _spriteRend;
 
     protected bool _canAttack = true;
     protected bool _isAttacking = false;
+    [SerializeField] private float _deathTimer;
+
+    private void Awake()
+    {
+        // Начальная точка, куда пойдет патрулировать.
+        _myPoint = _point1;
+    }
 
     protected void Start()
     {
@@ -37,7 +51,7 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
         
         // Проверка на землю
         _isGrounded = false;
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, 0.2f, groundLayer);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(_groundCheck.position, 0.2f, _groundLayer);
         for (int i = 0; i < colliders.Length; i++)
         {
             if (colliders[i].gameObject != gameObject)
@@ -61,57 +75,81 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
 
     private void FixedUpdate()
     {
-
-        if (!_isAttacking)
+        if (!_isDead)
         {
-            Move();
-        }
+            if (!_isAttacking)
+            {
+                Move();
+            }
 
-        if (_canAttack)
-        {
-            Attack();
+            if (_canAttack)
+            {
+                Attack();
+            }
         }
-
     }
 
-    protected virtual void Move()
+    public virtual void Move()
     {
-        // Когда дистанция от врага до игрока станет меньше заданного значения, враг побежит за игроком
-        if (Vector2.Distance(transform.position, _target.position) < _rangeToChasing && 
-            Vector2.Distance(transform.position, _target.position) > _rangeToSrandingNearPlayer)
+        // Если дистанция до игрока больше заданного значения,
+        if (Vector2.Distance(transform.position, _target.position) > _rangeToChasing)
         {
-            Vector3 _distance = (_target.position - transform.position).normalized;
-            _moveDistance = _distance;
+            // То враг будет патрулировать между 2 точками:
+            // Отмеряя дистанцию до выбранной точки. Если она меньше какого-то значения,
+            // То менять цель на вторую точку и идти к ней. И так бесконечно.
+            if (Vector2.Distance(transform.position, _point1.position) < 0.5f)
+            {
+                _myPoint = _point2;
+            }
+            if (Vector2.Distance(transform.position, _point2.position) < 0.5f)
+            {
+                _myPoint = _point1;
+            }
+            // Дистанцию до точки привести к значению близкому к 1.
+            // Оно может быть положительным и отрицательным.
+            // Таким образом задается направление движения по оси х.
+            Vector3 _range = (_myPoint.position - transform.position).normalized;
+            _moveDistance = _range;
+            // И умножается на скорость.
             _rb.velocity = new Vector2(_moveDistance.x, 0f) * _speed;
-        }
-
-        // Если расстояние до игрока меньше заданного значения,
-        // То враг встанет. Сделано, чтобы враг не толкал рб игрока.
-        else if (Vector2.Distance(transform.position, _target.position) < _rangeToSrandingNearPlayer)
-        {
-            _rb.velocity = new Vector2(0f, 0f);
         }
     }
 
     // Нужно реализовать поведение во время атаки в дочернем скрипте врага
     public abstract void Attack();
 
-    // Реализация интерфейса IDamaging. Поведение при получении урона от игрока
+    // Реализация интерфейса IDamageToEnemy. Поведение при получении урона от игрока
     public void EnemyGetDamaged(CharacterControl player, float damage)
     {
-        Debug.Log(_health);
-        if (_health > 0)
+        Debug.Log(HealthEnemy);
+        if (HealthEnemy > 0)
         {
-            _health -= damage;
-            //_animator.SetTrigger("IsHurt");
-            //StartCoroutine(Stuned());
-            if (_health == 0)
+            HealthEnemy -= damage;
+            StartCoroutine(HurtCoroutine());
+            if (HealthEnemy == 0)
             {
-                //isDead = true;
-                //_animator.SetTrigger("IsDead");
-                //Instantiate(deathParticles, transform.position, transform.rotation);
-                gameObject.SetActive(false);
+                StartCoroutine(Death());
             }
         }
+    }
+
+    private IEnumerator HurtCoroutine()
+    {
+        for (int i = 0; i < _flashesCount; i++)
+        {
+            _spriteRend.color = Color.red;
+            yield return new WaitForSeconds(_framesDuration / (_flashesCount * 2));
+            _spriteRend.color = Color.white;
+            yield return new WaitForSeconds(_framesDuration / (_flashesCount * 2));
+        }
+    }
+
+    private IEnumerator Death()
+    {
+        _isDead = true;
+        _animator.SetTrigger("Death");
+        _rb.velocity = new Vector2(0f, 0f);
+        yield return new WaitForSeconds(_deathTimer);
+        gameObject.SetActive(false);
     }
 }

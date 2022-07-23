@@ -103,6 +103,7 @@ public class CharacterControl : MonoBehaviour
             isFacingRight = !isFacingRight;
             _localScale.x *= -1f;
             transform.localScale = _localScale;
+            _animator.Play("Player1_Turnaround");
         }
     }
     #endregion
