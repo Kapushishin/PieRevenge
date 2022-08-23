@@ -2,14 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PeachBehavior : MonoBehaviour
+public class PeachBehavior : MonoBehaviour, IInteracteable
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public bool GetInteracted(InteractionsBehaviour target)
     {
-        if (collision.CompareTag("Player"))
-        {
-            EventManager.SendPeachUp();
-            Destroy(gameObject);
-        }
+        EventManager.SendPeachUp();
+        Destroy(gameObject);
+        return true;
     }
 }

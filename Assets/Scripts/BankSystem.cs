@@ -9,10 +9,10 @@ public class BankSystem : MonoBehaviour
 
     private void Start()
     {
-        EventManager.OnPeachUp += peachUp;
+        EventManager.OnPeachUp += PeachUp;
     }
 
-    private void peachUp()
+    private void PeachUp()
     {
         peachCounter++;
         GetComponent<Text>().text = peachCounter.ToString();

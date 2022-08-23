@@ -8,6 +8,7 @@ TagManager:
   - Platform
   - Wall
   - Trap
+  - Interact
   - CanCollect
   layers:
   - Default
@@ -43,6 +44,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: New Layer
+    uniqueID: 1156589661
+    locked: 0
   - name: Props
     uniqueID: 209397053
     locked: 0
