@@ -6,11 +6,7 @@ using System;
 public class EventManager : MonoBehaviour
 {
     public static event Action OnPeachUp;
-    public static event Action OnNPCInteract;
-
-    //public delegate void OnNextLine();
-    //public static event OnNextLine onNextLine;
-    public static event Action OnNextLine;
+    public static event Action OnMenuOpen;
 
 
     public static void SendPeachUp()
@@ -18,13 +14,8 @@ public class EventManager : MonoBehaviour
         OnPeachUp?.Invoke();
     }
 
-    public static void SendNPCInteract()
+    public static void SendMenuOpen()
     {
-        OnNPCInteract?.Invoke();
-    }
-
-    public static void SendNextLine()
-    {
-        OnNextLine?.Invoke();
+        OnMenuOpen?.Invoke();
     }
 }

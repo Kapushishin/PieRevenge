@@ -28,11 +28,6 @@ public class InkManager : MonoBehaviour
     [SerializeField]
     private TextWriterEffect _textWriter;
 
-    private void Update()
-    {
-        EventManager.OnNextLine += DisplayNextLine;
-    }
-
     //Добавление текта из NPC, запуск диалога
     public void NewStory(TextAsset text)
     {
@@ -56,7 +51,6 @@ public class InkManager : MonoBehaviour
             // удаление лишних пробелов, если есть
             text = text?.Trim();
             _textWriter.AddWriter(_textField, text, .1f);
-            //_textField.text = text;
         }
 
         if (_story.currentChoices.Count > 0)
