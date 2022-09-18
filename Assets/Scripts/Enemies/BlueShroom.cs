@@ -6,6 +6,6 @@ public class BlueShroom : EnemyBehavior
 {
     public override void Attack()
     {
-        throw new System.NotImplementedException();
+        // он атакует своим телом))
     }
 }

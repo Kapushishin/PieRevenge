@@ -10,17 +10,21 @@ public class CharacterControl : MonoBehaviour
     [SerializeField] private LayerMask platformLayer;
     private TrailRenderer _tr;
     private Animator _animator;
+    private CharacterSounds _charSounds;
 
     [SerializeField] private bool isGrounded;
     private bool isFalling;
 
     private int playerLayerMask, platformLayerMask;
 
+    public string tagSurface;
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
         _tr = GetComponent<TrailRenderer>();
         _animator = GetComponent<Animator>();
+        _charSounds = GetComponent<CharacterSounds>();
 
         playerLayerMask = LayerMask.NameToLayer("Player");
         platformLayerMask = LayerMask.NameToLayer("Platform");
@@ -46,6 +50,7 @@ public class CharacterControl : MonoBehaviour
         _animator.SetBool("IsFalling", isFalling);
         _animator.SetBool("IsWallSliding", isWallSliding);
         _animator.SetBool("IsDashing", isDashing);
+        _animator.SetBool("IsGrounded", isGrounded);
     }
 
     private void FixedUpdate()
@@ -57,6 +62,8 @@ public class CharacterControl : MonoBehaviour
         {
             if (colliders[i].gameObject != gameObject)
             {
+                // берем таг поверхности, на которой стоим
+                tagSurface = colliders[i].gameObject.tag.ToString();
                 isGrounded = true;
                 //isJumping = false;
                 isFalling = false;
@@ -153,67 +160,74 @@ public class CharacterControl : MonoBehaviour
     private float jumpCooldown = 0.4f;
     private bool isJumping;
     private bool isJumpingOff;
-    [SerializeField] private bool canDoubleJump;
+    private bool canDoubleJump = false;
 
     private float ignoreLayerTime = 0.3f;
     private float cantCrouchingJump = 0.5f;
 
     private void Jump()
     {
-        if (isGrounded && !isCrouching) 
+        if (SwitchParametres.CanJump == true)
         {
-            // Счетчик, пока на земле, равен отведенному времени на прыжок койота
-            coyoteTimeCounter = coyoteTime;
-            isJumping = false;
-            canDoubleJump = true;
-            isJumpingOff = false;
-        }
-        else
-        {
-            // Если игрок в воздухе, то значение счетчика уменьшается на 1 кадр до нуля, пока возможность прыгнуть не станет невозможной
-            coyoteTimeCounter -= Time.deltaTime;
-        }
+            if (isGrounded && !isCrouching)
+            {
+                // Счетчик, пока на земле, равен отведенному времени на прыжок койота
+                coyoteTimeCounter = coyoteTime;
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            // Как только нажали на прыжок, счетчик становится равен отведенному времени на буфер прыжка
-            jumpBufferCounter = jumpBufferTime;
-        }
-        else
-        {
-            // Пока мы не нажимаем прыжок, уменьшается счетчик на 1 кадр
-            jumpBufferCounter -= Time.deltaTime;
-        }
+                if (SwitchParametres.CanDoubleJump == true)
+                {
+                    canDoubleJump = false;
+                }
+                isJumping = false;
+                isJumpingOff = false;
+            }
+            else
+            {
+                // Если игрок в воздухе, то значение счетчика уменьшается на 1 кадр до нуля, пока возможность прыгнуть не станет невозможной
+                coyoteTimeCounter -= Time.deltaTime;
+            }
 
-        if ((coyoteTimeCounter > 0f && jumpBufferCounter > 0f || 
-            Input.GetButtonDown("Jump") && canDoubleJump && !isGrounded) && !isCrouching) // прыжок
-        {
-            _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
-            // для прыжков в воздухе, счетчик сбрасывается
-            jumpBufferCounter = 0f; 
-            canDoubleJump = false;
-            isJumping = true;
-            //StartCoroutine(JumpCooldown());
-        }
+            if (Input.GetButtonDown("Jump"))
+            {
+                // Как только нажали на прыжок, счетчик становится равен отведенному времени на буфер прыжка
+                jumpBufferCounter = jumpBufferTime;
+            }
+            else
+            {
+                // Пока мы не нажимаем прыжок, уменьшается счетчик на 1 кадр
+                jumpBufferCounter -= Time.deltaTime;
+            }
 
-        // высокий прыжок
-        if (Input.GetButtonUp("Jump") && _rb.velocity.y > 0f && !isCrouching) 
-        {
-            _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.5f);
-            // Счетчик сбрасывается, как только отпускается кнопка прыжка
-            coyoteTimeCounter = 0f;
-        }
+            if ((coyoteTimeCounter > 0f && jumpBufferCounter > 0f ||
+                Input.GetButtonDown("Jump") && canDoubleJump && !isGrounded) && !isCrouching) // прыжок
+            {
+                _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
+                // для прыжков в воздухе, счетчик сбрасывается
+                jumpBufferCounter = 0f;
+                canDoubleJump = false;
+                isJumping = true;
+                //StartCoroutine(JumpCooldown());
+            }
 
-        // Спрыгивание с платформы, после приседания
-        if (isCrouching && Input.GetButtonDown("Jump") && isGrounded)
-        {
-            isJumpingOff = true;
-            // Отключение колизий платформ и игрока
-            Physics2D.IgnoreLayerCollision(playerLayerMask, platformLayerMask, true);
-            // Включение колизий платформ и игрока
-            Invoke("IgnoreLayerOff", ignoreLayerTime);
-            // Запрет на спрыгивание на некоторое время
-            Invoke("CantCrouchingJump", cantCrouchingJump);
+            // высокий прыжок
+            if (Input.GetButtonUp("Jump") && _rb.velocity.y > 0f && !isCrouching)
+            {
+                _rb.velocity = new Vector2(_rb.velocity.x, _rb.velocity.y * 0.5f);
+                // Счетчик сбрасывается, как только отпускается кнопка прыжка
+                coyoteTimeCounter = 0f;
+            }
+
+            // Спрыгивание с платформы, после приседания
+            if (isCrouching && Input.GetButtonDown("Jump") && isGrounded)
+            {
+                isJumpingOff = true;
+                // Отключение колизий платформ и игрока
+                Physics2D.IgnoreLayerCollision(playerLayerMask, platformLayerMask, true);
+                // Включение колизий платформ и игрока
+                Invoke("IgnoreLayerOff", ignoreLayerTime);
+                // Запрет на спрыгивание на некоторое время
+                Invoke("CantCrouchingJump", cantCrouchingJump);
+            }
         }
     }
     // если очень быстро жать пробел, то делает двойной прыжок, так не надо
@@ -246,10 +260,14 @@ public class CharacterControl : MonoBehaviour
     private void Dashing()
     {
         // рывок
-        if (Input.GetButtonDown("Dash") && canDash)
+        if (SwitchParametres.CanDash == true)
         {
-            StartCoroutine(DashCoroutine());
+            if (Input.GetButtonDown("Dash") && canDash)
+            {
+                StartCoroutine(DashCoroutine());
+            }
         }
+
         if (isDashing)
         {
             //берем направление персонажа по х * силу рывка
@@ -264,6 +282,7 @@ public class CharacterControl : MonoBehaviour
         // отключаем гравитацию, чтобы персонаж не двигался наискосок
         _rb.gravityScale = 0f; 
         _tr.emitting = true;
+        _charSounds.PlayDashSound();
         yield return new WaitForSeconds(dashingTime);
         _tr.emitting = false;
         _rb.gravityScale = originalGravity;
@@ -297,7 +316,11 @@ public class CharacterControl : MonoBehaviour
                     isWallSliding = true;
                     
                 }
-            }                
+                else
+                {
+                    isWallSliding = false;
+                }
+            }
         }
     }
     #endregion
@@ -322,7 +345,7 @@ public class CharacterControl : MonoBehaviour
 
     [SerializeField] private Transform attackCheck;
     [SerializeField] private LayerMask attackLayer;
-    private bool canAttack = true;
+    private bool canAttack = false;
     private bool isAttacking = false;
     [SerializeField] private float attackCooldown;
     [SerializeField] private float attackTime;
@@ -381,12 +404,6 @@ public class CharacterControl : MonoBehaviour
         isAttacking = false;
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.blue;
-        Gizmos.DrawWireSphere(attackCheck.position, radiusAttack);
     }
 
     #endregion

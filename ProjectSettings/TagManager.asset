@@ -10,6 +10,8 @@ TagManager:
   - Trap
   - Interact
   - CanCollect
+  - Water
+  - Wood
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - Trap
   - CanCollect
   - Enemy
-  - 
+  - Interact
   - 
   - 
   - 
@@ -44,6 +46,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 4096614037
+    locked: 0
   - name: New Layer
     uniqueID: 1156589661
     locked: 0

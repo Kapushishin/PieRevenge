@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PeachBehavior : MonoBehaviour, IInteracteable
 {
+    public string PromptText => "";
+
     public bool GetInteracted(InteractionsBehaviour target)
     {
         EventManager.SendPeachUp();

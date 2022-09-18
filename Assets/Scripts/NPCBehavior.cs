@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NPCBehavior : MonoBehaviour, IInteracteable
+public abstract class NPCBehavior : MonoBehaviour, IInteracteable
 {
     [SerializeField] 
     private TextAsset _textDialog;
@@ -10,33 +10,32 @@ public class NPCBehavior : MonoBehaviour, IInteracteable
     private GameObject _canvas;
     [SerializeField] 
     private InkManager _ink;
-    [SerializeField] 
-    private bool _inRange;
     [SerializeField]
     private string _nameNPC;
+    [SerializeField]
+    private string _textPrompt;
 
-    private void Update()
+    public string PromptText => _textPrompt;
+
+    //[SerializeField] private GameObject _popUpText;
+
+    public bool GetInteracted(InteractionsBehaviour target)
     {
         if (!_ink._blockInteractions)
         {
             ActivateDialog();
+            SomeAction();
         }
-    }
-
-    public bool GetInteracted(InteractionsBehaviour target)
-    {
-        _inRange = true;
         return true;
     }
 
+    public abstract void SomeAction();
+
     private void ActivateDialog()
     {
-        if (_inRange && Input.GetButtonDown("Interact"))
-        {
-            _ink.NewStory(_textDialog);
-            _ink._nameField.text = _nameNPC;
-            _canvas.SetActive(true);
-            _ink._blockInteractions = true;
-        }
+        _ink.NewStory(_textDialog);
+        _ink._nameField.text = _nameNPC;
+        _canvas.SetActive(true);
+        _ink._blockInteractions = true;
     }
 }

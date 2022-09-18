@@ -32,6 +32,8 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
     protected bool _isAttacking = false;
     [SerializeField] private float _deathTimer;
 
+    private EnemySound _enemySound;
+
     private void Awake()
     {
         // Ќачальна€ точка, куда пойдет патрулировать.
@@ -44,6 +46,7 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
         _target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _enemySound = GetComponent<EnemySound>();
     }
 
     private void Update()
@@ -138,6 +141,7 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
         for (int i = 0; i < _flashesCount; i++)
         {
             _spriteRend.color = Color.red;
+            _enemySound.PlayEnemyHurtSound();
             yield return new WaitForSeconds(_framesDuration / (_flashesCount * 2));
             _spriteRend.color = Color.white;
             yield return new WaitForSeconds(_framesDuration / (_flashesCount * 2));

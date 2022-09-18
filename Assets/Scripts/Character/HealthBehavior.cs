@@ -6,6 +6,7 @@ public class HealthBehavior : MonoBehaviour, IDamageToPlayer
 {
     [SerializeField] private SpriteRenderer _spriteRend;
     private Animator _animator;
+    private CharacterSounds _charSounds;
 
     [SerializeField] public float StartingHealthPlayer;
     public float CurrentHealthPlayer;
@@ -15,11 +16,11 @@ public class HealthBehavior : MonoBehaviour, IDamageToPlayer
     [SerializeField] private float framesDuration;
     [SerializeField] private int flashesCount;
     [SerializeField] private GameObject deathParticles;
-    
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
+        _charSounds = GetComponent<CharacterSounds>();
 
         CurrentHealthPlayer = StartingHealthPlayer;
         playerLayerMask = LayerMask.NameToLayer("Player");
@@ -55,6 +56,7 @@ public class HealthBehavior : MonoBehaviour, IDamageToPlayer
             {
                 CurrentHealthPlayer = CurrentHealthPlayer - damage;
                 _animator.SetTrigger("IsHurt");
+                //_charSounds.PlayHurtSound();
                 StartCoroutine(Invulnerability());
 
                 // Смерть
