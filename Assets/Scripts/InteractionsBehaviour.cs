@@ -16,12 +16,30 @@ public class InteractionsBehaviour : MonoBehaviour
     [SerializeField] private GameObject _popUpBubble;
     [SerializeField] private TextMeshProUGUI _textPrompt;
 
+    private void Start()
+    {
+        EventManager.OnDestroyNPC += DisableNPC;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnDestroyNPC -= DisableNPC;
+    }
+
     private void Update()
     {
         // сколько коллизий с конкретным слоем произошло в данный момент
         _interactFound = Physics2D.OverlapCircleNonAlloc(_interactCheck.position, _radiusInteract, _colliders, _interactLayer);
 
         Interaction();
+    }
+
+    private void DisableNPC()
+    {
+        if (_colliders[0].GetComponent<NPCBehavior>()._isDisableable)
+        {
+            Destroy(_colliders[0].gameObject);
+        }
     }
 
     // само взаимодействие с объетктом коллизии

@@ -19,6 +19,8 @@ public class CharacterControl : MonoBehaviour
 
     public string tagSurface;
 
+    public bool CanMove = true;
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -32,25 +34,27 @@ public class CharacterControl : MonoBehaviour
 
     private void Update()
     {
-        // чтобы не бегал во время приседа
-        if (isCrouching) 
-            Run(0f);
-        else
-            Run(speed);
+        if (CanMove)
+        {
+            // чтобы не бегал во время приседа
+            if (isCrouching)
+                Run(0f);
+            else
+                Run(speed);
 
-        
-        Dashing();
-        Jump();
-        Crouching();
-        WallSliding();
-        Attacking();
-        //Landing();
+            Dashing();
+            Jump();
+            Crouching();
+            WallSliding();
+            Attacking();
+            //Landing();
 
-        _animator.SetBool("IsJumping", isJumping);
-        _animator.SetBool("IsFalling", isFalling);
-        _animator.SetBool("IsWallSliding", isWallSliding);
-        _animator.SetBool("IsDashing", isDashing);
-        _animator.SetBool("IsGrounded", isGrounded);
+            _animator.SetBool("IsJumping", isJumping);
+            _animator.SetBool("IsFalling", isFalling);
+            _animator.SetBool("IsWallSliding", isWallSliding);
+            _animator.SetBool("IsDashing", isDashing);
+            _animator.SetBool("IsGrounded", isGrounded);
+        }
     }
 
     private void FixedUpdate()

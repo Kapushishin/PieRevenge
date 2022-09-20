@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,25 +7,33 @@ public abstract class NPCBehavior : MonoBehaviour, IInteracteable
 {
     [SerializeField] 
     private TextAsset _textDialog;
-    [SerializeField] 
-    private GameObject _canvas;
-    [SerializeField] 
-    private InkManager _ink;
+    protected GameObject _canvas;
+    protected InkManager _ink;
     [SerializeField]
     private string _nameNPC;
     [SerializeField]
     private string _textPrompt;
-
+    [SerializeField]
+    public bool _isDisableable;
+    private bool _canTalk = true;
     public string PromptText => _textPrompt;
 
-    //[SerializeField] private GameObject _popUpText;
+    private void Awake()
+    {
+        _canvas = GameObject.Find("Canvas Dialogs");
+        _ink = _canvas.gameObject.GetComponent<InkManager>();
+    }
 
     public bool GetInteracted(InteractionsBehaviour target)
     {
-        if (!_ink._blockInteractions)
+        if (!_ink.BlockInteractions && _canTalk)
         {
             ActivateDialog();
             SomeAction();
+            if (_isDisableable)
+            {
+            _canTalk = false;
+            }
         }
         return true;
     }
@@ -34,8 +43,8 @@ public abstract class NPCBehavior : MonoBehaviour, IInteracteable
     private void ActivateDialog()
     {
         _ink.NewStory(_textDialog);
-        _ink._nameField.text = _nameNPC;
+        _ink.NameField.text = _nameNPC;
         _canvas.SetActive(true);
-        _ink._blockInteractions = true;
+        _ink.BlockInteractions = true;
     }
 }

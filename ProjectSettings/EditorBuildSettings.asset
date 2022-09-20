@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Near House Timeline.unity
+    guid: 1db0234f4dad2ca438af8a60d66f479e
+  - enabled: 1
     path: Assets/Scenes/Near House.unity
     guid: 850a9a5a2a464ad4b8aa078febd91c15
   - enabled: 1

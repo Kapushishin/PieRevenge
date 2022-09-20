@@ -11,7 +11,7 @@ public class InkManager : MonoBehaviour
     private GameObject _canvas;
 
 	[SerializeField]
-	public Story _story;
+	public Story Story;
     private TextAsset _newStory;
 
 	[SerializeField]
@@ -21,13 +21,25 @@ public class InkManager : MonoBehaviour
     [SerializeField]
     private Button _choiceButtonPrefab;
 
-    public bool _blockInteractions = false;
+    public bool BlockInteractions = false;
 
     [SerializeField]
-    public TextMeshProUGUI _nameField = null;
+    public TextMeshProUGUI NameField = null;
 
     [SerializeField]
     private TextWriterEffect _textWriter;
+    [SerializeField]
+    public float SpeedWriter = .1f;
+
+    private void Awake()
+    {
+        Invoke("DisableCanvas", .05f);
+    }
+
+    private void DisableCanvas()
+    {
+        gameObject.SetActive(false);
+    }
 
     //Добавление текта из NPC, запуск диалога
     public void NewStory(TextAsset text)
@@ -39,22 +51,22 @@ public class InkManager : MonoBehaviour
     // Начало диалога, отображение первой строчки
     private void StartStory(TextAsset text)
     {
-        _story = new Story(text.text);
+        Story = new Story(text.text);
         DisplayNextLine();
     }
 
     // Отображение следующей строки
     public void DisplayNextLine()
     {
-        if (_story.canContinue)
+        if (Story.canContinue)
         {
-            string text = _story.Continue();
+            string text = Story.Continue();
             // удаление лишних пробелов, если есть
             text = text?.Trim();
-            _textWriter.AddWriter(_textField, text, .1f);
+            _textWriter.AddWriter(_textField, text, SpeedWriter);
         }
 
-        if (_story.currentChoices.Count > 0)
+        if (Story.currentChoices.Count > 0)
         {
             Invoke("DisplayChoices", _textWriter._textToWrite.Length / 10f);
         }
@@ -64,8 +76,11 @@ public class InkManager : MonoBehaviour
             _textField.text = null;
             // если конец диалога, то закрыть канвас
             gameObject.SetActive(false);
-            // заблокировать возможность бесконечно открывать диалог заново внутри диалога
-            _blockInteractions = false;
+            // разблокировать возможность открывать диалог
+            BlockInteractions = false;
+            // выключить непися если надо
+            EventManager.SendDestroyNPC();
+            SpeedWriter = .1f;
         }
     }
 
@@ -73,9 +88,9 @@ public class InkManager : MonoBehaviour
     public void DisplayChoices()
     {
         // перебор всех вариантов ответа
-        for (int i = 0; i < _story.currentChoices.Count; i++)
+        for (int i = 0; i < Story.currentChoices.Count; i++)
         {
-            Choice choice = _story.currentChoices[i];
+            Choice choice = Story.currentChoices[i];
             // создание кнопки с ответом
             Button button = CreateChoiceButton(choice.text.Trim());
             // говорим кнопке, что делать, если на нее нажали
@@ -100,10 +115,10 @@ public class InkManager : MonoBehaviour
     // Когда нажимаем на кнопку ответа, говорим инку, что конкретно выбрали
     private void OnClickChoiceButton(Choice choice)
     {
-        _story.ChooseChoiceIndex(choice.index);
+        Story.ChooseChoiceIndex(choice.index);
         // убираем варианты ответа с экрана
         RefreshChoiceView();
-        _story.Continue();
+        Story.Continue();
         DisplayNextLine();
     }
 

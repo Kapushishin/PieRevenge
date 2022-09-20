@@ -12,6 +12,10 @@ public class BankSystem : MonoBehaviour
     {
         EventManager.OnPeachUp += PeachUp;
     }
+    private void OnDisable()
+    {
+        EventManager.OnPeachUp -= PeachUp;
+    }
 
     private void PeachUp()
     {
