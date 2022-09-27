@@ -67,6 +67,9 @@ TagManager:
   - name: Other
     uniqueID: 3546073199
     locked: 0
+  - name: Props 2
+    uniqueID: 1999581627
+    locked: 0
   - name: Walls
     uniqueID: 4186932595
     locked: 0
