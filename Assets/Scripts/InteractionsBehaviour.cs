@@ -18,12 +18,12 @@ public class InteractionsBehaviour : MonoBehaviour
 
     private void Start()
     {
-        EventManager.OnDestroyNPC += DisableNPC;
+        EventManager.OnEndDialog += DisableNPC;
     }
 
     private void OnDisable()
     {
-        EventManager.OnDestroyNPC -= DisableNPC;
+        EventManager.OnEndDialog -= DisableNPC;
     }
 
     private void Update()

@@ -38,7 +38,7 @@ public class InkManager : MonoBehaviour
 
     private void DisableCanvas()
     {
-        gameObject.SetActive(false);
+        _canvas.SetActive(false);
     }
 
     //Добавление текта из NPC, запуск диалога
@@ -75,7 +75,7 @@ public class InkManager : MonoBehaviour
         {
             _textField.text = null;
             // если конец диалога, то закрыть канвас
-            gameObject.SetActive(false);
+            _canvas.SetActive(false);
             // разблокировать возможность открывать диалог
             BlockInteractions = false;
             // выключить непися если надо

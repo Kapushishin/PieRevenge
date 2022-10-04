@@ -6,8 +6,9 @@ using UnityEngine;
 public abstract class NPCBehavior : MonoBehaviour, IInteracteable
 {
     [SerializeField] 
-    private TextAsset _textDialog;
+    protected TextAsset _textDialog;
     protected GameObject _canvas;
+    protected GameObject _canvasChild;
     protected InkManager _ink;
     [SerializeField]
     private string _nameNPC;
@@ -22,6 +23,7 @@ public abstract class NPCBehavior : MonoBehaviour, IInteracteable
     {
         _canvas = GameObject.Find("Canvas Dialogs");
         _ink = _canvas.gameObject.GetComponent<InkManager>();
+        _canvasChild = GameObject.Find("Canvas");
     }
 
     public bool GetInteracted(InteractionsBehaviour target)
@@ -44,7 +46,7 @@ public abstract class NPCBehavior : MonoBehaviour, IInteracteable
     {
         _ink.NewStory(_textDialog);
         _ink.NameField.text = _nameNPC;
-        _canvas.SetActive(true);
+        _canvasChild.SetActive(true);
         _ink.BlockInteractions = true;
     }
 }

@@ -6,7 +6,8 @@ using System;
 public class EventManager : MonoBehaviour
 {
     public static event Action OnPeachUp;
-    public static event Action OnDestroyNPC;
+    public static event Action OnEndDialog;
+    public static event Action OnHeartUp;
 
     public static void SendPeachUp()
     {
@@ -15,6 +16,11 @@ public class EventManager : MonoBehaviour
 
     public static void SendDestroyNPC()
     {
-        OnDestroyNPC?.Invoke();
+        OnEndDialog?.Invoke();
+    }
+
+    public static void SendHeartUp()
+    {
+        OnHeartUp?.Invoke();
     }
 }

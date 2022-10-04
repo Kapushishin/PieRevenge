@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class BankSystem : MonoBehaviour
 {
-    public static int _peachCounter = 0;
     [SerializeField] private AudioSource _peachUpSound;
 
     private void Start()
     {
         EventManager.OnPeachUp += PeachUp;
+        GetComponent<Text>().text = SwitchParametres.PeachCounter.ToString();
     }
     private void OnDisable()
     {
@@ -19,8 +19,8 @@ public class BankSystem : MonoBehaviour
 
     private void PeachUp()
     {
-        _peachCounter++;
+        SwitchParametres.PeachCounter++;
         _peachUpSound.Play();
-        GetComponent<Text>().text = _peachCounter.ToString();
+        GetComponent<Text>().text = SwitchParametres.PeachCounter.ToString();
     }
 }

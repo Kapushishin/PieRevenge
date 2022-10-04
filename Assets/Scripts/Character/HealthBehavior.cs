@@ -9,7 +9,6 @@ public class HealthBehavior : MonoBehaviour, IDamageToPlayer
     private CharacterSounds _charSounds;
 
     [SerializeField] public float StartingHealthPlayer;
-    public float CurrentHealthPlayer;
     //private bool isDead = false;
     private bool isInvul = false;
     private int playerLayerMask, trapLayerMask, enemyLayerMask;
@@ -17,15 +16,26 @@ public class HealthBehavior : MonoBehaviour, IDamageToPlayer
     [SerializeField] private int flashesCount;
     [SerializeField] private GameObject deathParticles;
 
+    [SerializeField] private AudioSource _heartUpSound;
+
     private void Awake()
     {
         _animator = GetComponent<Animator>();
         _charSounds = GetComponent<CharacterSounds>();
-
-        CurrentHealthPlayer = StartingHealthPlayer;
+        SwitchParametres.HealthCounter = StartingHealthPlayer;
         playerLayerMask = LayerMask.NameToLayer("Player");
         trapLayerMask = LayerMask.NameToLayer("Trap");
         enemyLayerMask = LayerMask.NameToLayer("Enemy");
+    }
+
+    private void Start()
+    {
+        EventManager.OnHeartUp += GetHealed;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnHeartUp -= GetHealed;
     }
 
     // Неуязвимость на короткое время после получения урона
@@ -52,15 +62,15 @@ public class HealthBehavior : MonoBehaviour, IDamageToPlayer
         if (!isInvul)
         {
             // Получение урона
-            if (CurrentHealthPlayer > 0)
+            if (SwitchParametres.HealthCounter > 0)
             {
-                CurrentHealthPlayer = CurrentHealthPlayer - damage;
+                SwitchParametres.HealthCounter = SwitchParametres.HealthCounter - damage;
                 _animator.SetTrigger("IsHurt");
                 //_charSounds.PlayHurtSound();
                 StartCoroutine(Invulnerability());
 
                 // Смерть
-                if (CurrentHealthPlayer == 0)
+                if (SwitchParametres.HealthCounter == 0)
                 {
                     //isDead = true;
                     _animator.SetTrigger("IsDead");
@@ -68,6 +78,16 @@ public class HealthBehavior : MonoBehaviour, IDamageToPlayer
                     gameObject.SetActive(false);
                 }
             }
+        }
+    }
+
+    private void GetHealed()
+    {
+        _heartUpSound.Play();
+
+        if (SwitchParametres.HealthCounter < StartingHealthPlayer)
+        {
+            SwitchParametres.HealthCounter++;
         }
     }
 }

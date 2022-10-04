@@ -52,11 +52,14 @@ TagManager:
   - name: New Layer
     uniqueID: 1156589661
     locked: 0
+  - name: Light 2
+    uniqueID: 2901246817
+    locked: 0
+  - name: Light
+    uniqueID: 605169185
+    locked: 0
   - name: Props
     uniqueID: 209397053
-    locked: 0
-  - name: Water
-    uniqueID: 1484059721
     locked: 0
   - name: Default
     uniqueID: 0
@@ -78,6 +81,9 @@ TagManager:
     locked: 0
   - name: Grass
     uniqueID: 2651197361
+    locked: 0
+  - name: Water
+    uniqueID: 1484059721
     locked: 0
   - name: UI
     uniqueID: 3793400397

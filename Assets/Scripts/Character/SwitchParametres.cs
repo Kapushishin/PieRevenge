@@ -1,5 +1,8 @@
 public static class SwitchParametres
 {
+    public static int PeachCounter;
+    public static float HealthCounter;
+
     public static bool CanJump = false;
     public static bool CanDoubleJump = false;
     public static bool CanDash = false;
