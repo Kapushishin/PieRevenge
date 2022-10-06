@@ -61,10 +61,17 @@ public class InteractionsBehaviour : MonoBehaviour
                     // вывести бабл с подсказкой над объектом
                     _popUpBubble.SetActive(true);
                     _textPrompt.text = _target.PromptText;
-                    Transform child = _colliders[0].transform.GetChild(0);
-                    float size = child.GetComponent<SpriteRenderer>().bounds.size.y;
-                    _popUpBubble.transform.position = new Vector3(_targetPosition.transform.position.x, _targetPosition.transform.position.y + size, 
-                        _targetPosition.transform.position.z);
+
+                    if (_colliders[0].transform.GetChild(0))
+                    {
+                        Transform child = _colliders[0].transform.GetChild(0);
+                        if (child.GetComponent<SpriteRenderer>())
+                        {
+                            float size = child.GetComponent<SpriteRenderer>().bounds.size.y;
+                            _popUpBubble.transform.position = new Vector3(_targetPosition.transform.position.x, _targetPosition.transform.position.y + size,
+                                _targetPosition.transform.position.z);
+                        }
+                    }
 
                     if (Input.GetButtonDown("Interact"))
                     {

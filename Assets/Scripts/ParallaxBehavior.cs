@@ -11,7 +11,14 @@ public class ParallaxBehavior : MonoBehaviour
     {
         startPosX = transform.position.x;
         startPosY = transform.position.y;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+        if (GetComponent<SpriteRenderer>())
+        {
+            length = GetComponent<SpriteRenderer>().bounds.size.x;
+        }
+        else if (GetComponent<BoxCollider2D>())
+        {
+            length = GetComponent<BoxCollider2D>().bounds.size.x;
+        }
     }
 
     private void Update()

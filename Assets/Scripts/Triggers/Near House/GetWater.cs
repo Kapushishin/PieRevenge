@@ -5,11 +5,11 @@ using UnityEngine;
 public class GetWater : NPCBehavior
 {
     [SerializeField] private AudioSource _waterSound;
+    [SerializeField] private GameObject _door;
 
     public override void SomeAction()
     {
-        SwitchParametres.SwitchHaveWater();
-        SwitchParametres.SwitchGoHome();
+        _door.SetActive(true);
         _waterSound.Play();
     }
 }
