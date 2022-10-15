@@ -98,8 +98,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -321908321
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -4789323840033856576, guid: 9ba3d013a7623c14193fe555fef4938d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -154,7 +154,7 @@ GameObject:
   m_Layer: 0
   m_Name: Shroom Blue Pref
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -292,10 +292,15 @@ MonoBehaviour:
   _rangeToChasing: 0
   _rangeToSrandingNearPlayer: 0
   HealthEnemy: 1
-  _framesDuration: 1
-  _flashesCount: 1
   _spriteRend: {fileID: 5782983846464485349}
+  _canAttack: 1
+  _isAttacking: 0
   _deathTimer: 0.5
+  _attackCooldown: 0
+  _attackTime: 0
+  _isChill: 0
+  _isPatrol: 1
+  _typeOfMonster: 0
 --- !u!114 &9146691441742206792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,7 +375,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 16.2
+  MaxDistance: 6.2682395
   Pan2D: 0
   rolloffMode: 1
   BypassEffects: 0

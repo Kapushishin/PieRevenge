@@ -31,6 +31,8 @@ public class InkManager : MonoBehaviour
     [SerializeField]
     public float SpeedWriter = .1f;
 
+    [SerializeField] private AudioSource _writingSFX;
+
     private void Awake()
     {
         Invoke("DisableCanvas", .05f);
@@ -68,6 +70,7 @@ public class InkManager : MonoBehaviour
 
         if (Story.currentChoices.Count > 0)
         {
+            _writingSFX.Play();
             Invoke("DisplayChoices", _textWriter._textToWrite.Length / 10f);
         }
 
@@ -87,6 +90,7 @@ public class InkManager : MonoBehaviour
     // Показать выбор ответов
     public void DisplayChoices()
     {
+        _writingSFX.Stop();
         // перебор всех вариантов ответа
         for (int i = 0; i < Story.currentChoices.Count; i++)
         {

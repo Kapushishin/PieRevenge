@@ -9,7 +9,7 @@ public class EnemySound : MonoBehaviour
 
     // названия папок пути к дорожкам
     private string _mainFolder = "Enemies",
-        _stepsFolder = "Footsteps", _hurtFolder = "Hurt";
+        _stepsFolder = "Footsteps", _hurtFolder = "Hurt", _flapsFolder = "Flaps", _slimeFolder = "Slime";
 
     private float _lowPitch = 0.7f;
 
@@ -26,7 +26,18 @@ public class EnemySound : MonoBehaviour
 
     private void LoadSounds()
     {
-        _steps = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _stepsFolder);
+        switch (GetComponent<EnemyBehavior>()._typeOfMonster)
+        {
+            case (EnemyBehavior.MonsterType.shroom):
+                _steps = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _stepsFolder);
+                break;
+            case (EnemyBehavior.MonsterType.bat):
+                _steps = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _flapsFolder);
+                break;
+            case (EnemyBehavior.MonsterType.slime):
+                _steps = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _slimeFolder);
+                break;
+        }
 
         _hurts = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _hurtFolder);
     }

@@ -16,8 +16,8 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
     [SerializeField] protected float _rangeToSrandingNearPlayer;
 
     [SerializeField] public float HealthEnemy;
-    [SerializeField] private float _framesDuration;
-    [SerializeField] private int _flashesCount;
+    private float _framesDuration = 1f;
+    private int _flashesCount = 1;
     private bool _isDead = false;
 
     private bool _isFacingRight;
@@ -28,11 +28,25 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
     protected Animator _animator;
     [SerializeField] private SpriteRenderer _spriteRend;
 
-    protected bool _canAttack = true;
-    protected bool _isAttacking = false;
+    public bool _canAttack = true;
+    public bool _isAttacking = false;
     [SerializeField] private float _deathTimer;
+    [SerializeField] protected float _attackCooldown;
+    [SerializeField] protected float _attackTime;
 
     private EnemySound _enemySound;
+
+    [SerializeField] protected bool _isChill;
+    [SerializeField] protected bool _isPatrol;
+
+    public enum MonsterType
+    {
+        shroom,
+        bat,
+        slime
+    };
+
+    public MonsterType _typeOfMonster = MonsterType.shroom;
 
     private void Awake()
     {
@@ -51,7 +65,6 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
 
     private void Update()
     {
-        
         // Проверка на землю
         _isGrounded = false;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(_groundCheck.position, 0.2f, _groundLayer);
@@ -73,7 +86,6 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
         }
 
         _animator.SetFloat("Speed", Mathf.Abs(_moveDistance.x));
-
     }
 
     private void FixedUpdate()
@@ -84,10 +96,12 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
             {
                 Move();
             }
-
-            if (_canAttack)
+            else
             {
-                Attack();
+                if (_canAttack)
+                {
+                    Attack();
+                }
             }
         }
     }
@@ -100,22 +114,47 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
             // То враг будет патрулировать между 2 точками:
             // Отмеряя дистанцию до выбранной точки. Если она меньше какого-то значения,
             // То менять цель на вторую точку и идти к ней. И так бесконечно.
-            if (Vector2.Distance(transform.position, _point1.position) < 0.5f)
+            if (_isPatrol)
             {
-                _myPoint = _point2;
+                if (Vector2.Distance(transform.position, _point1.position) < 0.5f)
+                {
+                    _myPoint = _point2;
+                }
+                if (Vector2.Distance(transform.position, _point2.position) < 0.5f)
+                {
+                    _myPoint = _point1;
+                }
+
+                Motion(_myPoint);
+
             }
-            if (Vector2.Distance(transform.position, _point2.position) < 0.5f)
+
+            if (_isChill)
             {
-                _myPoint = _point1;
+                if (Vector2.Distance(transform.position, _target.position) > _rangeToChasing &&
+                    Vector2.Distance(transform.position, _myPoint.position) > 0.5f)
+                {
+                    Motion(_myPoint);
+                }
+
+                if (Vector2.Distance(transform.position, _target.position) > _rangeToChasing &&
+                    Vector2.Distance(transform.position, _myPoint.position) <= 0.5f)
+                {
+                    _moveDistance = new Vector2(0f, 0f);
+                }
             }
-            // Дистанцию до точки привести к значению близкому к 1.
-            // Оно может быть положительным и отрицательным.
-            // Таким образом задается направление движения по оси х.
-            Vector3 _range = (_myPoint.position - transform.position).normalized;
-            _moveDistance = _range;
-            // И умножается на скорость.
-            _rb.velocity = new Vector2(_moveDistance.x, 0f) * _speed;
+
         }
+    }
+
+    protected Vector3 Motion(Transform point)
+    {
+        // Дистанцию до точки привести к значению близкому к 1.
+        // Оно может быть положительным и отрицательным.
+        // Таким образом задается направление движения по оси х.
+        Vector3 _range = (point.position - transform.position).normalized;
+        _moveDistance = _range * _speed;
+        return _range;
     }
 
     // Нужно реализовать поведение во время атаки в дочернем скрипте врага
@@ -124,15 +163,14 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
     // Реализация интерфейса IDamageToEnemy. Поведение при получении урона от игрока
     public void EnemyGetDamaged(CharacterControl player, float damage)
     {
-        Debug.Log(HealthEnemy);
         if (HealthEnemy > 0)
         {
             HealthEnemy -= damage;
             StartCoroutine(HurtCoroutine());
-            if (HealthEnemy == 0)
-            {
-                StartCoroutine(Death());
-            }
+        }
+        if (HealthEnemy == 0)
+        {
+            Dead();
         }
     }
 
@@ -148,11 +186,15 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
         }
     }
 
-    private IEnumerator Death()
+    public virtual void Dead()
     {
         _isDead = true;
-        _animator.SetTrigger("Death");
-        _rb.velocity = new Vector2(0f, 0f);
+        _animator.SetBool("Death", true);
+        StartCoroutine(Death());
+    }
+
+    protected IEnumerator Death()
+    {
         yield return new WaitForSeconds(_deathTimer);
         gameObject.SetActive(false);
     }

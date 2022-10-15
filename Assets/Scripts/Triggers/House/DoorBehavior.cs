@@ -9,9 +9,9 @@ public class DoorBehavior : MonoBehaviour, IInteracteable
     // значение смещения камеры (половина размера комнаты, в данном случае 18f).
     [SerializeField] private float _camOffset;
     private Vector3 _direction;
-    private float _canMove = 0;
+    private float _camMove = 0;
 
-    [SerializeField] private GameObject _enterPosition;
+    [SerializeField] private GameObject _newPosition;
     private GameObject _character;
 
     [SerializeField] private string _textPrompt;
@@ -44,25 +44,25 @@ public class DoorBehavior : MonoBehaviour, IInteracteable
         // если персонаж взаимодействует с дверью, то
         // проиграть звук открытия двери
         _doorOpenedSound.Play();
-        // дать возможность двигаться камере, увеличив значение _canMove
-        _canMove = _camOffset;
+        // дать возможность двигаться камере, увеличив значение _camMove
+        _camMove = _camOffset;
     }
 
     // смещение камеры на центр комнаты, куда вошел персонаж
     private void CameraOffset()
     {
-        if (_canMove > 0f)
+        if (_camMove > 0f)
         {
             _mainCamera.transform.position = new Vector3(_mainCamera.transform.position.x + (.5f * _direction.x),
                 _mainCamera.transform.position.y, _mainCamera.transform.position.z);
-            _canMove -= .5f;
+            _camMove -= .5f;
         }
     }
 
     // перемещение персонажа в комнату, в которую он вошел
     private void EnterPosition()
     {
-        _character.transform.position = new Vector3(_enterPosition.transform.position.x, _enterPosition.transform.position.y,
-            _enterPosition.transform.position.z);
+        _character.transform.position = new Vector3(_newPosition.transform.position.x, _newPosition.transform.position.y,
+            _newPosition.transform.position.z);
     }
 }

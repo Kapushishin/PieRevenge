@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class CharacterSounds : MonoBehaviour
 {
-    private AudioClip[] _stepGround, _stepWater, _stepWood;
+    private AudioClip[] _stepGround, _stepWater, _stepWood, _stepRock;
     private AudioClip _stepClip;
-    private AudioClip[] _jumpGround, _jumpWater, _jumpWood;
+    private AudioClip[] _jumpGround, _jumpWater, _jumpWood, _jumpRock;
     private AudioClip _jumpClip;
     private AudioClip[] _dashes;
     private AudioClip _dashClip;
@@ -27,7 +27,7 @@ public class CharacterSounds : MonoBehaviour
     private string _mainFolder = "Character", 
         _stepsFolder = "Footsteps", _jumpsFolder = "Jumps", _dashesFolder = "Dashes", _hurtesFolder = "Hurt",
         _slashesFolder = "Sword Slashes",
-        _groundFolder = "Ground", _waterFolder = "Water", _woodFolder = "Wood";
+        _groundFolder = "Ground", _waterFolder = "Water", _woodFolder = "Wood", _rockFolder = "Rock";
 
     private void Start()
     {
@@ -42,10 +42,12 @@ public class CharacterSounds : MonoBehaviour
         _stepGround = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _stepsFolder + "/" + _groundFolder);
         _stepWater = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _stepsFolder + "/" + _waterFolder);
         _stepWood = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _stepsFolder + "/" + _woodFolder);
+        _stepRock = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _stepsFolder + "/" + _rockFolder);
 
         _jumpGround = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _jumpsFolder + "/" + _groundFolder);
         _jumpWater = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _jumpsFolder + "/" + _waterFolder);
         _jumpWood = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _jumpsFolder + "/" + _woodFolder);
+        _jumpRock = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _jumpsFolder + "/" + _rockFolder);
 
         _dashes = Resources.LoadAll<AudioClip>(_mainFolder + "/" + _dashesFolder);
 
@@ -70,6 +72,9 @@ public class CharacterSounds : MonoBehaviour
             case "Wood":
                 _stepClip = _stepWood[UnityEngine.Random.Range(0, _stepWood.Length)];
                 break;
+            case "Rock":
+                _stepClip = _stepRock[UnityEngine.Random.Range(0, _stepRock.Length)];
+                break;
         }
         // рандомно менять уровень громкости в заданном диапазоне 
         _audioSource.pitch = UnityEngine.Random.Range(_lowPitch, 1f);
@@ -93,13 +98,17 @@ public class CharacterSounds : MonoBehaviour
             case "Wood":
                 _jumpClip = _jumpWood[0];
                 break;
+            case "Rock":
+                _jumpClip = _jumpRock[0];
+                break;
         }
         // рандомно менять уровень громкости в заданном диапазоне 
         _audioSource.pitch = UnityEngine.Random.Range(_lowPitch, 1f);
         // проиграть дорожку 1 раз
         _audioSource.PlayOneShot(_jumpClip);
         // так как в этом скрипте есть обработчик вхождения в коллизию земли, проиграть анимацию приземления
-        _animator.Play("Player1_Landing");
+        //_animator.Play("Player1_Landing");
+        _animator.SetTrigger("IsLanding");
     }
 
     // звук дэша, вызывается из скрипта CharacterControl

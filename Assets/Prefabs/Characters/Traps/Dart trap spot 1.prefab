@@ -54,7 +54,7 @@ GameObject:
   m_Layer: 8
   m_Name: Dart trap spot 1
   m_TagString: Trap
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _target: {fileID: 5767082944410323326}
-  _frequency: 1
+  _frequency: 1.5
   darts:
   - {fileID: 6644826929316104038}
   - {fileID: 6644826929271496216}
@@ -162,7 +162,7 @@ GameObject:
   m_Layer: 8
   m_Name: FirePointer
   m_TagString: Untagged
-  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 7174288486110832750, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

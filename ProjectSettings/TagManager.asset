@@ -12,6 +12,8 @@ TagManager:
   - CanCollect
   - Water
   - Wood
+  - BG Trigger
+  - Rock
   layers:
   - Default
   - TransparentFX
@@ -58,17 +60,20 @@ TagManager:
   - name: Light
     uniqueID: 605169185
     locked: 0
-  - name: Props
-    uniqueID: 209397053
-    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Ground
-    uniqueID: 2012837009
-    locked: 0
   - name: Other
     uniqueID: 3546073199
+    locked: 0
+  - name: Props
+    uniqueID: 209397053
+    locked: 0
+  - name: Enemy
+    uniqueID: 3973058975
+    locked: 0
+  - name: Ground
+    uniqueID: 2012837009
     locked: 0
   - name: Props 2
     uniqueID: 1999581627

@@ -5,15 +5,33 @@ using UnityEngine;
 public class EnemyDamageBehavior : MonoBehaviour
 {
     [SerializeField] protected float _damage;
+    private Animator _animator;
 
     private IDamageToPlayer _target;
+
+    private void Start()
+    {
+        if (GetComponent<Animator>())
+            _animator = GetComponent<Animator>();
+    }
 
     protected void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
+            if (GetComponent<EnemyBehavior>())
+            {
+                GetComponent<EnemyBehavior>()._isAttacking = true;
+            }
+            
+            Debug.Log("1" + GetComponent<EnemyBehavior>()._isAttacking);
             _target = collision.GetComponent<IDamageToPlayer>();
             _target.GetDamaged(this, _damage);
+
+            if (_animator != null)
+            {
+                _animator.SetTrigger("Attack");
+            }
         }
     }
 

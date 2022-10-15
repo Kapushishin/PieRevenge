@@ -8,7 +8,6 @@ public class CharacterControl : MonoBehaviour
     [SerializeField] private Transform ceilingCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private LayerMask platformLayer;
-    private TrailRenderer _tr;
     private Animator _animator;
     private CharacterSounds _charSounds;
 
@@ -24,7 +23,6 @@ public class CharacterControl : MonoBehaviour
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
-        _tr = GetComponent<TrailRenderer>();
         _animator = GetComponent<Animator>();
         _charSounds = GetComponent<CharacterSounds>();
 
@@ -72,6 +70,7 @@ public class CharacterControl : MonoBehaviour
                 //isJumping = false;
                 isFalling = false;
                 isWallSliding = false;
+                isJumping = false;
             }
         }
 
@@ -164,14 +163,33 @@ public class CharacterControl : MonoBehaviour
     private float jumpCooldown = 0.4f;
     private bool isJumping;
     private bool isJumpingOff;
-    private bool canDoubleJump = false;
-
     private float ignoreLayerTime = 0.3f;
     private float cantCrouchingJump = 0.5f;
+    private bool canDoubleJump;
+    [SerializeField] public bool isCanJump;
+    [SerializeField] public bool _isCanDoubleJump;
 
     private void Jump()
     {
-        if (SwitchParametres.CanJump == true)
+        if (isCanJump)
+        {
+            SwitchParametres.CanJump = true;
+        }
+        else
+        {
+            SwitchParametres.CanJump = false;
+        }
+
+        if (_isCanDoubleJump)
+        {
+            SwitchParametres.CanDoubleJump = true;
+        }
+        else
+        {
+            SwitchParametres.CanDoubleJump = false;
+        }
+
+        if (SwitchParametres.CanJump)
         {
             if (isGrounded && !isCrouching)
             {
@@ -180,9 +198,10 @@ public class CharacterControl : MonoBehaviour
 
                 if (SwitchParametres.CanDoubleJump == true)
                 {
-                    canDoubleJump = false;
+                    canDoubleJump = true;
                 }
-                isJumping = false;
+
+                //isJumping = false;
                 isJumpingOff = false;
             }
             else
@@ -209,8 +228,13 @@ public class CharacterControl : MonoBehaviour
                 // для прыжков в воздухе, счетчик сбрасывается
                 jumpBufferCounter = 0f;
                 canDoubleJump = false;
-                isJumping = true;
-                //StartCoroutine(JumpCooldown());
+
+                if (_rb.velocity.y > 0.01f)
+                {
+                    isJumping = true;
+                }
+
+                StartCoroutine(JumpCooldown());
             }
 
             // высокий прыжок
@@ -261,10 +285,21 @@ public class CharacterControl : MonoBehaviour
     private bool isDashing;
     private bool canDash = true;
 
+    [SerializeField] public bool isCanDash;
+
     private void Dashing()
     {
         // рывок
-        if (SwitchParametres.CanDash == true)
+        if (isCanDash)
+        {
+            SwitchParametres.CanDash = true;
+        }
+        else
+        {
+            SwitchParametres.CanDash = false;
+        }
+
+        if (SwitchParametres.CanDash)
         {
             if (Input.GetButtonDown("Dash") && canDash)
             {
@@ -285,10 +320,8 @@ public class CharacterControl : MonoBehaviour
         float originalGravity = _rb.gravityScale;
         // отключаем гравитацию, чтобы персонаж не двигался наискосок
         _rb.gravityScale = 0f; 
-        _tr.emitting = true;
         _charSounds.PlayDashSound();
         yield return new WaitForSeconds(dashingTime);
-        _tr.emitting = false;
         _rb.gravityScale = originalGravity;
         isDashing = false;
         yield return new WaitForSeconds(dashingCooldown);
@@ -329,26 +362,12 @@ public class CharacterControl : MonoBehaviour
     }
     #endregion
 
-    /*[SerializeField] private float distanceToGround;
-    private void Landing()
-    {
-        Physics2D.queriesStartInColliders = false;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, distanceToGround);
-        if (hit.collider != null)
-        {
-            if (hit.distance > 1.5f)
-            {
-                _animator.Play("Player1_Landing");
-                Debug.Log("landing");
-            }
-        }
-    }*/
-
     #region Attack
     [Header("Attack")]
 
     [SerializeField] private Transform attackCheck;
     [SerializeField] private LayerMask attackLayer;
+    [SerializeField] public bool isCanAttack;
     private bool canAttack = false;
     private bool isAttacking = false;
     [SerializeField] private float attackCooldown;
@@ -363,7 +382,16 @@ public class CharacterControl : MonoBehaviour
     {
         Collider2D[] attackColliders = Physics2D.OverlapCircleAll(attackCheck.position, radiusAttack, attackLayer);
 
-        if (Input.GetButtonDown("Attack") && canAttack)
+        if (isCanAttack)
+        {
+            SwitchParametres.CanAttack = true;
+        }
+        else
+        {
+            SwitchParametres.CanAttack = false;
+        }
+
+        if (Input.GetButtonDown("Attack") && SwitchParametres.CanAttack)
         {
 
             if (attackColliders.Length > 0 && canAttack)
