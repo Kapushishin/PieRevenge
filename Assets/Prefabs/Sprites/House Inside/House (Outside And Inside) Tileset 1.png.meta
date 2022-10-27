@@ -1,0 +1,2310 @@
+fileFormatVersion: 2
+guid: 4e92c58fd23044b44be035ef80c97e68
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4345758652637206247
+    second: House (Outside And Inside) Tileset_0
+  - first:
+      213: 8900186188742487863
+    second: House (Outside And Inside) Tileset_1
+  - first:
+      213: -5524719517520129371
+    second: House (Outside And Inside) Tileset_2
+  - first:
+      213: 2332358923176122919
+    second: House (Outside And Inside) Tileset_3
+  - first:
+      213: -6406864504289297766
+    second: House (Outside And Inside) Tileset_4
+  - first:
+      213: 8342058820358896971
+    second: House (Outside And Inside) Tileset_5
+  - first:
+      213: 1990741539740037886
+    second: House (Outside And Inside) Tileset_6
+  - first:
+      213: -848857135895676156
+    second: House (Outside And Inside) Tileset_7
+  - first:
+      213: 9217142469824012060
+    second: House (Outside And Inside) Tileset_8
+  - first:
+      213: -122119318682688088
+    second: House (Outside And Inside) Tileset_9
+  - first:
+      213: -192024081203528696
+    second: House (Outside And Inside) Tileset_10
+  - first:
+      213: 5051540807673966125
+    second: House (Outside And Inside) Tileset_11
+  - first:
+      213: -6394103287596985231
+    second: House (Outside And Inside) Tileset_12
+  - first:
+      213: -7998309672007311187
+    second: House (Outside And Inside) Tileset_13
+  - first:
+      213: -6430158280203486145
+    second: House (Outside And Inside) Tileset_14
+  - first:
+      213: 3413113614390453641
+    second: House (Outside And Inside) Tileset_15
+  - first:
+      213: 8301007028974816525
+    second: House (Outside And Inside) Tileset_16
+  - first:
+      213: -2714727654320813155
+    second: House (Outside And Inside) Tileset_17
+  - first:
+      213: -5354512736769945852
+    second: House (Outside And Inside) Tileset_18
+  - first:
+      213: -2604340087138825663
+    second: House (Outside And Inside) Tileset_19
+  - first:
+      213: 8504201983154855666
+    second: House (Outside And Inside) Tileset_20
+  - first:
+      213: 5534777551093250538
+    second: House (Outside And Inside) Tileset_21
+  - first:
+      213: 7992951117394145036
+    second: House (Outside And Inside) Tileset_22
+  - first:
+      213: -5394214043445944732
+    second: House (Outside And Inside) Tileset_23
+  - first:
+      213: 117711306788246897
+    second: House (Outside And Inside) Tileset_24
+  - first:
+      213: -5275080524919456878
+    second: House (Outside And Inside) Tileset_25
+  - first:
+      213: -6811861444729365236
+    second: House (Outside And Inside) Tileset_26
+  - first:
+      213: -5518056338987134428
+    second: House (Outside And Inside) Tileset_27
+  - first:
+      213: 3154739050789462740
+    second: House (Outside And Inside) Tileset_28
+  - first:
+      213: 8044287750017321874
+    second: House (Outside And Inside) Tileset_29
+  - first:
+      213: -5111661588952049453
+    second: House (Outside And Inside) Tileset_30
+  - first:
+      213: 3138346605300799669
+    second: House (Outside And Inside) Tileset_31
+  - first:
+      213: -5946234975898936718
+    second: House (Outside And Inside) Tileset_32
+  - first:
+      213: -2261705463999771221
+    second: House (Outside And Inside) Tileset_33
+  - first:
+      213: 1736258867676311526
+    second: House (Outside And Inside) Tileset_34
+  - first:
+      213: -7239633464310447788
+    second: House (Outside And Inside) Tileset_35
+  - first:
+      213: 6556843398239800511
+    second: House (Outside And Inside) Tileset_36
+  - first:
+      213: -2534613256126077030
+    second: House (Outside And Inside) Tileset_37
+  - first:
+      213: 3450047436970676169
+    second: House (Outside And Inside) Tileset_38
+  - first:
+      213: -5307120389473618308
+    second: House (Outside And Inside) Tileset_39
+  - first:
+      213: 6914956326745530536
+    second: House (Outside And Inside) Tileset_40
+  - first:
+      213: 3515586647648137628
+    second: House (Outside And Inside) Tileset_41
+  - first:
+      213: -5913529289096814011
+    second: House (Outside And Inside) Tileset_42
+  - first:
+      213: 2442195398138595944
+    second: House (Outside And Inside) Tileset_43
+  - first:
+      213: 6354338162561123406
+    second: House (Outside And Inside) Tileset_44
+  - first:
+      213: -449460129298048839
+    second: House (Outside And Inside) Tileset_45
+  - first:
+      213: 2730947617074454485
+    second: House (Outside And Inside) Tileset_46
+  - first:
+      213: 8239554367973215343
+    second: House (Outside And Inside) Tileset_47
+  - first:
+      213: 185912440300253257
+    second: House (Outside And Inside) Tileset_48
+  - first:
+      213: -6526971037262804157
+    second: House (Outside And Inside) Tileset_49
+  - first:
+      213: -601792379608258777
+    second: House (Outside And Inside) Tileset_50
+  - first:
+      213: 2614647684545934254
+    second: House (Outside And Inside) Tileset_51
+  - first:
+      213: 4135616870788616500
+    second: House (Outside And Inside) Tileset_52
+  - first:
+      213: -9210478222914387064
+    second: House (Outside And Inside) Tileset_53
+  - first:
+      213: -6451892825459570723
+    second: House (Outside And Inside) Tileset_54
+  - first:
+      213: -6593596457079598483
+    second: House (Outside And Inside) Tileset_55
+  - first:
+      213: 7409983868995765070
+    second: House (Outside And Inside) Tileset_56
+  - first:
+      213: -8362634467117346395
+    second: House (Outside And Inside) Tileset_57
+  - first:
+      213: -6455858963326009785
+    second: House (Outside And Inside) Tileset_58
+  - first:
+      213: -7165327102250788350
+    second: House (Outside And Inside) Tileset_59
+  - first:
+      213: -7774415156464419957
+    second: House (Outside And Inside) Tileset_60
+  - first:
+      213: 5336240543699375614
+    second: House (Outside And Inside) Tileset_61
+  - first:
+      213: 4816885599935844435
+    second: House (Outside And Inside) Tileset_62
+  - first:
+      213: -6045907419787662677
+    second: House (Outside And Inside) Tileset_63
+  - first:
+      213: -1114673395870170533
+    second: House (Outside And Inside) Tileset_64
+  - first:
+      213: 2420212030285382213
+    second: House (Outside And Inside) Tileset_65
+  - first:
+      213: 6028340525026232302
+    second: House (Outside And Inside) Tileset_66
+  - first:
+      213: -9036837894252857969
+    second: House (Outside And Inside) Tileset_67
+  - first:
+      213: 4453721478750868255
+    second: House (Outside And Inside) Tileset_68
+  - first:
+      213: 8683168845055071600
+    second: House (Outside And Inside) Tileset_69
+  - first:
+      213: 8368576987526208085
+    second: House (Outside And Inside) Tileset_70
+  - first:
+      213: -499853004239224623
+    second: House (Outside And Inside) Tileset_71
+  - first:
+      213: 5524713076872444190
+    second: House (Outside And Inside) Tileset_72
+  - first:
+      213: 8261462240055558617
+    second: House (Outside And Inside) Tileset_73
+  - first:
+      213: 910127602248344617
+    second: House (Outside And Inside) Tileset_74
+  - first:
+      213: 4354216093533667830
+    second: House (Outside And Inside) Tileset_75
+  - first:
+      213: 2320157475678410791
+    second: House (Outside And Inside) Tileset_76
+  - first:
+      213: 8815510381203655784
+    second: House (Outside And Inside) Tileset_77
+  - first:
+      213: -7282696513371439435
+    second: House (Outside And Inside) Tileset_78
+  - first:
+      213: 2262213934427233315
+    second: House (Outside And Inside) Tileset_79
+  - first:
+      213: -3253009213314354334
+    second: House (Outside And Inside) Tileset_80
+  - first:
+      213: -8932925546865980805
+    second: House (Outside And Inside) Tileset_81
+  - first:
+      213: -7622678105892947233
+    second: House (Outside And Inside) Tileset_82
+  - first:
+      213: 8991113885501313213
+    second: House (Outside And Inside) Tileset_83
+  - first:
+      213: 3454558980924406263
+    second: House (Outside And Inside) Tileset_84
+  - first:
+      213: -3358149859493474663
+    second: House (Outside And Inside) Tileset_85
+  - first:
+      213: 6420191868660296485
+    second: House (Outside And Inside) Tileset_86
+  - first:
+      213: 3775563372875335391
+    second: House (Outside And Inside) Tileset_87
+  - first:
+      213: -2802564299070164662
+    second: House (Outside And Inside) Tileset_88
+  - first:
+      213: 2167217326604942284
+    second: House (Outside And Inside) Tileset_89
+  - first:
+      213: -7070791803438175552
+    second: House (Outside And Inside) Tileset_90
+  - first:
+      213: 5859126585452604649
+    second: House (Outside And Inside) Tileset_91
+  - first:
+      213: 1070230081464732847
+    second: House (Outside And Inside) Tileset_92
+  - first:
+      213: 4472015407731859545
+    second: House (Outside And Inside) Tileset_93
+  - first:
+      213: 4693537850849979648
+    second: House (Outside And Inside) Tileset_94
+  - first:
+      213: 335443110460331948
+    second: House (Outside And Inside) Tileset_95
+  - first:
+      213: -3897121640113030568
+    second: House (Outside And Inside) Tileset_96
+  - first:
+      213: -5330116766113599076
+    second: House (Outside And Inside) Tileset_97
+  - first:
+      213: -6512229716908504358
+    second: House (Outside And Inside) Tileset_98
+  - first:
+      213: 1020008159077079402
+    second: House (Outside And Inside) Tileset_99
+  - first:
+      213: -5020284227013662254
+    second: House (Outside And Inside) Tileset_100
+  - first:
+      213: 3136935435284406449
+    second: House (Outside And Inside) Tileset_101
+  - first:
+      213: 4744890110121384870
+    second: House (Outside And Inside) Tileset_102
+  - first:
+      213: -7905303944211756994
+    second: House (Outside And Inside) Tileset_103
+  - first:
+      213: 1056587880729862661
+    second: House (Outside And Inside) Tileset_104
+  - first:
+      213: -8614873886119004128
+    second: House (Outside And Inside) Tileset_105
+  - first:
+      213: -4859015676182894199
+    second: House (Outside And Inside) Tileset_106
+  - first:
+      213: -8896461151930931360
+    second: House (Outside And Inside) Tileset_107
+  - first:
+      213: 48798159180339010
+    second: House (Outside And Inside) Tileset_108
+  - first:
+      213: 2384034137702196672
+    second: House (Outside And Inside) Tileset_109
+  - first:
+      213: -4715588321361704286
+    second: House (Outside And Inside) Tileset_110
+  - first:
+      213: -1947003530314322856
+    second: House (Outside And Inside) Tileset_111
+  - first:
+      213: 4050241987926210103
+    second: House (Outside And Inside) Tileset_112
+  - first:
+      213: 6521355862224597837
+    second: House (Outside And Inside) Tileset_113
+  - first:
+      213: -960594719727177933
+    second: House (Outside And Inside) Tileset_114
+  - first:
+      213: -7106479605004133009
+    second: House (Outside And Inside) Tileset_115
+  - first:
+      213: 5678003636295206617
+    second: House (Outside And Inside) Tileset_116
+  - first:
+      213: -1425654594834128276
+    second: House (Outside And Inside) Tileset_117
+  - first:
+      213: 6965115648102968743
+    second: House (Outside And Inside) Tileset_118
+  - first:
+      213: 5990376971334977172
+    second: House (Outside And Inside) Tileset_119
+  - first:
+      213: -5696192892548498157
+    second: House (Outside And Inside) Tileset_120
+  - first:
+      213: -865655862662556264
+    second: House (Outside And Inside) Tileset_121
+  - first:
+      213: -7778627337718985032
+    second: House (Outside And Inside) Tileset_122
+  - first:
+      213: -4341965434301857489
+    second: House (Outside And Inside) Tileset_123
+  - first:
+      213: -9096798787989103193
+    second: House (Outside And Inside) Tileset_124
+  - first:
+      213: -7124311027091523263
+    second: House (Outside And Inside) Tileset_125
+  - first:
+      213: -1916953732079129383
+    second: House (Outside And Inside) Tileset_126
+  - first:
+      213: -1006271496695601823
+    second: House (Outside And Inside) Tileset_127
+  - first:
+      213: 514039640952567905
+    second: House (Outside And Inside) Tileset_128
+  - first:
+      213: -6018666424213489012
+    second: House (Outside And Inside) Tileset_129
+  - first:
+      213: 1466670844708420139
+    second: House (Outside And Inside) Tileset_130
+  - first:
+      213: 3281573665789029254
+    second: House (Outside And Inside) Tileset_131
+  - first:
+      213: 6161530252557130761
+    second: House (Outside And Inside) Tileset_132
+  - first:
+      213: -2748667995594221546
+    second: House (Outside And Inside) Tileset_133
+  - first:
+      213: 3921216753597692879
+    second: House (Outside And Inside) Tileset_134
+  - first:
+      213: -4250107200215060810
+    second: House (Outside And Inside) Tileset_135
+  - first:
+      213: 2967321459023347134
+    second: House (Outside And Inside) Tileset_136
+  - first:
+      213: -1509424655283418049
+    second: House (Outside And Inside) Tileset_137
+  - first:
+      213: -103602078927024524
+    second: House (Outside And Inside) Tileset_138
+  - first:
+      213: -4715294779625095759
+    second: House (Outside And Inside) Tileset_139
+  - first:
+      213: -2456924587448772054
+    second: House (Outside And Inside) Tileset_140
+  - first:
+      213: 3612985030673339681
+    second: House (Outside And Inside) Tileset_141
+  - first:
+      213: -42557890608546208
+    second: House (Outside And Inside) Tileset_142
+  - first:
+      213: 1397486669366348338
+    second: House (Outside And Inside) Tileset_143
+  - first:
+      213: 6140884891657009490
+    second: House (Outside And Inside) Tileset_144
+  - first:
+      213: -7899794885710507272
+    second: House (Outside And Inside) Tileset_145
+  - first:
+      213: 7377057542104425049
+    second: House (Outside And Inside) Tileset_146
+  - first:
+      213: 3835397013708790829
+    second: House (Outside And Inside) Tileset_147
+  - first:
+      213: 7790968352689551780
+    second: House (Outside And Inside) Tileset_148
+  - first:
+      213: 5156048215059608461
+    second: House (Outside And Inside) Tileset_149
+  - first:
+      213: -7656002461057546901
+    second: House (Outside And Inside) Tileset_150
+  - first:
+      213: -4979453568151700154
+    second: House (Outside And Inside) Tileset_151
+  - first:
+      213: -8606987844320422991
+    second: House (Outside And Inside) Tileset_152
+  - first:
+      213: 2282990363370622592
+    second: House (Outside And Inside) Tileset_153
+  - first:
+      213: 2874960117461414855
+    second: House (Outside And Inside) Tileset_154
+  - first:
+      213: 3205905776202635404
+    second: House (Outside And Inside) Tileset_155
+  - first:
+      213: -5757173897285184169
+    second: House (Outside And Inside) Tileset_156
+  - first:
+      213: 2278700351528465264
+    second: House (Outside And Inside) Tileset_157
+  - first:
+      213: 5643659287627242233
+    second: House (Outside And Inside) Tileset_158
+  - first:
+      213: -8088286948434822993
+    second: House (Outside And Inside) Tileset_159
+  - first:
+      213: 6583493270908463344
+    second: House (Outside And Inside) Tileset_160
+  - first:
+      213: 6701615431084151928
+    second: House (Outside And Inside) Tileset_161
+  - first:
+      213: 7069025656145649382
+    second: House (Outside And Inside) Tileset_162
+  - first:
+      213: -1180925102111422574
+    second: House (Outside And Inside) Tileset_163
+  - first:
+      213: -8169283864533111035
+    second: House (Outside And Inside) Tileset_164
+  - first:
+      213: 5955200857944220144
+    second: House (Outside And Inside) Tileset_165
+  - first:
+      213: -6539646843642342868
+    second: House (Outside And Inside) Tileset_166
+  - first:
+      213: -3271749197381072826
+    second: House (Outside And Inside) Tileset_167
+  - first:
+      213: -8362495574470207005
+    second: House (Outside And Inside) Tileset_168
+  - first:
+      213: -491140109204803608
+    second: House (Outside And Inside) Tileset_169
+  - first:
+      213: 4521159215813199133
+    second: House (Outside And Inside) Tileset_170
+  - first:
+      213: -8181405954543443463
+    second: House (Outside And Inside) Tileset_171
+  - first:
+      213: -5623282879971606150
+    second: House (Outside And Inside) Tileset_172
+  - first:
+      213: 213370506947781106
+    second: House (Outside And Inside) Tileset_173
+  - first:
+      213: -2973304536255746403
+    second: House (Outside And Inside) Tileset_174
+  - first:
+      213: 7205920543950533304
+    second: House (Outside And Inside) Tileset_175
+  - first:
+      213: -2750561265396302734
+    second: House (Outside And Inside) Tileset_176
+  - first:
+      213: 494615844798314567
+    second: House (Outside And Inside) Tileset_177
+  - first:
+      213: -3781067027609322832
+    second: House (Outside And Inside) Tileset_178
+  - first:
+      213: 3349002815439964673
+    second: House (Outside And Inside) Tileset_179
+  - first:
+      213: 89924813749832225
+    second: House (Outside And Inside) Tileset_180
+  - first:
+      213: 3665492985915148337
+    second: House (Outside And Inside) Tileset_181
+  - first:
+      213: 6608087076997681504
+    second: House (Outside And Inside) Tileset_182
+  - first:
+      213: -4333511504010981057
+    second: House (Outside And Inside) Tileset_183
+  - first:
+      213: -5348815582556304107
+    second: House (Outside And Inside) Tileset_184
+  - first:
+      213: 5529683981850067902
+    second: House (Outside And Inside) Tileset_185
+  - first:
+      213: -4736011846587635987
+    second: House (Outside And Inside) Tileset_186
+  - first:
+      213: 3201953861335103501
+    second: House (Outside And Inside) Tileset_187
+  - first:
+      213: 7498801080327906496
+    second: House (Outside And Inside) Tileset_188
+  - first:
+      213: 3236072663092566113
+    second: House (Outside And Inside) Tileset_189
+  - first:
+      213: 5428334628026807286
+    second: House (Outside And Inside) Tileset_190
+  - first:
+      213: 497781775826675285
+    second: House (Outside And Inside) Tileset_191
+  - first:
+      213: 4069787571695085523
+    second: House (Outside And Inside) Tileset_192
+  - first:
+      213: -8956180087268035259
+    second: House (Outside And Inside) Tileset_193
+  - first:
+      213: 4227876217687923613
+    second: House (Outside And Inside) Tileset_194
+  - first:
+      213: 8627126828184883526
+    second: House (Outside And Inside) Tileset_195
+  - first:
+      213: 7546105516307040429
+    second: House (Outside And Inside) Tileset_196
+  - first:
+      213: -2581168758219948017
+    second: House (Outside And Inside) Tileset_197
+  - first:
+      213: -4045545522139427401
+    second: House (Outside And Inside) Tileset_198
+  - first:
+      213: -7725438091775491317
+    second: House (Outside And Inside) Tileset_199
+  - first:
+      213: 8120732023731321705
+    second: House (Outside And Inside) Tileset_200
+  - first:
+      213: -8355636222176027291
+    second: House (Outside And Inside) Tileset_201
+  - first:
+      213: 326716152566080662
+    second: House (Outside And Inside) Tileset_202
+  - first:
+      213: -4904893100245863891
+    second: House (Outside And Inside) Tileset_203
+  - first:
+      213: 5271917978844712647
+    second: House (Outside And Inside) Tileset_204
+  - first:
+      213: 3597130900175257669
+    second: House (Outside And Inside) Tileset_205
+  - first:
+      213: 2220272753695313079
+    second: House (Outside And Inside) Tileset_206
+  - first:
+      213: -6205722792746838189
+    second: House (Outside And Inside) Tileset_207
+  - first:
+      213: 3571705463926906326
+    second: House (Outside And Inside) Tileset_208
+  - first:
+      213: 1368371163077472309
+    second: House (Outside And Inside) Tileset_209
+  - first:
+      213: -1916752859485709021
+    second: House (Outside And Inside) Tileset_210
+  - first:
+      213: -4222710411022593673
+    second: House (Outside And Inside) Tileset_211
+  - first:
+      213: -7931356600238114997
+    second: House (Outside And Inside) Tileset_212
+  - first:
+      213: 5421485139835412994
+    second: House (Outside And Inside) Tileset_213
+  - first:
+      213: 135618588461461043
+    second: House (Outside And Inside) Tileset_214
+  - first:
+      213: -6736670938482122145
+    second: House (Outside And Inside) Tileset_215
+  - first:
+      213: 2230388788263053358
+    second: House (Outside And Inside) Tileset_216
+  - first:
+      213: 2540392851241578055
+    second: House (Outside And Inside) Tileset_217
+  - first:
+      213: -3937223744583958076
+    second: House (Outside And Inside) Tileset_218
+  - first:
+      213: 6221429878230795723
+    second: House (Outside And Inside) Tileset_219
+  - first:
+      213: 1036052731695094187
+    second: House (Outside And Inside) Tileset_220
+  - first:
+      213: 2625587569929123166
+    second: House (Outside And Inside) Tileset_221
+  - first:
+      213: -1469371078103135914
+    second: House (Outside And Inside) Tileset_222
+  - first:
+      213: 5863648896569543849
+    second: House (Outside And Inside) Tileset_223
+  - first:
+      213: 88085969848706260
+    second: House (Outside And Inside) Tileset_224
+  - first:
+      213: -2521018395565841718
+    second: House (Outside And Inside) Tileset_225
+  - first:
+      213: -8770039696245879939
+    second: House (Outside And Inside) Tileset_226
+  - first:
+      213: -7115102476293604041
+    second: House (Outside And Inside) Tileset_227
+  - first:
+      213: -5134603148943565617
+    second: House (Outside And Inside) Tileset_228
+  - first:
+      213: 2660012587869731124
+    second: House (Outside And Inside) Tileset_229
+  - first:
+      213: 4198609238989610494
+    second: House (Outside And Inside) Tileset_230
+  - first:
+      213: -4954727436445897348
+    second: House (Outside And Inside) Tileset_231
+  - first:
+      213: -2837472462240775234
+    second: House (Outside And Inside) Tileset_232
+  - first:
+      213: -8270366233412257761
+    second: House (Outside And Inside) Tileset_233
+  - first:
+      213: 571667108215347541
+    second: House (Outside And Inside) Tileset_234
+  - first:
+      213: -2907393136551457193
+    second: House (Outside And Inside) Tileset_235
+  - first:
+      213: 3410000464026872637
+    second: House (Outside And Inside) Tileset_236
+  - first:
+      213: -4935018918963052125
+    second: House (Outside And Inside) Tileset_237
+  - first:
+      213: 353959407170551655
+    second: House (Outside And Inside) Tileset_238
+  - first:
+      213: -885844184104065412
+    second: House (Outside And Inside) Tileset_239
+  - first:
+      213: 8455632376220238520
+    second: House (Outside And Inside) Tileset_240
+  - first:
+      213: -7523938323339665681
+    second: House (Outside And Inside) Tileset_241
+  - first:
+      213: 5721060037701366966
+    second: House (Outside And Inside) Tileset_242
+  - first:
+      213: -6527649523681110657
+    second: House (Outside And Inside) Tileset_243
+  - first:
+      213: -8643742056835815341
+    second: House (Outside And Inside) Tileset_244
+  - first:
+      213: 2921117576609657955
+    second: House (Outside And Inside) Tileset_245
+  - first:
+      213: -1492205550797177263
+    second: House (Outside And Inside) Tileset_246
+  - first:
+      213: 1135024971400405926
+    second: House (Outside And Inside) Tileset_247
+  - first:
+      213: -1312987256958813131
+    second: House (Outside And Inside) Tileset_248
+  - first:
+      213: 3869668645503292601
+    second: House (Outside And Inside) Tileset_249
+  - first:
+      213: -7259045696338585874
+    second: House (Outside And Inside) Tileset_250
+  - first:
+      213: 6737716230110539288
+    second: House (Outside And Inside) Tileset_251
+  - first:
+      213: -448455906799977263
+    second: House (Outside And Inside) Tileset_252
+  - first:
+      213: -6258734596811849130
+    second: House (Outside And Inside) Tileset_253
+  - first:
+      213: -8171878928082390493
+    second: House (Outside And Inside) Tileset_254
+  - first:
+      213: -2920887961237341597
+    second: House (Outside And Inside) Tileset_255
+  - first:
+      213: -2869297011852002875
+    second: House (Outside And Inside) Tileset_256
+  - first:
+      213: -8265514455235248404
+    second: House (Outside And Inside) Tileset_257
+  - first:
+      213: -2245114315972078973
+    second: House (Outside And Inside) Tileset_258
+  - first:
+      213: 315119740736501473
+    second: House (Outside And Inside) Tileset_259
+  - first:
+      213: 8124539248458626063
+    second: House (Outside And Inside) Tileset_260
+  - first:
+      213: 7394891487038988970
+    second: House (Outside And Inside) Tileset_261
+  - first:
+      213: -1634682151400885458
+    second: House (Outside And Inside) Tileset_262
+  - first:
+      213: -268272511220441938
+    second: House (Outside And Inside) Tileset_263
+  - first:
+      213: -976405074065596752
+    second: House (Outside And Inside) Tileset_264
+  - first:
+      213: 5423658416392979657
+    second: House (Outside And Inside) Tileset_265
+  - first:
+      213: 4490979845177020308
+    second: House (Outside And Inside) Tileset_266
+  - first:
+      213: 4273436796395127902
+    second: House (Outside And Inside) Tileset_267
+  - first:
+      213: -5965610329607564824
+    second: House (Outside And Inside) Tileset_268
+  - first:
+      213: 7311130248292920276
+    second: House (Outside And Inside) Tileset_269
+  - first:
+      213: 1410816454577249729
+    second: House (Outside And Inside) Tileset_270
+  - first:
+      213: 5955980588742686587
+    second: House (Outside And Inside) Tileset_271
+  - first:
+      213: -5828807285275313234
+    second: House (Outside And Inside) Tileset_272
+  - first:
+      213: 1444532738870496166
+    second: House (Outside And Inside) Tileset_273
+  - first:
+      213: -4208180961763071187
+    second: House (Outside And Inside) Tileset_274
+  - first:
+      213: -5352355508343331869
+    second: House (Outside And Inside) Tileset_275
+  - first:
+      213: -4336885099542455658
+    second: House (Outside And Inside) Tileset_276
+  - first:
+      213: 3295151276847892152
+    second: House (Outside And Inside) Tileset_277
+  - first:
+      213: -896860761278767042
+    second: House (Outside And Inside) Tileset_278
+  - first:
+      213: 7592506733738707871
+    second: House (Outside And Inside) Tileset_279
+  - first:
+      213: -5574400939549900672
+    second: House (Outside And Inside) Tileset_280
+  - first:
+      213: 7695771553607992565
+    second: House (Outside And Inside) Tileset_281
+  - first:
+      213: -6560868700175950339
+    second: House (Outside And Inside) Tileset_282
+  - first:
+      213: -3432303028758516248
+    second: House (Outside And Inside) Tileset_283
+  - first:
+      213: -6043491461548892756
+    second: House (Outside And Inside) Tileset_284
+  - first:
+      213: -5569583659598902441
+    second: House (Outside And Inside) Tileset_285
+  - first:
+      213: -8558958805044543179
+    second: House (Outside And Inside) Tileset_286
+  - first:
+      213: 2166001282696238152
+    second: House (Outside And Inside) Tileset_287
+  - first:
+      213: -26233051103298735
+    second: House (Outside And Inside) Tileset_288
+  - first:
+      213: -6013066204231030474
+    second: House (Outside And Inside) Tileset_289
+  - first:
+      213: -4673688682983342695
+    second: House (Outside And Inside) Tileset_290
+  - first:
+      213: 7494460711346003594
+    second: House (Outside And Inside) Tileset_291
+  - first:
+      213: -9104742867348326019
+    second: House (Outside And Inside) Tileset_292
+  - first:
+      213: 4797141178983110847
+    second: House (Outside And Inside) Tileset_293
+  - first:
+      213: 943073470198821427
+    second: House (Outside And Inside) Tileset_294
+  - first:
+      213: -5584967465053407775
+    second: House (Outside And Inside) Tileset_295
+  - first:
+      213: -4284822402248839164
+    second: House (Outside And Inside) Tileset_296
+  - first:
+      213: 460373727360894735
+    second: House (Outside And Inside) Tileset_297
+  - first:
+      213: 8201435807102515062
+    second: House (Outside And Inside) Tileset_298
+  - first:
+      213: -1316577709460451497
+    second: House (Outside And Inside) Tileset_299
+  - first:
+      213: 3138402267291226123
+    second: House (Outside And Inside) Tileset_300
+  - first:
+      213: -2343708048706911531
+    second: House (Outside And Inside) Tileset_301
+  - first:
+      213: 1081860632897217532
+    second: House (Outside And Inside) Tileset_302
+  - first:
+      213: 4186565560333130378
+    second: House (Outside And Inside) Tileset_303
+  - first:
+      213: 220646016068056970
+    second: House (Outside And Inside) Tileset_304
+  - first:
+      213: 876634775895097045
+    second: House (Outside And Inside) Tileset_305
+  - first:
+      213: -4965272557933749552
+    second: House (Outside And Inside) Tileset_306
+  - first:
+      213: 4629728048452703211
+    second: House (Outside And Inside) Tileset_307
+  - first:
+      213: 8528695379657705134
+    second: House (Outside And Inside) Tileset_308
+  - first:
+      213: -2365685187439793895
+    second: House (Outside And Inside) Tileset_309
+  - first:
+      213: -749205431637860835
+    second: House (Outside And Inside) Tileset_310
+  - first:
+      213: 3478366731083959493
+    second: House (Outside And Inside) Tileset_311
+  - first:
+      213: -4848947781070962976
+    second: House (Outside And Inside) Tileset_312
+  - first:
+      213: -1936769171642770460
+    second: House (Outside And Inside) Tileset_313
+  - first:
+      213: -1336481082730987898
+    second: House (Outside And Inside) Tileset_314
+  - first:
+      213: -1043057620040652503
+    second: House (Outside And Inside) Tileset_315
+  - first:
+      213: 8751334625019580509
+    second: House (Outside And Inside) Tileset_316
+  - first:
+      213: 3443581211477094596
+    second: House (Outside And Inside) Tileset_317
+  - first:
+      213: -8707070432183785198
+    second: House (Outside And Inside) Tileset_318
+  - first:
+      213: -3402068084126278370
+    second: House (Outside And Inside) Tileset_319
+  - first:
+      213: 3552003115362711980
+    second: House (Outside And Inside) Tileset_320
+  - first:
+      213: 1895039916677277258
+    second: House (Outside And Inside) Tileset_321
+  - first:
+      213: 4094282212133818249
+    second: House (Outside And Inside) Tileset_322
+  - first:
+      213: 350564092951908939
+    second: House (Outside And Inside) Tileset_323
+  - first:
+      213: 3996434493545940318
+    second: House (Outside And Inside) Tileset_324
+  - first:
+      213: -752289280881058106
+    second: House (Outside And Inside) Tileset_325
+  - first:
+      213: -2361383187063016925
+    second: House (Outside And Inside) Tileset_326
+  - first:
+      213: -5923546108356288701
+    second: House (Outside And Inside) Tileset_327
+  - first:
+      213: -7282506949679945439
+    second: House (Outside And Inside) Tileset_328
+  - first:
+      213: -6104128941047049158
+    second: House (Outside And Inside) Tileset_329
+  - first:
+      213: 4031922952501767127
+    second: House (Outside And Inside) Tileset_330
+  - first:
+      213: 7290802262395190844
+    second: House (Outside And Inside) Tileset_331
+  - first:
+      213: -8818658899751775708
+    second: House (Outside And Inside) Tileset_332
+  - first:
+      213: 5824998812736892018
+    second: House (Outside And Inside) Tileset_333
+  - first:
+      213: 2148507410734813520
+    second: House (Outside And Inside) Tileset_334
+  - first:
+      213: -1106149768627187344
+    second: House (Outside And Inside) Tileset_335
+  - first:
+      213: 4902037297904299796
+    second: House (Outside And Inside) Tileset_336
+  - first:
+      213: 5135997958934579143
+    second: House (Outside And Inside) Tileset_337
+  - first:
+      213: 5516569022169246696
+    second: House (Outside And Inside) Tileset_338
+  - first:
+      213: -9182596983233238122
+    second: House (Outside And Inside) Tileset_339
+  - first:
+      213: -5076996401006855196
+    second: House (Outside And Inside) Tileset_340
+  - first:
+      213: -6708779805223614075
+    second: House (Outside And Inside) Tileset_341
+  - first:
+      213: 6668585287895838558
+    second: House (Outside And Inside) Tileset_342
+  - first:
+      213: 5077402083514559821
+    second: House (Outside And Inside) Tileset_343
+  - first:
+      213: -4647433857241734542
+    second: House (Outside And Inside) Tileset_344
+  - first:
+      213: -2338513560178403558
+    second: House (Outside And Inside) Tileset_345
+  - first:
+      213: -4846660802900050769
+    second: House (Outside And Inside) Tileset_346
+  - first:
+      213: -5681541358091009386
+    second: House (Outside And Inside) Tileset_347
+  - first:
+      213: -1472451058304174467
+    second: House (Outside And Inside) Tileset_348
+  - first:
+      213: 7984941589422181135
+    second: House (Outside And Inside) Tileset_349
+  - first:
+      213: 6417134450576380759
+    second: House (Outside And Inside) Tileset_350
+  - first:
+      213: -4103766081821526445
+    second: House (Outside And Inside) Tileset_351
+  - first:
+      213: 695123322301225226
+    second: House (Outside And Inside) Tileset_352
+  - first:
+      213: -8718995166083175302
+    second: House (Outside And Inside) Tileset_353
+  - first:
+      213: 8002694921734543476
+    second: House (Outside And Inside) Tileset_354
+  - first:
+      213: -2372413332886554009
+    second: House (Outside And Inside) Tileset_355
+  - first:
+      213: -1846928051408151080
+    second: House (Outside And Inside) Tileset_356
+  - first:
+      213: 5032589119191964139
+    second: House (Outside And Inside) Tileset_357
+  - first:
+      213: 4757781298257755056
+    second: House (Outside And Inside) Tileset_358
+  - first:
+      213: -459999109157116146
+    second: House (Outside And Inside) Tileset_359
+  - first:
+      213: 9103149052049404431
+    second: House (Outside And Inside) Tileset_360
+  - first:
+      213: 1586881676229230412
+    second: House (Outside And Inside) Tileset_361
+  - first:
+      213: -8881515498431537752
+    second: House (Outside And Inside) Tileset_362
+  - first:
+      213: -2398342086191524549
+    second: House (Outside And Inside) Tileset_363
+  - first:
+      213: -6156190513538075336
+    second: House (Outside And Inside) Tileset_364
+  - first:
+      213: -4618751210077575010
+    second: House (Outside And Inside) Tileset_365
+  - first:
+      213: -6340692823403376757
+    second: House (Outside And Inside) Tileset_366
+  - first:
+      213: -6995265886651277764
+    second: House (Outside And Inside) Tileset_367
+  - first:
+      213: -3327777803689336007
+    second: House (Outside And Inside) Tileset_368
+  - first:
+      213: -7303330455519344544
+    second: House (Outside And Inside) Tileset_369
+  - first:
+      213: -3230971774685847742
+    second: House (Outside And Inside) Tileset_370
+  - first:
+      213: 2288530498938939526
+    second: House (Outside And Inside) Tileset_371
+  - first:
+      213: -2216869035859500531
+    second: House (Outside And Inside) Tileset_372
+  - first:
+      213: 6871289771777755562
+    second: House (Outside And Inside) Tileset_373
+  - first:
+      213: -7921713558373605469
+    second: House (Outside And Inside) Tileset_374
+  - first:
+      213: -6932932650961740328
+    second: House (Outside And Inside) Tileset_375
+  - first:
+      213: -2051357012273337704
+    second: House (Outside And Inside) Tileset_376
+  - first:
+      213: 5166984768161576424
+    second: House (Outside And Inside) Tileset_377
+  - first:
+      213: -4315706739625131777
+    second: House (Outside And Inside) Tileset_378
+  - first:
+      213: -1259071048381020251
+    second: House (Outside And Inside) Tileset_379
+  - first:
+      213: -33492950500152095
+    second: House (Outside And Inside) Tileset_380
+  - first:
+      213: 1007130635750065303
+    second: House (Outside And Inside) Tileset_381
+  - first:
+      213: 197065237862778537
+    second: House (Outside And Inside) Tileset_382
+  - first:
+      213: -5216056983929391376
+    second: House (Outside And Inside) Tileset_383
+  - first:
+      213: -3931887879121275447
+    second: House (Outside And Inside) Tileset_384
+  - first:
+      213: 2697399442716040644
+    second: House (Outside And Inside) Tileset_385
+  - first:
+      213: -8306078200662928524
+    second: House (Outside And Inside) Tileset_386
+  - first:
+      213: -452459129966068385
+    second: House (Outside And Inside) Tileset_387
+  - first:
+      213: 8598100856598089075
+    second: House (Outside And Inside) Tileset_388
+  - first:
+      213: -99382365839238609
+    second: House (Outside And Inside) Tileset_389
+  - first:
+      213: 4827222219639453800
+    second: House (Outside And Inside) Tileset_390
+  - first:
+      213: -1233627822263687167
+    second: House (Outside And Inside) Tileset_391
+  - first:
+      213: -5788851647683778687
+    second: House (Outside And Inside) Tileset_392
+  - first:
+      213: -1756833305001332728
+    second: House (Outside And Inside) Tileset_393
+  - first:
+      213: -8357296321163789801
+    second: House (Outside And Inside) Tileset_394
+  - first:
+      213: 4818341814912666656
+    second: House (Outside And Inside) Tileset_395
+  - first:
+      213: 6535272527538032670
+    second: House (Outside And Inside) Tileset_396
+  - first:
+      213: -6375078325011284601
+    second: House (Outside And Inside) Tileset_397
+  - first:
+      213: 2944942399279298815
+    second: House (Outside And Inside) Tileset_398
+  - first:
+      213: -8780480623482739123
+    second: House (Outside And Inside) Tileset_399
+  - first:
+      213: -3335858610852670941
+    second: House (Outside And Inside) Tileset_400
+  - first:
+      213: 4616081311101438761
+    second: House (Outside And Inside) Tileset_401
+  - first:
+      213: 7045343996779182402
+    second: House (Outside And Inside) Tileset_402
+  - first:
+      213: 4111081809832635294
+    second: House (Outside And Inside) Tileset_403
+  - first:
+      213: 5315779423768945574
+    second: House (Outside And Inside) Tileset_404
+  - first:
+      213: -1617545232799069342
+    second: House (Outside And Inside) Tileset_405
+  - first:
+      213: -4745259879399890826
+    second: House (Outside And Inside) Tileset_406
+  - first:
+      213: -2803108024477493750
+    second: House (Outside And Inside) Tileset_407
+  - first:
+      213: 4429640098810599185
+    second: House (Outside And Inside) Tileset_408
+  - first:
+      213: -2014274764681107956
+    second: House (Outside And Inside) Tileset_409
+  - first:
+      213: 2634459660404026360
+    second: House (Outside And Inside) Tileset_410
+  - first:
+      213: 4485043701299450267
+    second: House (Outside And Inside) Tileset_411
+  - first:
+      213: 4759697553959662354
+    second: House (Outside And Inside) Tileset_412
+  - first:
+      213: 6758575378754356102
+    second: House (Outside And Inside) Tileset_413
+  - first:
+      213: 313040257393087975
+    second: House (Outside And Inside) Tileset_414
+  - first:
+      213: -4033862330041562991
+    second: House (Outside And Inside) Tileset_415
+  - first:
+      213: 9193991968872572441
+    second: House (Outside And Inside) Tileset_416
+  - first:
+      213: 1992161715312614345
+    second: House (Outside And Inside) Tileset_417
+  - first:
+      213: -2605420521648370968
+    second: House (Outside And Inside) Tileset_418
+  - first:
+      213: -8468246152003177205
+    second: House (Outside And Inside) Tileset_419
+  - first:
+      213: 369008753866972402
+    second: House (Outside And Inside) Tileset_420
+  - first:
+      213: 6654897911073686808
+    second: House (Outside And Inside) Tileset_421
+  - first:
+      213: 6728454699422804446
+    second: House (Outside And Inside) Tileset_422
+  - first:
+      213: -4011484559069021607
+    second: House (Outside And Inside) Tileset_423
+  - first:
+      213: -6130770905482430089
+    second: House (Outside And Inside) Tileset_424
+  - first:
+      213: 1075785377300642325
+    second: House (Outside And Inside) Tileset_425
+  - first:
+      213: 766073765455896550
+    second: House (Outside And Inside) Tileset_426
+  - first:
+      213: 7357850020345603907
+    second: House (Outside And Inside) Tileset_427
+  - first:
+      213: 1544281550630489414
+    second: House (Outside And Inside) Tileset_428
+  - first:
+      213: 5029424387353126933
+    second: House (Outside And Inside) Tileset_429
+  - first:
+      213: -2318587130792627895
+    second: House (Outside And Inside) Tileset_430
+  - first:
+      213: 7586880031138591933
+    second: House (Outside And Inside) Tileset_431
+  - first:
+      213: 6301877576949472038
+    second: House (Outside And Inside) Tileset_432
+  - first:
+      213: 5854845922197312876
+    second: House (Outside And Inside) Tileset_433
+  - first:
+      213: -1328893524825172615
+    second: House (Outside And Inside) Tileset_434
+  - first:
+      213: -7841944475365218130
+    second: House (Outside And Inside) Tileset_435
+  - first:
+      213: 6038501414562047317
+    second: House (Outside And Inside) Tileset_436
+  - first:
+      213: 8607042718343499049
+    second: House (Outside And Inside) Tileset_437
+  - first:
+      213: 7520195787312737836
+    second: House (Outside And Inside) Tileset_438
+  - first:
+      213: -4212124354837198106
+    second: House (Outside And Inside) Tileset_439
+  - first:
+      213: 2987427038244761334
+    second: House (Outside And Inside) Tileset_440
+  - first:
+      213: 8058749213351694477
+    second: House (Outside And Inside) Tileset_441
+  - first:
+      213: 695250165044291955
+    second: House (Outside And Inside) Tileset_442
+  - first:
+      213: -8044489401697542319
+    second: House (Outside And Inside) Tileset_443
+  - first:
+      213: -3521542338619421060
+    second: House (Outside And Inside) Tileset_444
+  - first:
+      213: -3906908550290056529
+    second: House (Outside And Inside) Tileset_445
+  - first:
+      213: 5934928569054251310
+    second: House (Outside And Inside) Tileset_446
+  - first:
+      213: -4996203341089454427
+    second: House (Outside And Inside) Tileset_447
+  - first:
+      213: 3630345200884187658
+    second: House (Outside And Inside) Tileset_448
+  - first:
+      213: 3379546342357820851
+    second: House (Outside And Inside) Tileset_449
+  - first:
+      213: 300567575017095620
+    second: House (Outside And Inside) Tileset_450
+  - first:
+      213: 2926337337275641846
+    second: House (Outside And Inside) Tileset_451
+  - first:
+      213: 1599324825606960173
+    second: House (Outside And Inside) Tileset_452
+  - first:
+      213: -2032478239946889641
+    second: House (Outside And Inside) Tileset_453
+  - first:
+      213: 933554806046854428
+    second: House (Outside And Inside) Tileset_454
+  - first:
+      213: 1404539273960146051
+    second: House (Outside And Inside) Tileset_455
+  - first:
+      213: 764498328304247943
+    second: House (Outside And Inside) Tileset_456
+  - first:
+      213: -7021012186235803601
+    second: House (Outside And Inside) Tileset_457
+  - first:
+      213: -1179916413745076628
+    second: House (Outside And Inside) Tileset_458
+  - first:
+      213: -7324108330646624963
+    second: House (Outside And Inside) Tileset_459
+  - first:
+      213: 4579149661717749819
+    second: House (Outside And Inside) Tileset_460
+  - first:
+      213: 8046381627854219094
+    second: House (Outside And Inside) Tileset_461
+  - first:
+      213: -8581458960741103759
+    second: House (Outside And Inside) Tileset_462
+  - first:
+      213: 5502856142573232394
+    second: House (Outside And Inside) Tileset_463
+  - first:
+      213: 5214658179841749187
+    second: House (Outside And Inside) Tileset_464
+  - first:
+      213: 2014415063415123486
+    second: House (Outside And Inside) Tileset_465
+  - first:
+      213: -8519243209736441401
+    second: House (Outside And Inside) Tileset_466
+  - first:
+      213: 8646438924232332226
+    second: House (Outside And Inside) Tileset_467
+  - first:
+      213: -3693201000498916418
+    second: House (Outside And Inside) Tileset_468
+  - first:
+      213: -8152897765028979726
+    second: House (Outside And Inside) Tileset_469
+  - first:
+      213: -2270087812581285395
+    second: House (Outside And Inside) Tileset_470
+  - first:
+      213: 4511006490809319676
+    second: House (Outside And Inside) Tileset_471
+  - first:
+      213: 1025729128491458359
+    second: House (Outside And Inside) Tileset_472
+  - first:
+      213: 3890014457462166933
+    second: House (Outside And Inside) Tileset_473
+  - first:
+      213: -7632997510000780174
+    second: House (Outside And Inside) Tileset_474
+  - first:
+      213: -1582511433226772757
+    second: House (Outside And Inside) Tileset_475
+  - first:
+      213: -9216859475297958276
+    second: House (Outside And Inside) Tileset_476
+  - first:
+      213: 6152514573618988393
+    second: House (Outside And Inside) Tileset_477
+  - first:
+      213: 7764810309491623454
+    second: House (Outside And Inside) Tileset_478
+  - first:
+      213: 909827980201522503
+    second: House (Outside And Inside) Tileset_479
+  - first:
+      213: 5772932861734357718
+    second: House (Outside And Inside) Tileset_480
+  - first:
+      213: -4232812519128358327
+    second: House (Outside And Inside) Tileset_481
+  - first:
+      213: -4777840270655149614
+    second: House (Outside And Inside) Tileset_482
+  - first:
+      213: -6550176009821613183
+    second: House (Outside And Inside) Tileset_483
+  - first:
+      213: -8558777451800698476
+    second: House (Outside And Inside) Tileset_484
+  - first:
+      213: 1325787573800464583
+    second: House (Outside And Inside) Tileset_485
+  - first:
+      213: 3261438852103749845
+    second: House (Outside And Inside) Tileset_486
+  - first:
+      213: -603416591508290037
+    second: House (Outside And Inside) Tileset_487
+  - first:
+      213: -1801235577279810080
+    second: House (Outside And Inside) Tileset_488
+  - first:
+      213: 4041466004135057929
+    second: House (Outside And Inside) Tileset_489
+  - first:
+      213: 2002820074364724334
+    second: House (Outside And Inside) Tileset_490
+  - first:
+      213: 4736157340572124246
+    second: House (Outside And Inside) Tileset_491
+  - first:
+      213: 7915849108890917008
+    second: House (Outside And Inside) Tileset_492
+  - first:
+      213: 3998873762385103705
+    second: House (Outside And Inside) Tileset_493
+  - first:
+      213: -1006831567541806921
+    second: House (Outside And Inside) Tileset_494
+  - first:
+      213: 4918038720480207431
+    second: House (Outside And Inside) Tileset_495
+  - first:
+      213: -2403939906780748998
+    second: House (Outside And Inside) Tileset_496
+  - first:
+      213: 6251753396774458149
+    second: House (Outside And Inside) Tileset_497
+  - first:
+      213: -3859979751204900656
+    second: House (Outside And Inside) Tileset_498
+  - first:
+      213: -6175877704331458792
+    second: House (Outside And Inside) Tileset_499
+  - first:
+      213: -3835075734616976868
+    second: House (Outside And Inside) Tileset_500
+  - first:
+      213: -700235091649478009
+    second: House (Outside And Inside) Tileset_501
+  - first:
+      213: 6314952007766193215
+    second: House (Outside And Inside) Tileset_502
+  - first:
+      213: -4176774754686464847
+    second: House (Outside And Inside) Tileset_503
+  - first:
+      213: -364224073383766313
+    second: House (Outside And Inside) Tileset_504
+  - first:
+      213: -7789481880217206857
+    second: House (Outside And Inside) Tileset_505
+  - first:
+      213: 6513623375776090307
+    second: House (Outside And Inside) Tileset_506
+  - first:
+      213: -9104051738957641785
+    second: House (Outside And Inside) Tileset_507
+  - first:
+      213: -1620403397402806837
+    second: House (Outside And Inside) Tileset_508
+  - first:
+      213: 7207150230057785758
+    second: House (Outside And Inside) Tileset_509
+  - first:
+      213: 5372746384769118339
+    second: House (Outside And Inside) Tileset_510
+  - first:
+      213: 1606592589683020165
+    second: House (Outside And Inside) Tileset_511
+  - first:
+      213: 357155603361485756
+    second: House (Outside And Inside) Tileset_512
+  - first:
+      213: -1778669718708642379
+    second: House (Outside And Inside) Tileset_513
+  - first:
+      213: 7913831482807946271
+    second: House (Outside And Inside) Tileset_514
+  - first:
+      213: -4963983773770580609
+    second: House (Outside And Inside) Tileset_515
+  - first:
+      213: 4536108852659169877
+    second: House (Outside And Inside) Tileset_516
+  - first:
+      213: -8321238066544094419
+    second: House (Outside And Inside) Tileset_517
+  - first:
+      213: -8691178457903786686
+    second: House (Outside And Inside) Tileset_518
+  - first:
+      213: 5918030490205046370
+    second: House (Outside And Inside) Tileset_519
+  - first:
+      213: 6738944737772825955
+    second: House (Outside And Inside) Tileset_520
+  - first:
+      213: -8606537153936950920
+    second: House (Outside And Inside) Tileset_521
+  - first:
+      213: -972705688747396515
+    second: House (Outside And Inside) Tileset_522
+  - first:
+      213: 3853315864146149820
+    second: House (Outside And Inside) Tileset_523
+  - first:
+      213: -6122958133505965599
+    second: House (Outside And Inside) Tileset_524
+  - first:
+      213: 6678376524759047773
+    second: House (Outside And Inside) Tileset_525
+  - first:
+      213: -2252194628628668751
+    second: House (Outside And Inside) Tileset_526
+  - first:
+      213: 1282336520904693734
+    second: House (Outside And Inside) Tileset_527
+  - first:
+      213: -3356233319905458593
+    second: House (Outside And Inside) Tileset_528
+  - first:
+      213: 1203475047931195913
+    second: House (Outside And Inside) Tileset_529
+  - first:
+      213: -2157132251378393153
+    second: House (Outside And Inside) Tileset_530
+  - first:
+      213: 5950104034264962814
+    second: House (Outside And Inside) Tileset_531
+  - first:
+      213: 460990312205709855
+    second: House (Outside And Inside) Tileset_532
+  - first:
+      213: 5021096889671735443
+    second: House (Outside And Inside) Tileset_533
+  - first:
+      213: -2264503973283804017
+    second: House (Outside And Inside) Tileset_534
+  - first:
+      213: -4306618022448643530
+    second: House (Outside And Inside) Tileset_535
+  - first:
+      213: 950385766091550406
+    second: House (Outside And Inside) Tileset_536
+  - first:
+      213: 3177586273358723478
+    second: House (Outside And Inside) Tileset_537
+  - first:
+      213: 6714276259245141583
+    second: House (Outside And Inside) Tileset_538
+  - first:
+      213: -7907180309478075506
+    second: House (Outside And Inside) Tileset_539
+  - first:
+      213: -8054669456702268641
+    second: House (Outside And Inside) Tileset_540
+  - first:
+      213: 7898845152879755597
+    second: House (Outside And Inside) Tileset_541
+  - first:
+      213: -8950593158241607205
+    second: House (Outside And Inside) Tileset_542
+  - first:
+      213: 5452239359821172568
+    second: House (Outside And Inside) Tileset_543
+  - first:
+      213: 2412429645034075451
+    second: House (Outside And Inside) Tileset_544
+  - first:
+      213: -6732116052727359814
+    second: House (Outside And Inside) Tileset_545
+  - first:
+      213: -5237170202316053537
+    second: House (Outside And Inside) Tileset_546
+  - first:
+      213: -8849115735794349648
+    second: House (Outside And Inside) Tileset_547
+  - first:
+      213: -797651420783968841
+    second: House (Outside And Inside) Tileset_548
+  - first:
+      213: 3515029284272176080
+    second: House (Outside And Inside) Tileset_549
+  - first:
+      213: -4568738349508060103
+    second: House (Outside And Inside) Tileset_550
+  - first:
+      213: 8632152530677476918
+    second: House (Outside And Inside) Tileset_551
+  - first:
+      213: -7383069900850631240
+    second: House (Outside And Inside) Tileset_552
+  - first:
+      213: 3574520570788806624
+    second: House (Outside And Inside) Tileset_553
+  - first:
+      213: 6020339950765184544
+    second: House (Outside And Inside) Tileset_554
+  - first:
+      213: 7033628314327285634
+    second: House (Outside And Inside) Tileset_555
+  - first:
+      213: -7160711496747118827
+    second: House (Outside And Inside) Tileset_556
+  - first:
+      213: 4143282804379467203
+    second: House (Outside And Inside) Tileset_557
+  - first:
+      213: 1048397701072766513
+    second: House (Outside And Inside) Tileset_558
+  - first:
+      213: 6603258907630074291
+    second: House (Outside And Inside) Tileset_559
+  - first:
+      213: 3565080007774918508
+    second: House (Outside And Inside) Tileset_560
+  - first:
+      213: -6824238653696953498
+    second: House (Outside And Inside) Tileset_561
+  - first:
+      213: -7742704753712081745
+    second: House (Outside And Inside) Tileset_562
+  - first:
+      213: -5498161626077069025
+    second: House (Outside And Inside) Tileset_563
+  - first:
+      213: 2584191901293953710
+    second: House (Outside And Inside) Tileset_564
+  - first:
+      213: 2637555284085162914
+    second: House (Outside And Inside) Tileset_565
+  - first:
+      213: 4961673063107266703
+    second: House (Outside And Inside) Tileset_566
+  - first:
+      213: -1227364886334832216
+    second: House (Outside And Inside) Tileset_567
+  - first:
+      213: 2762012914504518491
+    second: House (Outside And Inside) Tileset_568
+  - first:
+      213: 368679065280230249
+    second: House (Outside And Inside) Tileset_569
+  - first:
+      213: -5815078259441219289
+    second: House (Outside And Inside) Tileset_570
+  - first:
+      213: 2514039515815857215
+    second: House (Outside And Inside) Tileset_571
+  - first:
+      213: 1149945793809319022
+    second: House (Outside And Inside) Tileset_572
+  - first:
+      213: -6177781320739224949
+    second: House (Outside And Inside) Tileset_573
+  - first:
+      213: 315590753865529412
+    second: House (Outside And Inside) Tileset_574
+  - first:
+      213: 5233109099409010666
+    second: House (Outside And Inside) Tileset_575
+  - first:
+      213: -2717366865880135676
+    second: House (Outside And Inside) Tileset_576
+  - first:
+      213: 8607330766084379298
+    second: House (Outside And Inside) Tileset_577
+  - first:
+      213: -7866299630263992276
+    second: House (Outside And Inside) Tileset_578
+  - first:
+      213: 6465411912378488735
+    second: House (Outside And Inside) Tileset_579
+  - first:
+      213: -545208446677463467
+    second: House (Outside And Inside) Tileset_580
+  - first:
+      213: -8582606749951799817
+    second: House (Outside And Inside) Tileset_581
+  - first:
+      213: -2181952462860775111
+    second: House (Outside And Inside) Tileset_582
+  - first:
+      213: 6529889959505839956
+    second: House (Outside And Inside) Tileset_583
+  - first:
+      213: -3965839305812525861
+    second: House (Outside And Inside) Tileset_584
+  - first:
+      213: 8461795743371811048
+    second: House (Outside And Inside) Tileset_585
+  - first:
+      213: -1492766961921770763
+    second: House (Outside And Inside) Tileset_586
+  - first:
+      213: -7963401894990762973
+    second: House (Outside And Inside) Tileset_587
+  - first:
+      213: 2848797669835858831
+    second: House (Outside And Inside) Tileset_588
+  - first:
+      213: -1766917846425244290
+    second: House (Outside And Inside) Tileset_589
+  - first:
+      213: 2019822973351724178
+    second: House (Outside And Inside) Tileset_590
+  - first:
+      213: 8833301364914330377
+    second: House (Outside And Inside) Tileset_591
+  - first:
+      213: -5348287284538924030
+    second: House (Outside And Inside) Tileset_592
+  - first:
+      213: -4383981368848772373
+    second: House (Outside And Inside) Tileset_593
+  - first:
+      213: -2242801831044690514
+    second: House (Outside And Inside) Tileset_594
+  - first:
+      213: 4021221970645327556
+    second: House (Outside And Inside) Tileset_595
+  - first:
+      213: 1817505459489477205
+    second: House (Outside And Inside) Tileset_596
+  - first:
+      213: -4472291528324026563
+    second: House (Outside And Inside) Tileset_597
+  - first:
+      213: 6691696686010065705
+    second: House (Outside And Inside) Tileset_598
+  - first:
+      213: -6937817951320258905
+    second: House (Outside And Inside) Tileset_599
+  - first:
+      213: 1597521579267264885
+    second: House (Outside And Inside) Tileset_600
+  - first:
+      213: -2483758042260081731
+    second: House (Outside And Inside) Tileset_601
+  - first:
+      213: -7816750653523032679
+    second: House (Outside And Inside) Tileset_602
+  - first:
+      213: 1040528824196151755
+    second: House (Outside And Inside) Tileset_603
+  - first:
+      213: 8445067508854521355
+    second: House (Outside And Inside) Tileset_604
+  - first:
+      213: -5711364763933144519
+    second: House (Outside And Inside) Tileset_605
+  - first:
+      213: -6363334442114106514
+    second: House (Outside And Inside) Tileset_606
+  - first:
+      213: -7009869155444724067
+    second: House (Outside And Inside) Tileset_607
+  - first:
+      213: -4875563939271658684
+    second: House (Outside And Inside) Tileset_608
+  - first:
+      213: 563071277360590732
+    second: House (Outside And Inside) Tileset_609
+  - first:
+      213: 4176584461726986302
+    second: House (Outside And Inside) Tileset_610
+  - first:
+      213: 4746007564459003327
+    second: House (Outside And Inside) Tileset_611
+  - first:
+      213: 4228294622026218785
+    second: House (Outside And Inside) Tileset_612
+  - first:
+      213: 1778800549031773484
+    second: House (Outside And Inside) Tileset_613
+  - first:
+      213: -577821081921096010
+    second: House (Outside And Inside) Tileset_614
+  - first:
+      213: 3788794739355096708
+    second: House (Outside And Inside) Tileset_615
+  - first:
+      213: 2989531887949101592
+    second: House (Outside And Inside) Tileset_616
+  - first:
+      213: 367023046146492086
+    second: House (Outside And Inside) Tileset_617
+  - first:
+      213: 3329157400011953048
+    second: House (Outside And Inside) Tileset_618
+  - first:
+      213: 583580562297257152
+    second: House (Outside And Inside) Tileset_619
+  - first:
+      213: -8305348927517068985
+    second: House (Outside And Inside) Tileset_620
+  - first:
+      213: 5199477964029817681
+    second: House (Outside And Inside) Tileset_621
+  - first:
+      213: 6403571715278653451
+    second: House (Outside And Inside) Tileset_622
+  - first:
+      213: -9068896752736686061
+    second: House (Outside And Inside) Tileset_623
+  - first:
+      213: 7893648064111025302
+    second: House (Outside And Inside) Tileset_624
+  - first:
+      213: 2713227207124470605
+    second: House (Outside And Inside) Tileset_625
+  - first:
+      213: 7272175761934532149
+    second: House (Outside And Inside) Tileset_626
+  - first:
+      213: -678775914617333145
+    second: House (Outside And Inside) Tileset_627
+  - first:
+      213: -1026423229167612497
+    second: House (Outside And Inside) Tileset_628
+  - first:
+      213: -7894709175763956094
+    second: House (Outside And Inside) Tileset_629
+  - first:
+      213: 532872094115788703
+    second: House (Outside And Inside) Tileset_630
+  - first:
+      213: 1738134070979765190
+    second: House (Outside And Inside) Tileset_631
+  - first:
+      213: -8920007088902528157
+    second: House (Outside And Inside) Tileset_632
+  - first:
+      213: 8227358176791085395
+    second: House (Outside And Inside) Tileset_633
+  - first:
+      213: -4377133070609526445
+    second: House (Outside And Inside) Tileset_634
+  - first:
+      213: 1624600082788380735
+    second: House (Outside And Inside) Tileset_635
+  - first:
+      213: 2956356713761751599
+    second: House (Outside And Inside) Tileset_636
+  - first:
+      213: -8407900717823267693
+    second: House (Outside And Inside) Tileset_637
+  - first:
+      213: -4092458015418790886
+    second: House (Outside And Inside) Tileset_638
+  - first:
+      213: 7374296403755414568
+    second: House (Outside And Inside) Tileset_639
+  - first:
+      213: 3630474880981838362
+    second: House (Outside And Inside) Tileset_640
+  - first:
+      213: 2397544217347964786
+    second: House (Outside And Inside) Tileset_641
+  - first:
+      213: -5375002673336848838
+    second: House (Outside And Inside) Tileset_642
+  - first:
+      213: -5112853280316093774
+    second: House (Outside And Inside) Tileset_643
+  - first:
+      213: 5937931810598834628
+    second: House (Outside And Inside) Tileset_644
+  - first:
+      213: 7077594130266460769
+    second: House (Outside And Inside) Tileset_645
+  - first:
+      213: 7952922706889773949
+    second: House (Outside And Inside) Tileset_646
+  - first:
+      213: -3689411411714419469
+    second: House (Outside And Inside) Tileset_647
+  - first:
+      213: -8686658368827012845
+    second: House (Outside And Inside) Tileset_648
+  - first:
+      213: -3118356739372154496
+    second: House (Outside And Inside) Tileset_649
+  - first:
+      213: -3498033785102672384
+    second: House (Outside And Inside) Tileset_650
+  - first:
+      213: -6656445389359634442
+    second: House (Outside And Inside) Tileset_651
+  - first:
+      213: -8402703973978324464
+    second: House (Outside And Inside) Tileset_652
+  - first:
+      213: 7640308596503358446
+    second: House (Outside And Inside) Tileset_653
+  - first:
+      213: 1263729438728648598
+    second: House (Outside And Inside) Tileset_654
+  - first:
+      213: -1217968109524123237
+    second: House (Outside And Inside) Tileset_655
+  - first:
+      213: -494804491388727634
+    second: House (Outside And Inside) Tileset_656
+  - first:
+      213: -4531622333594477222
+    second: House (Outside And Inside) Tileset_657
+  - first:
+      213: 4844256829505129429
+    second: House (Outside And Inside) Tileset_658
+  - first:
+      213: -3682978416428467011
+    second: House (Outside And Inside) Tileset_659
+  - first:
+      213: 607257992334863834
+    second: House (Outside And Inside) Tileset_660
+  - first:
+      213: 5483745228135332265
+    second: House (Outside And Inside) Tileset_661
+  - first:
+      213: -6912244951113373780
+    second: House (Outside And Inside) Tileset_662
+  - first:
+      213: -68339394273116936
+    second: House (Outside And Inside) Tileset_663
+  - first:
+      213: -8114566736104275967
+    second: House (Outside And Inside) Tileset_664
+  - first:
+      213: -2374811386265495894
+    second: House (Outside And Inside) Tileset_665
+  - first:
+      213: -2530028833981778760
+    second: House (Outside And Inside) Tileset_666
+  - first:
+      213: -2499582383434240778
+    second: House (Outside And Inside) Tileset_667
+  - first:
+      213: 5337510202440504513
+    second: House (Outside And Inside) Tileset_668
+  - first:
+      213: -2902867038778298960
+    second: House (Outside And Inside) Tileset_669
+  - first:
+      213: -5753860383896800941
+    second: House (Outside And Inside) Tileset_670
+  - first:
+      213: 6833862433908787125
+    second: House (Outside And Inside) Tileset_671
+  - first:
+      213: 5403312310952150867
+    second: House (Outside And Inside) Tileset_672
+  - first:
+      213: 421901994336734619
+    second: House (Outside And Inside) Tileset_673
+  - first:
+      213: 8079404808571421608
+    second: House (Outside And Inside) Tileset_674
+  - first:
+      213: -938967510415553242
+    second: House (Outside And Inside) Tileset_675
+  - first:
+      213: -5024266842990072952
+    second: House (Outside And Inside) Tileset_676
+  - first:
+      213: 246857669261814475
+    second: House (Outside And Inside) Tileset_677
+  - first:
+      213: -3950680305860027818
+    second: House (Outside And Inside) Tileset_678
+  - first:
+      213: -8057031073577382696
+    second: House (Outside And Inside) Tileset_679
+  - first:
+      213: 2798343786063938000
+    second: House (Outside And Inside) Tileset_680
+  - first:
+      213: 6460263538322793811
+    second: House (Outside And Inside) Tileset_681
+  - first:
+      213: -4047722984219747099
+    second: House (Outside And Inside) Tileset_682
+  - first:
+      213: -7346686006609856133
+    second: House (Outside And Inside) Tileset_683
+  - first:
+      213: 6805212879801805647
+    second: House (Outside And Inside) Tileset_684
+  - first:
+      213: -6220045555344210661
+    second: House (Outside And Inside) Tileset_685
+  - first:
+      213: 4276771568737151430
+    second: House (Outside And Inside) Tileset_686
+  - first:
+      213: -7433269685942804810
+    second: House (Outside And Inside) Tileset_687
+  - first:
+      213: -4185202598554019525
+    second: House (Outside And Inside) Tileset_688
+  - first:
+      213: -8489863310194286736
+    second: House (Outside And Inside) Tileset_689
+  - first:
+      213: 1839544078176617597
+    second: House (Outside And Inside) Tileset_690
+  - first:
+      213: 353541713145379667
+    second: House (Outside And Inside) Tileset_691
+  - first:
+      213: 8016732424037162527
+    second: House (Outside And Inside) Tileset_692
+  - first:
+      213: -3742129423075361813
+    second: House (Outside And Inside) Tileset_693
+  - first:
+      213: -826908075543659840
+    second: House (Outside And Inside) Tileset_694
+  - first:
+      213: -8918400398116842411
+    second: House (Outside And Inside) Tileset_695
+  - first:
+      213: -660305722761300973
+    second: House (Outside And Inside) Tileset_696
+  - first:
+      213: -3290754311864081008
+    second: House (Outside And Inside) Tileset_697
+  - first:
+      213: -7178485878314105883
+    second: House (Outside And Inside) Tileset 1_0
+  - first:
+      213: 4649702674412760487
+    second: House (Outside And Inside) Tileset 1_1
+  - first:
+      213: 6311665716474314322
+    second: House (Outside And Inside) Tileset 1_2
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: House (Outside And Inside) Tileset 1_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 432
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e30eed7025e06c90800000000000000
+      internalID: -7178485878314105883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House (Outside And Inside) Tileset 1_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 432
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ad6e8b72ff078040800000000000000
+      internalID: 4649702674412760487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: House (Outside And Inside) Tileset 1_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 432
+        width: 34
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25e767b478a879750800000000000000
+      internalID: 6311665716474314322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

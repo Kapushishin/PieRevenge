@@ -28,14 +28,12 @@ public abstract class NPCBehavior : MonoBehaviour, IInteracteable
 
     public bool GetInteracted(InteractionsBehaviour target)
     {
-        if (!_ink.BlockInteractions && _canTalk)
+        if (_canTalk)
         {
-            ActivateDialog();
             SomeAction();
+            ActivateDialog();
             if (_isDisableable)
-            {
-            _canTalk = false;
-            }
+                _canTalk = false;
         }
         return true;
     }

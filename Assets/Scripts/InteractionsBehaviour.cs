@@ -16,9 +16,14 @@ public class InteractionsBehaviour : MonoBehaviour
     [SerializeField] private GameObject _popUpBubble;
     [SerializeField] private TextMeshProUGUI _textPrompt;
 
+    protected GameObject _canvas;
+    protected InkManager _ink;
+
     private void Start()
     {
         EventManager.OnEndDialog += DisableNPC;
+        _canvas = GameObject.Find("Canvas Dialogs");
+        _ink = _canvas.gameObject.GetComponent<InkManager>();
     }
 
     private void OnDisable()
@@ -73,7 +78,7 @@ public class InteractionsBehaviour : MonoBehaviour
                         }
                     }
 
-                    if (Input.GetButtonDown("Interact"))
+                    if (Input.GetButtonDown("Interact") && !_ink.BlockInteractions)
                     {
                         // запустить реализацию интерфейса взаимодействия
                         _target.GetInteracted(this);

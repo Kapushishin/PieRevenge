@@ -72,6 +72,9 @@ TagManager:
   - name: Enemy
     uniqueID: 3973058975
     locked: 0
+  - name: Natural Light
+    uniqueID: 1941243681
+    locked: 0
   - name: Ground
     uniqueID: 2012837009
     locked: 0

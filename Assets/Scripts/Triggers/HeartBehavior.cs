@@ -9,6 +9,7 @@ public class HeartBehavior : MonoBehaviour, IInteracteable
     public bool GetInteracted(InteractionsBehaviour target)
     {
         EventManager.SendHeartUp();
+        SwitchParametres.objectsNames.Add(gameObject.name);
         Destroy(gameObject);
         return true;
     }

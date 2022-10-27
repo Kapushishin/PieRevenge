@@ -55,6 +55,7 @@ public class InkManager : MonoBehaviour
     {
         Story = new Story(text.text);
         DisplayNextLine();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterControl>().CanMove = false;
     }
 
     // Отображение следующей строки
@@ -70,6 +71,7 @@ public class InkManager : MonoBehaviour
 
         if (Story.currentChoices.Count > 0)
         {
+            _writingSFX.pitch = UnityEngine.Random.Range(.4f, 1f);
             _writingSFX.Play();
             Invoke("DisplayChoices", _textWriter._textToWrite.Length / 10f);
         }
@@ -81,6 +83,7 @@ public class InkManager : MonoBehaviour
             _canvas.SetActive(false);
             // разблокировать возможность открывать диалог
             BlockInteractions = false;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterControl>().CanMove = true;
             // выключить непися если надо
             EventManager.SendDestroyNPC();
             SpeedWriter = .1f;

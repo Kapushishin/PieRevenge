@@ -18,6 +18,7 @@ public class PeachBehavior : MonoBehaviour, IInteracteable
     public bool GetInteracted(InteractionsBehaviour target)
     {
         EventManager.SendPeachUp();
+        SwitchParametres.objectsNames.Add(gameObject.name);
         Destroy(gameObject);
         return true;
     }

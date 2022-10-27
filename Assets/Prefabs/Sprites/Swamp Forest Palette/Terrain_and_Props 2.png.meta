@@ -1,0 +1,1755 @@
+fileFormatVersion: 2
+guid: f92ed592a4b338946bb3d898ae15ba04
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1492970060332131113
+    second: Terrain_and_Props 1_0
+  - first:
+      213: -4855926211722530041
+    second: Terrain_and_Props 1_1
+  - first:
+      213: 7514837467645215303
+    second: Terrain_and_Props 1_2
+  - first:
+      213: -5406020844963370245
+    second: Terrain_and_Props 1_3
+  - first:
+      213: -8403690061763638389
+    second: Terrain_and_Props 1_4
+  - first:
+      213: -5676579855426042579
+    second: Terrain_and_Props 1_5
+  - first:
+      213: 3324419090508354957
+    second: Terrain_and_Props 1_6
+  - first:
+      213: -9199003269148479340
+    second: Terrain_and_Props 1_7
+  - first:
+      213: -2094807226769079271
+    second: Terrain_and_Props 1_8
+  - first:
+      213: -5017997497689645208
+    second: Terrain_and_Props 1_9
+  - first:
+      213: 6302513119425430245
+    second: Terrain_and_Props 1_10
+  - first:
+      213: -8051783154349239331
+    second: Terrain_and_Props 1_11
+  - first:
+      213: 345596230673381553
+    second: Terrain_and_Props 1_12
+  - first:
+      213: -2521709792452490963
+    second: Terrain_and_Props 1_13
+  - first:
+      213: 5077207248446539942
+    second: Terrain_and_Props 1_14
+  - first:
+      213: 7878879897020999015
+    second: Terrain_and_Props 1_15
+  - first:
+      213: -5958455422883756164
+    second: Terrain_and_Props 1_16
+  - first:
+      213: -6297155955432320862
+    second: Terrain_and_Props 1_17
+  - first:
+      213: 5409515782835194926
+    second: Terrain_and_Props 1_18
+  - first:
+      213: 368810949446540451
+    second: Terrain_and_Props 1_19
+  - first:
+      213: -6469561238992244850
+    second: Terrain_and_Props 1_20
+  - first:
+      213: 9089275108567241018
+    second: Terrain_and_Props 1_21
+  - first:
+      213: 4411825029096659175
+    second: Terrain_and_Props 1_22
+  - first:
+      213: 4169368156000402896
+    second: Terrain_and_Props 1_23
+  - first:
+      213: -6388710856545374593
+    second: Terrain_and_Props 1_24
+  - first:
+      213: 1396789702269902909
+    second: Terrain_and_Props 1_25
+  - first:
+      213: -2335509835705389405
+    second: Terrain_and_Props 1_26
+  - first:
+      213: 8598977504487232047
+    second: Terrain_and_Props 1_27
+  - first:
+      213: 8802186096282913233
+    second: Terrain_and_Props 1_28
+  - first:
+      213: 5905457505244099692
+    second: Terrain_and_Props 1_29
+  - first:
+      213: 5318403415452877870
+    second: Terrain_and_Props 1_30
+  - first:
+      213: 6928014288625378307
+    second: Terrain_and_Props 1_31
+  - first:
+      213: -8939246635380747362
+    second: Terrain_and_Props 1_32
+  - first:
+      213: -361484274934915873
+    second: Terrain_and_Props 1_33
+  - first:
+      213: -7723948193024031516
+    second: Terrain_and_Props 1_34
+  - first:
+      213: 5198441780297629650
+    second: Terrain_and_Props 1_35
+  - first:
+      213: -7003626887505376375
+    second: Terrain_and_Props 1_36
+  - first:
+      213: -3775272214024584136
+    second: Terrain_and_Props 1_37
+  - first:
+      213: -4824187010670374504
+    second: Terrain_and_Props 1_38
+  - first:
+      213: 3328443477901988698
+    second: Terrain_and_Props 1_39
+  - first:
+      213: 2708988696729344738
+    second: Terrain_and_Props 1_40
+  - first:
+      213: -6981105318219538272
+    second: Terrain_and_Props 1_41
+  - first:
+      213: 4513021991718442821
+    second: Terrain_and_Props 1_42
+  - first:
+      213: -7291629182517131889
+    second: Terrain_and_Props 1_43
+  - first:
+      213: 5845256231161861740
+    second: Terrain_and_Props 1_44
+  - first:
+      213: 1386347464584217051
+    second: Terrain_and_Props 1_45
+  - first:
+      213: 280517597491500678
+    second: Terrain_and_Props 1_46
+  - first:
+      213: -203708180245006667
+    second: Terrain_and_Props 1_47
+  - first:
+      213: -4678061318007184479
+    second: Terrain_and_Props 1_48
+  - first:
+      213: -7175745304355195131
+    second: Terrain_and_Props 1_49
+  - first:
+      213: -3523104258433197520
+    second: Terrain_and_Props 1_50
+  - first:
+      213: -6483307434888642999
+    second: Terrain_and_Props 1_51
+  - first:
+      213: -4954322455580344096
+    second: Terrain_and_Props 1_52
+  - first:
+      213: -5336537493565664496
+    second: Terrain_and_Props 1_53
+  - first:
+      213: 4293066819039133636
+    second: Terrain_and_Props 1_54
+  - first:
+      213: 1697956088422577026
+    second: Terrain_and_Props 1_55
+  - first:
+      213: 8764379389938300412
+    second: Terrain_and_Props 1_56
+  - first:
+      213: 5311282019658150565
+    second: Terrain_and_Props 1_57
+  - first:
+      213: 2233008965888453308
+    second: Terrain_and_Props 1_58
+  - first:
+      213: -1422276545532988723
+    second: Terrain_and_Props 1_59
+  - first:
+      213: 6194062505473029094
+    second: Terrain_and_Props 1_60
+  - first:
+      213: 7903340689746381181
+    second: Terrain_and_Props 1_61
+  - first:
+      213: 5842393644577111670
+    second: Terrain_and_Props 1_62
+  - first:
+      213: -287254486927216281
+    second: Terrain_and_Props 1_63
+  - first:
+      213: 3345419434480128101
+    second: Terrain_and_Props 1_64
+  - first:
+      213: 8314237166653262411
+    second: Terrain_and_Props 1_65
+  - first:
+      213: 1358653366850322127
+    second: Terrain_and_Props 1_66
+  - first:
+      213: -3777321412121657672
+    second: Terrain_and_Props 1_67
+  - first:
+      213: -1638977698161872729
+    second: Terrain_and_Props 1_68
+  - first:
+      213: -6809282635154187267
+    second: Terrain_and_Props 1_69
+  - first:
+      213: -2734708346178795723
+    second: Terrain_and_Props 1_70
+  - first:
+      213: -4854817267793571959
+    second: Terrain_and_Props 1_71
+  - first:
+      213: -2100446160178340937
+    second: Terrain_and_Props 1_72
+  - first:
+      213: -2628258027268556275
+    second: Terrain_and_Props 1_73
+  - first:
+      213: 6073224322278086834
+    second: Terrain_and_Props 1_74
+  - first:
+      213: 2151472823498030170
+    second: Terrain_and_Props 1_75
+  - first:
+      213: 6119461138315050484
+    second: Terrain_and_Props 1_76
+  - first:
+      213: 951700120007504718
+    second: Terrain_and_Props 1_77
+  - first:
+      213: -4923364986381035633
+    second: Terrain_and_Props 1_78
+  - first:
+      213: 8721521911491361001
+    second: Terrain_and_Props 1_79
+  - first:
+      213: -5387573077072692670
+    second: Terrain_and_Props 1_80
+  - first:
+      213: -5750107907765738693
+    second: Terrain_and_Props 1_81
+  - first:
+      213: -4641826067246925958
+    second: Terrain_and_Props 1_82
+  - first:
+      213: 5852480493492843537
+    second: Terrain_and_Props 1_83
+  - first:
+      213: 9168672413269233460
+    second: Terrain_and_Props 1_84
+  - first:
+      213: -6948800599415226413
+    second: Terrain_and_Props 1_85
+  - first:
+      213: -2618237590378635136
+    second: Terrain_and_Props 1_86
+  - first:
+      213: -3437023272626793937
+    second: Terrain_and_Props 1_87
+  - first:
+      213: 8563483610005287581
+    second: Terrain_and_Props 1_88
+  - first:
+      213: -7249873532402025940
+    second: Terrain_and_Props 1_89
+  - first:
+      213: -7473375882549922122
+    second: Terrain_and_Props 1_90
+  - first:
+      213: -6757576725689081796
+    second: Terrain_and_Props 1_91
+  - first:
+      213: -3651691750674883597
+    second: Terrain_and_Props 1_92
+  - first:
+      213: 2254600097664985404
+    second: Terrain_and_Props 1_93
+  - first:
+      213: -5935493395843402662
+    second: Terrain_and_Props 1_94
+  - first:
+      213: -2231824648874677680
+    second: Terrain_and_Props 1_95
+  - first:
+      213: 8093788387884007423
+    second: Terrain_and_Props 1_96
+  - first:
+      213: 2539072163786456035
+    second: Terrain_and_Props 1_97
+  - first:
+      213: 609783787405071755
+    second: Terrain_and_Props 1_98
+  - first:
+      213: -3032666520076390599
+    second: Terrain_and_Props 1_99
+  - first:
+      213: -549282479280404953
+    second: Terrain_and_Props 1_100
+  - first:
+      213: 3278460365327885833
+    second: Terrain_and_Props 1_101
+  - first:
+      213: -2354436626782550280
+    second: Terrain_and_Props 1_102
+  - first:
+      213: 7156838396986368432
+    second: Terrain_and_Props 1_103
+  - first:
+      213: -2466125314389750739
+    second: Terrain_and_Props 1_104
+  - first:
+      213: -5280816724384693042
+    second: Terrain_and_Props 1_105
+  - first:
+      213: -5468200954219226471
+    second: Terrain_and_Props 1_106
+  - first:
+      213: -3434367319496160140
+    second: Terrain_and_Props 1_107
+  - first:
+      213: 4396657630597498699
+    second: Terrain_and_Props 1_108
+  - first:
+      213: -7646955145521750000
+    second: Terrain_and_Props 1_109
+  - first:
+      213: -5655597739617290252
+    second: Terrain_and_Props 1_110
+  - first:
+      213: -4701679271504218824
+    second: Terrain_and_Props 1_111
+  - first:
+      213: 1575424741739934489
+    second: Terrain_and_Props 1_112
+  - first:
+      213: 1935023015561814077
+    second: Terrain_and_Props 1_113
+  - first:
+      213: -5238917638390175589
+    second: Terrain_and_Props 1_114
+  - first:
+      213: -3337118268564745365
+    second: Terrain_and_Props 1_115
+  - first:
+      213: 5548113065323367260
+    second: Terrain_and_Props 1_116
+  - first:
+      213: 3978135721154273978
+    second: Terrain_and_Props 1_117
+  - first:
+      213: 4422159703390423022
+    second: Terrain_and_Props 1_118
+  - first:
+      213: 1169385942090855768
+    second: Terrain_and_Props 1_119
+  - first:
+      213: -428037497279619039
+    second: Terrain_and_Props 1_120
+  - first:
+      213: 3339191067601390888
+    second: Terrain_and_Props 1_121
+  - first:
+      213: 5052439626799406653
+    second: Terrain_and_Props 1_122
+  - first:
+      213: -7343024827362801898
+    second: Terrain_and_Props 1_123
+  - first:
+      213: 5310727658799241259
+    second: Terrain_and_Props 1_124
+  - first:
+      213: 2511759069109795348
+    second: Terrain_and_Props 1_125
+  - first:
+      213: -6434168573770046373
+    second: Terrain_and_Props 1_126
+  - first:
+      213: -5432493840271125269
+    second: Terrain_and_Props 1_127
+  - first:
+      213: -4677763052779195064
+    second: Terrain_and_Props 1_128
+  - first:
+      213: 3550249065777959001
+    second: Terrain_and_Props 1_129
+  - first:
+      213: 8781560728954795713
+    second: Terrain_and_Props 1_130
+  - first:
+      213: -3813059757040828771
+    second: Terrain_and_Props 1_131
+  - first:
+      213: -5174410406261190246
+    second: Terrain_and_Props 1_132
+  - first:
+      213: -4011255673316491909
+    second: Terrain_and_Props 1_133
+  - first:
+      213: 3359712244011303630
+    second: Terrain_and_Props 1_134
+  - first:
+      213: -4317835983558092048
+    second: Terrain_and_Props 1_135
+  - first:
+      213: -5639118557527243744
+    second: Terrain_and_Props 1_136
+  - first:
+      213: -5236110950139214651
+    second: Terrain_and_Props 1_137
+  - first:
+      213: -3529063086683177015
+    second: Terrain_and_Props 1_138
+  - first:
+      213: 2471297760629643574
+    second: Terrain_and_Props 1_139
+  - first:
+      213: -2481297923868786849
+    second: Terrain_and_Props 1_140
+  - first:
+      213: -8943389669494647305
+    second: Terrain_and_Props 1_141
+  - first:
+      213: -7509842348906456414
+    second: Terrain_and_Props 1_142
+  - first:
+      213: 1782168992316844446
+    second: Terrain_and_Props 1_143
+  - first:
+      213: -607410953827719428
+    second: Terrain_and_Props 1_144
+  - first:
+      213: 6511958346126035238
+    second: Terrain_and_Props 1_145
+  - first:
+      213: -1064295934975110042
+    second: Terrain_and_Props 1_146
+  - first:
+      213: 2936747550952939452
+    second: Terrain_and_Props 1_147
+  - first:
+      213: 7351273329447735589
+    second: Terrain_and_Props 1_148
+  - first:
+      213: 4050164484223461495
+    second: Terrain_and_Props 1_149
+  - first:
+      213: 307982619826168080
+    second: Terrain_and_Props 1_150
+  - first:
+      213: 5779382633507835953
+    second: Terrain_and_Props 1_151
+  - first:
+      213: 6138676767342604354
+    second: Terrain_and_Props 1_152
+  - first:
+      213: -6820158190223403741
+    second: Terrain_and_Props 1_153
+  - first:
+      213: -3784528683035916414
+    second: Terrain_and_Props 1_154
+  - first:
+      213: -6111058793512063124
+    second: Terrain_and_Props 1_155
+  - first:
+      213: -8912185956311449469
+    second: Terrain_and_Props 1_156
+  - first:
+      213: 4011937849441127886
+    second: Terrain_and_Props 1_157
+  - first:
+      213: 6363793700519298599
+    second: Terrain_and_Props 1_158
+  - first:
+      213: 7085749782551740193
+    second: Terrain_and_Props 1_159
+  - first:
+      213: -1707067245488544641
+    second: Terrain_and_Props 1_160
+  - first:
+      213: 2068561471377414800
+    second: Terrain_and_Props 1_161
+  - first:
+      213: -5096143294714939050
+    second: Terrain_and_Props 1_162
+  - first:
+      213: 1104071525712225831
+    second: Terrain_and_Props 1_163
+  - first:
+      213: -3923277981695177143
+    second: Terrain_and_Props 1_164
+  - first:
+      213: 5905008706271949199
+    second: Terrain_and_Props 1_165
+  - first:
+      213: -7961560255832904078
+    second: Terrain_and_Props 1_166
+  - first:
+      213: 2272082496878489234
+    second: Terrain_and_Props 1_167
+  - first:
+      213: -9024456949397297344
+    second: Terrain_and_Props 1_168
+  - first:
+      213: -6563690608126013371
+    second: Terrain_and_Props 1_169
+  - first:
+      213: 7740924907559946605
+    second: Terrain_and_Props 1_170
+  - first:
+      213: 628773785826240059
+    second: Terrain_and_Props 1_171
+  - first:
+      213: -545581124364966214
+    second: Terrain_and_Props 1_172
+  - first:
+      213: 6372763431197947026
+    second: Terrain_and_Props 1_173
+  - first:
+      213: 8265219153772564399
+    second: Terrain_and_Props 1_174
+  - first:
+      213: -6779460849164465258
+    second: Terrain_and_Props 1_175
+  - first:
+      213: -1931568987671827432
+    second: Terrain_and_Props 1_176
+  - first:
+      213: 7135897948675715622
+    second: Terrain_and_Props 1_177
+  - first:
+      213: -7698227219807499792
+    second: Terrain_and_Props 1_178
+  - first:
+      213: 43920489054694555
+    second: Terrain_and_Props 1_179
+  - first:
+      213: 6539804233464695763
+    second: Terrain_and_Props 1_180
+  - first:
+      213: 8707144814951932731
+    second: Terrain_and_Props 1_181
+  - first:
+      213: 4823127427463461660
+    second: Terrain_and_Props 1_182
+  - first:
+      213: -462514398410101248
+    second: Terrain_and_Props 1_183
+  - first:
+      213: 9130236618717929332
+    second: Terrain_and_Props 1_184
+  - first:
+      213: -4477461580265440688
+    second: Terrain_and_Props 1_185
+  - first:
+      213: 4722218088097837734
+    second: Terrain_and_Props 1_186
+  - first:
+      213: -8825700343948569993
+    second: Terrain_and_Props 1_187
+  - first:
+      213: -2232106784290784406
+    second: Terrain_and_Props 1_188
+  - first:
+      213: -4178129463860425090
+    second: Terrain_and_Props 1_189
+  - first:
+      213: 8599653031727638632
+    second: Terrain_and_Props 1_190
+  - first:
+      213: -2935298017721071435
+    second: Terrain_and_Props 1_191
+  - first:
+      213: 2519531918606786860
+    second: Terrain_and_Props 1_192
+  - first:
+      213: -7818581522308552768
+    second: Terrain_and_Props 1_193
+  - first:
+      213: 1234600568954101742
+    second: Terrain_and_Props 1_194
+  - first:
+      213: -5409140346492270648
+    second: Terrain_and_Props 1_195
+  - first:
+      213: -3354740803445875365
+    second: Terrain_and_Props 1_196
+  - first:
+      213: 1690068860558696225
+    second: Terrain_and_Props 1_197
+  - first:
+      213: 2321016257200912943
+    second: Terrain_and_Props 1_198
+  - first:
+      213: 5420966943024201313
+    second: Terrain_and_Props 1_199
+  - first:
+      213: 1044046903164960475
+    second: Terrain_and_Props 1_200
+  - first:
+      213: -6004149017293640685
+    second: Terrain_and_Props 1_201
+  - first:
+      213: -4954881362850453086
+    second: Terrain_and_Props 1_202
+  - first:
+      213: -4257286060492291845
+    second: Terrain_and_Props 1_203
+  - first:
+      213: 1426150505801424085
+    second: Terrain_and_Props 1_204
+  - first:
+      213: -8602343095185132990
+    second: Terrain_and_Props 1_205
+  - first:
+      213: -3271987116646836126
+    second: Terrain_and_Props 1_206
+  - first:
+      213: 4309233653236958398
+    second: Terrain_and_Props 1_207
+  - first:
+      213: 1026723250661164251
+    second: Terrain_and_Props 1_208
+  - first:
+      213: 2065708986915340608
+    second: Terrain_and_Props 1_209
+  - first:
+      213: 319511919952724461
+    second: Terrain_and_Props 1_210
+  - first:
+      213: 1885645136524317974
+    second: Terrain_and_Props 1_211
+  - first:
+      213: 5842400905169710127
+    second: Terrain_and_Props 1_212
+  - first:
+      213: -604715542707009574
+    second: Terrain_and_Props 1_213
+  - first:
+      213: 4607362044604911978
+    second: Terrain_and_Props 1_214
+  - first:
+      213: -8430687974139432975
+    second: Terrain_and_Props 1_215
+  - first:
+      213: -7442895071613328667
+    second: Terrain_and_Props 1_216
+  - first:
+      213: -5044705147102885037
+    second: Terrain_and_Props 1_217
+  - first:
+      213: -6098011677097727218
+    second: Terrain_and_Props 1_218
+  - first:
+      213: 5328547058129457627
+    second: Terrain_and_Props 1_219
+  - first:
+      213: -1415582951590698996
+    second: Terrain_and_Props 1_220
+  - first:
+      213: -7920599956822951723
+    second: Terrain_and_Props 1_221
+  - first:
+      213: -5854756335602772135
+    second: Terrain_and_Props 1_222
+  - first:
+      213: -5928107968047475643
+    second: Terrain_and_Props 1_223
+  - first:
+      213: -1857122195964883545
+    second: Terrain_and_Props 1_224
+  - first:
+      213: 3733851577619776225
+    second: Terrain_and_Props 1_225
+  - first:
+      213: -3040400421469243345
+    second: Terrain_and_Props 1_226
+  - first:
+      213: -990942186214220405
+    second: Terrain_and_Props 1_227
+  - first:
+      213: 2814983723711917207
+    second: Terrain_and_Props 1_228
+  - first:
+      213: -5250422791326945955
+    second: Terrain_and_Props 1_229
+  - first:
+      213: -962652287719176758
+    second: Terrain_and_Props 1_230
+  - first:
+      213: 664197256807760110
+    second: Terrain_and_Props 1_231
+  - first:
+      213: -2826869809791639685
+    second: Terrain_and_Props 1_232
+  - first:
+      213: -1740259008197737230
+    second: Terrain_and_Props 1_233
+  - first:
+      213: 167913880876015379
+    second: Terrain_and_Props 1_234
+  - first:
+      213: 4279585226395579228
+    second: Terrain_and_Props 1_235
+  - first:
+      213: -3862904418091333579
+    second: Terrain_and_Props 1_236
+  - first:
+      213: -7419839947978888310
+    second: Terrain_and_Props 1_237
+  - first:
+      213: -3052913694503850380
+    second: Terrain_and_Props 1_238
+  - first:
+      213: -721815214278841402
+    second: Terrain_and_Props 1_239
+  - first:
+      213: -7961432574976667336
+    second: Terrain_and_Props 1_240
+  - first:
+      213: 1072194664081272122
+    second: Terrain_and_Props 1_241
+  - first:
+      213: -7330649837689363351
+    second: Terrain_and_Props 1_242
+  - first:
+      213: 3653965228722967369
+    second: Terrain_and_Props 1_243
+  - first:
+      213: 6086603973001125112
+    second: Terrain_and_Props 1_244
+  - first:
+      213: 2077094116312758413
+    second: Terrain_and_Props 1_245
+  - first:
+      213: 1253348068467064491
+    second: Terrain_and_Props 1_246
+  - first:
+      213: -3910320748191324758
+    second: Terrain_and_Props 1_247
+  - first:
+      213: 3335365017246700362
+    second: Terrain_and_Props 1_248
+  - first:
+      213: -621900808360877827
+    second: Terrain_and_Props 1_249
+  - first:
+      213: -224891950620691969
+    second: Terrain_and_Props 1_250
+  - first:
+      213: 5187513898901811354
+    second: Terrain_and_Props 1_251
+  - first:
+      213: 638727512770482022
+    second: Terrain_and_Props 1_252
+  - first:
+      213: -503140682788807111
+    second: Terrain_and_Props 1_253
+  - first:
+      213: 6424423619071236565
+    second: Terrain_and_Props 1_254
+  - first:
+      213: 2303795309639296021
+    second: Terrain_and_Props 1_255
+  - first:
+      213: -4839379592865879559
+    second: Terrain_and_Props 1_256
+  - first:
+      213: -8885734266045437743
+    second: Terrain_and_Props 1_257
+  - first:
+      213: -4711109741665254662
+    second: Terrain_and_Props 1_258
+  - first:
+      213: 3104318459375752399
+    second: Terrain_and_Props 1_259
+  - first:
+      213: 8300963594686684031
+    second: Terrain_and_Props 1_260
+  - first:
+      213: 2019083692036453065
+    second: Terrain_and_Props 1_261
+  - first:
+      213: 8666674035313190927
+    second: Terrain_and_Props 1_262
+  - first:
+      213: 6817870425460951671
+    second: Terrain_and_Props 1_263
+  - first:
+      213: 166980641226948709
+    second: Terrain_and_Props 1_264
+  - first:
+      213: -8577084089941219040
+    second: Terrain_and_Props 1_265
+  - first:
+      213: 5177232520054363516
+    second: Terrain_and_Props 1_266
+  - first:
+      213: -1308751006828079272
+    second: Terrain_and_Props 1_267
+  - first:
+      213: 529511729455325626
+    second: Terrain_and_Props 1_268
+  - first:
+      213: -8907353082219667125
+    second: Terrain_and_Props 1_269
+  - first:
+      213: 5442516780370940764
+    second: Terrain_and_Props 1_270
+  - first:
+      213: -6522664779071017954
+    second: Terrain_and_Props 1_271
+  - first:
+      213: 2035838627770678354
+    second: Terrain_and_Props 1_272
+  - first:
+      213: -6833485484985210578
+    second: Terrain_and_Props 1_273
+  - first:
+      213: 2633523715800858754
+    second: Terrain_and_Props 1_274
+  - first:
+      213: -6114925893563258920
+    second: Terrain_and_Props 1_275
+  - first:
+      213: -4343461052842003813
+    second: Terrain_and_Props 1_276
+  - first:
+      213: 584303060842119931
+    second: Terrain_and_Props 1_277
+  - first:
+      213: 8392445681764727932
+    second: Terrain_and_Props 1_278
+  - first:
+      213: 5160970281162633018
+    second: Terrain_and_Props 1_279
+  - first:
+      213: -8372022679265860498
+    second: Terrain_and_Props 1_280
+  - first:
+      213: -2291101192911866461
+    second: Terrain_and_Props 1_281
+  - first:
+      213: 8192730116282221222
+    second: Terrain_and_Props 1_282
+  - first:
+      213: 5540404281187405031
+    second: Terrain_and_Props 1_283
+  - first:
+      213: 4244522809934712157
+    second: Terrain_and_Props 1_284
+  - first:
+      213: -356597823501469103
+    second: Terrain_and_Props 1_285
+  - first:
+      213: 1559969142064581210
+    second: Terrain_and_Props 1_286
+  - first:
+      213: 1498227291332240628
+    second: Terrain_and_Props 1_287
+  - first:
+      213: 3387896154291663825
+    second: Terrain_and_Props 1_288
+  - first:
+      213: -5446418637534712834
+    second: Terrain_and_Props 1_289
+  - first:
+      213: -6475133246693265576
+    second: Terrain_and_Props 1_290
+  - first:
+      213: 3648171128159078057
+    second: Terrain_and_Props 1_291
+  - first:
+      213: 1451358791780626116
+    second: Terrain_and_Props 1_292
+  - first:
+      213: 6144291554890298227
+    second: Terrain_and_Props 1_293
+  - first:
+      213: -7185275787984427943
+    second: Terrain_and_Props 1_294
+  - first:
+      213: -1637729093365823464
+    second: Terrain_and_Props 1_295
+  - first:
+      213: -2214430899851813148
+    second: Terrain_and_Props 1_296
+  - first:
+      213: 5911142180516177247
+    second: Terrain_and_Props 1_297
+  - first:
+      213: -966184338952375173
+    second: Terrain_and_Props 1_298
+  - first:
+      213: -2495446090534502639
+    second: Terrain_and_Props 1_299
+  - first:
+      213: -1109506318562100416
+    second: Terrain_and_Props 1_300
+  - first:
+      213: -746010084885972266
+    second: Terrain_and_Props 1_301
+  - first:
+      213: 2779945942423360947
+    second: Terrain_and_Props 1_302
+  - first:
+      213: -3327439181151919449
+    second: Terrain_and_Props 1_303
+  - first:
+      213: 6575688741301107839
+    second: Terrain_and_Props 1_304
+  - first:
+      213: -7954980462496769093
+    second: Terrain_and_Props 1_305
+  - first:
+      213: -2071753042453293385
+    second: Terrain_and_Props 1_306
+  - first:
+      213: -2730586369921963712
+    second: Terrain_and_Props 1_307
+  - first:
+      213: 6123059611578460280
+    second: Terrain_and_Props 1_308
+  - first:
+      213: -8967212934562739977
+    second: Terrain_and_Props 1_309
+  - first:
+      213: 5807813776565243090
+    second: Terrain_and_Props 1_310
+  - first:
+      213: 188900780958213283
+    second: Terrain_and_Props 1_311
+  - first:
+      213: -69768038774844496
+    second: Terrain_and_Props 1_312
+  - first:
+      213: -9203014456809458015
+    second: Terrain_and_Props 1_313
+  - first:
+      213: 6197943325461996860
+    second: Terrain_and_Props 1_314
+  - first:
+      213: 1900316600648284629
+    second: Terrain_and_Props 1_315
+  - first:
+      213: 6553865410200978287
+    second: Terrain_and_Props 1_316
+  - first:
+      213: -4094832715309344326
+    second: Terrain_and_Props 1_317
+  - first:
+      213: -251670088730916367
+    second: Terrain_and_Props 1_318
+  - first:
+      213: -4913559070720403177
+    second: Terrain_and_Props 1_319
+  - first:
+      213: -8476319421331284956
+    second: Terrain_and_Props 1_320
+  - first:
+      213: 4581511998299892977
+    second: Terrain_and_Props 1_321
+  - first:
+      213: -6979998531471312441
+    second: Terrain_and_Props 1_322
+  - first:
+      213: 2035616577815847429
+    second: Terrain_and_Props 1_323
+  - first:
+      213: -5196238673886278425
+    second: Terrain_and_Props 1_324
+  - first:
+      213: 7149226565902687352
+    second: Terrain_and_Props 1_325
+  - first:
+      213: 4702359185794328254
+    second: Terrain_and_Props 1_326
+  - first:
+      213: -7221413991107720481
+    second: Terrain_and_Props 1_327
+  - first:
+      213: 8437332398594143267
+    second: Terrain_and_Props 1_328
+  - first:
+      213: -462270671194586573
+    second: Terrain_and_Props 1_329
+  - first:
+      213: 2243140983092402057
+    second: Terrain_and_Props 1_330
+  - first:
+      213: -717255931176664931
+    second: Terrain_and_Props 1_331
+  - first:
+      213: -1225098504075583310
+    second: Terrain_and_Props 1_332
+  - first:
+      213: -548201208856178736
+    second: Terrain_and_Props 1_333
+  - first:
+      213: 5068173484650161427
+    second: Terrain_and_Props 1_334
+  - first:
+      213: -5440402300898576977
+    second: Terrain_and_Props 1_335
+  - first:
+      213: 9063151149101829694
+    second: Terrain_and_Props 1_336
+  - first:
+      213: -2431698087882239900
+    second: Terrain_and_Props 1_337
+  - first:
+      213: -6406369588303458417
+    second: Terrain_and_Props 1_338
+  - first:
+      213: 8191579417234633657
+    second: Terrain_and_Props 1_339
+  - first:
+      213: 983106246695825143
+    second: Terrain_and_Props 1_340
+  - first:
+      213: -2006965786593394972
+    second: Terrain_and_Props 1_341
+  - first:
+      213: 2556771843150916679
+    second: Terrain_and_Props 1_342
+  - first:
+      213: 5303706184061116016
+    second: Terrain_and_Props 1_343
+  - first:
+      213: 5903056629785153199
+    second: Terrain_and_Props 1_344
+  - first:
+      213: 7942410823679719274
+    second: Terrain_and_Props 1_345
+  - first:
+      213: -6294967503692436010
+    second: Terrain_and_Props 1_346
+  - first:
+      213: 8567241437523716219
+    second: Terrain_and_Props 1_347
+  - first:
+      213: 5773059906605015946
+    second: Terrain_and_Props 1_348
+  - first:
+      213: 1561812484230683026
+    second: Terrain_and_Props 1_349
+  - first:
+      213: 202259123834775030
+    second: Terrain_and_Props 1_350
+  - first:
+      213: -2524338433681918306
+    second: Terrain_and_Props 1_351
+  - first:
+      213: 8063048503129155871
+    second: Terrain_and_Props 1_352
+  - first:
+      213: 1548961048401169750
+    second: Terrain_and_Props 1_353
+  - first:
+      213: -2927028506290725872
+    second: Terrain_and_Props 1_354
+  - first:
+      213: 3850156973490271578
+    second: Terrain_and_Props 1_355
+  - first:
+      213: -186572143502843315
+    second: Terrain_and_Props 1_356
+  - first:
+      213: 5094850289297992440
+    second: Terrain_and_Props 1_357
+  - first:
+      213: 8278490305129785292
+    second: Terrain_and_Props 1_358
+  - first:
+      213: -8411014120931848162
+    second: Terrain_and_Props 1_359
+  - first:
+      213: -3503693924800912352
+    second: Terrain_and_Props 1_360
+  - first:
+      213: 8160401537537452569
+    second: Terrain_and_Props 1_361
+  - first:
+      213: 3768541112918760215
+    second: Terrain_and_Props 1_362
+  - first:
+      213: -8871783515793505074
+    second: Terrain_and_Props 1_363
+  - first:
+      213: -8372230660041972497
+    second: Terrain_and_Props 1_364
+  - first:
+      213: -7229048780379470674
+    second: Terrain_and_Props 1_365
+  - first:
+      213: 9114298998221592847
+    second: Terrain_and_Props 1_366
+  - first:
+      213: -5762117696162244900
+    second: Terrain_and_Props 1_367
+  - first:
+      213: -3353977392545042961
+    second: Terrain_and_Props 1_368
+  - first:
+      213: 8773471639686617187
+    second: Terrain_and_Props 1_369
+  - first:
+      213: 4075378361201690022
+    second: Terrain_and_Props 1_370
+  - first:
+      213: -8444377007063849088
+    second: Terrain_and_Props 1_371
+  - first:
+      213: -875472310609705580
+    second: Terrain_and_Props 1_372
+  - first:
+      213: -7627383109954707473
+    second: Terrain_and_Props 1_373
+  - first:
+      213: 2128276300981400142
+    second: Terrain_and_Props 1_374
+  - first:
+      213: 1673819049926452045
+    second: Terrain_and_Props 1_375
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 288
+        width: 62
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226dc2653708aba60800000000000000
+      internalID: 7690600546543916578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_1
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 423
+        width: 105
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52ccfe69cd1ba960800000000000000
+      internalID: 7614212345987646046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 512
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d9c85b9af5974010800000000000000
+      internalID: 1173071131533953496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_3
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 423
+        width: 105
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9990716515ae1a70800000000000000
+      internalID: 8799652233176193438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 480
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea9c8fc6e6067350800000000000000
+      internalID: 6014001940794219246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 371
+        width: 95
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7a4a58aaf6644f0800000000000000
+      internalID: -844865101908105299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 369
+        width: 96
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6296987eda043c0800000000000000
+      internalID: -4377307627849701714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_7
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 336
+        width: 8
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c904af96debf5af0800000000000000
+      internalID: -405395612429448764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 336
+        width: 16
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77f34f32a3f47cde0800000000000000
+      internalID: -1312993655225303177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_9
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 336
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c5cf2eb91e28ff0800000000000000
+      internalID: -35217787421172718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 256
+        width: 103
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153523949df702050800000000000000
+      internalID: 5773755293501641553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_11
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 192
+        width: 239
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9316e0f087a759e0800000000000000
+      internalID: -1632652167659252838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 192
+        width: 26
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e1e13428b3a1c9e0800000000000000
+      internalID: -1602819981090627100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_13
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 192
+        width: 28
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a074f830968e82fd0800000000000000
+      internalID: -2366386066454264054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_14
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 160
+        width: 29
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994e0122b0c300d90800000000000000
+      internalID: -7133635791241026407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_15
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 160
+        width: 53
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f7ee7cd5a8d3950800000000000000
+      internalID: 6430447978345824087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_16
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 155
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5eec0e4ffd482910800000000000000
+      internalID: 1812784608938094174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 64
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04b541b3532142c0800000000000000
+      internalID: -4449236114501946354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 80
+        width: 101
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe94b576e40ca790800000000000000
+      internalID: -7517628290124439819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_19
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 86
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7a50e8c5a91d220800000000000000
+      internalID: 2508956189732480989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_20
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 0
+        width: 70
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8714257134d5bc4a0800000000000000
+      internalID: -6572056688481648264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_21
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 16
+        width: 16
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9049e3824b26190800000000000000
+      internalID: -7970610305550775834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Terrain_and_Props 2_22
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 64
+        width: 40
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f4d43fa17fe0ce00800000000000000
+      internalID: 1063112783609255160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
