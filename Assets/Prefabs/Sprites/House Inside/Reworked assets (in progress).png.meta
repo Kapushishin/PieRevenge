@@ -834,7 +834,7 @@ TextureImporter:
       213: 8846851857447266220
     second: Reworked assets (in progress)_276
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -855,6 +855,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -893,6 +894,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -944,6 +946,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -6784,6 +6810,284 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Reworked assets (in progress)_46: 6527043447948509957
+      Reworked assets (in progress)_7: 8028714819876384771
+      Reworked assets (in progress)_68: 5872002698339930384
+      Reworked assets (in progress)_266: 4471191390085520078
+      Reworked assets (in progress)_93: 976824889390758398
+      Reworked assets (in progress)_276: 8846851857447266220
+      Reworked assets (in progress)_140: 8971374851648820897
+      Reworked assets (in progress)_10: -2715663139835024735
+      Reworked assets (in progress)_30: -4815484801264319327
+      Reworked assets (in progress)_112: -8451844931158092390
+      Reworked assets (in progress)_36: 3062876252127997530
+      Reworked assets (in progress)_185: -8842339088281841112
+      Reworked assets (in progress)_32: -8721307975778973060
+      Reworked assets (in progress)_113: -7689988480965346228
+      Reworked assets (in progress)_160: 6122210672066127181
+      Reworked assets (in progress)_25: -6121912838371210945
+      Reworked assets (in progress)_92: -5829050762006844672
+      Reworked assets (in progress)_1: 1841146618628106270
+      Reworked assets (in progress)_236: 4810993688589637245
+      Reworked assets (in progress)_193: 5465599192576990832
+      Reworked assets (in progress)_55: 5358867362702588597
+      Reworked assets (in progress)_218: 165765311604411423
+      Reworked assets (in progress)_152: 5430919253914854779
+      Reworked assets (in progress)_272: -1472247807275214512
+      Reworked assets (in progress)_95: 4399651403556985274
+      Reworked assets (in progress)_179: -2675170659968900486
+      Reworked assets (in progress)_270: 6981102672836859371
+      Reworked assets (in progress)_110: -2115151272255640068
+      Reworked assets (in progress)_164: 1987351389770202094
+      Reworked assets (in progress)_43: -6512186555505120681
+      Reworked assets (in progress)_244: -6272608214012257879
+      Reworked assets (in progress)_98: -6174867540174326406
+      Reworked assets (in progress)_172: -4196370710094638099
+      Reworked assets (in progress)_94: 7441088146298244358
+      Reworked assets (in progress)_239: -1116889434067737490
+      Reworked assets (in progress)_33: 7689919364803531380
+      Reworked assets (in progress)_180: -736524607593806919
+      Reworked assets (in progress)_178: 1307810621952879249
+      Reworked assets (in progress)_156: 4361589054725666470
+      Reworked assets (in progress)_3: 125395575846851454
+      Reworked assets (in progress)_143: 7581333865042563335
+      Reworked assets (in progress)_65: -7530516055490806700
+      Reworked assets (in progress)_137: 2469349994128134031
+      Reworked assets (in progress)_53: 3446923024344942747
+      Reworked assets (in progress)_246: -4572372340524559866
+      Reworked assets (in progress)_237: 3718346562947520619
+      Reworked assets (in progress)_116: 6999246329128523372
+      Reworked assets (in progress)_136: -5995938025170926167
+      Reworked assets (in progress)_51: -4705375604930771827
+      Reworked assets (in progress)_267: 3871062832098097339
+      Reworked assets (in progress)_255: -5622096086291658676
+      Reworked assets (in progress)_153: 3133930132020528502
+      Reworked assets (in progress)_194: 8236682862606791998
+      Reworked assets (in progress)_183: 7153328295213793815
+      Reworked assets (in progress)_206: -8879034351925965048
+      Reworked assets (in progress)_174: -3107828027869755238
+      Reworked assets (in progress)_16: 3193361262171995151
+      Reworked assets (in progress)_269: 5123844753240962962
+      Reworked assets (in progress)_220: 4503167258335843086
+      Reworked assets (in progress)_225: -5706846962641333354
+      Reworked assets (in progress)_198: -6972754217863329865
+      Reworked assets (in progress)_58: -5625225335440426708
+      Reworked assets (in progress)_80: -3789431137050017221
+      Reworked assets (in progress)_135: -7164046712700972522
+      Reworked assets (in progress)_130: -8027971753129422776
+      Reworked assets (in progress)_227: 8410295078923783246
+      Reworked assets (in progress)_70: -6710202764127272334
+      Reworked assets (in progress)_261: 5889564897600855177
+      Reworked assets (in progress)_144: -3200333560806347106
+      Reworked assets (in progress)_222: 2051024463573963271
+      Reworked assets (in progress)_45: 2883310068861665880
+      Reworked assets (in progress)_234: -8472277440755751545
+      Reworked assets (in progress)_85: 2939937014344330628
+      Reworked assets (in progress)_190: -8267654222632530683
+      Reworked assets (in progress)_200: -273299166047155645
+      Reworked assets (in progress)_191: -2468072882995084793
+      Reworked assets (in progress)_205: 6359355208036140866
+      Reworked assets (in progress)_209: -3167240727997332416
+      Reworked assets (in progress)_96: -1394395550718123432
+      Reworked assets (in progress)_243: 8638671326354607885
+      Reworked assets (in progress)_17: -1219887679576159241
+      Reworked assets (in progress)_49: -5905708924250405571
+      Reworked assets (in progress)_109: 6899136427569668346
+      Reworked assets (in progress)_47: 1917132154024831535
+      Reworked assets (in progress)_196: -5827694180597082996
+      Reworked assets (in progress)_146: 7357030075064763274
+      Reworked assets (in progress)_157: 5088275635868698260
+      Reworked assets (in progress)_105: 2589174481721647469
+      Reworked assets (in progress)_186: 6215586724142175905
+      Reworked assets (in progress)_165: 1245819673169423211
+      Reworked assets (in progress)_223: -32833620252387202
+      Reworked assets (in progress)_219: 5976041499266873961
+      Reworked assets (in progress)_162: -1183819476415707480
+      Reworked assets (in progress)_101: 1478660381402082157
+      Reworked assets (in progress)_231: 455403731373407094
+      Reworked assets (in progress)_138: -7454810641259941557
+      Reworked assets (in progress)_44: -4323341608900402508
+      Reworked assets (in progress)_20: -7063436647811216567
+      Reworked assets (in progress)_271: 6842238597779270216
+      Reworked assets (in progress)_148: 4990225588898411062
+      Reworked assets (in progress)_251: 1450764333047688130
+      Reworked assets (in progress)_41: -4096459484838021201
+      Reworked assets (in progress)_170: 619718449781687461
+      Reworked assets (in progress)_217: -5483794174275148131
+      Reworked assets (in progress)_204: -4215505062665429972
+      Reworked assets (in progress)_158: -3903407446220388819
+      Reworked assets (in progress)_88: 2135411765967170544
+      Reworked assets (in progress)_21: -4139123915808841887
+      Reworked assets (in progress)_214: 8358968668217361096
+      Reworked assets (in progress)_123: 753713504712520798
+      Reworked assets (in progress)_83: 3919402027879830729
+      Reworked assets (in progress)_24: -1306462514603039915
+      Reworked assets (in progress)_52: -6824125946150796865
+      Reworked assets (in progress)_60: 4747083202070905325
+      Reworked assets (in progress)_131: -2796049123579880377
+      Reworked assets (in progress)_79: 2575859058834098601
+      Reworked assets (in progress)_260: 6137068229038342772
+      Reworked assets (in progress)_26: -521148241789867444
+      Reworked assets (in progress)_108: -4346153813623253781
+      Reworked assets (in progress)_54: 3858165394540714460
+      Reworked assets (in progress)_104: -5278536076958969659
+      Reworked assets (in progress)_75: -6132811762100769064
+      Reworked assets (in progress)_245: 4174428503906169030
+      Reworked assets (in progress)_124: -3569708624598244220
+      Reworked assets (in progress)_28: 87019742604241713
+      Reworked assets (in progress)_38: 7848155006794149989
+      Reworked assets (in progress)_169: -1555602578205509690
+      Reworked assets (in progress)_106: -6675410579592186346
+      Reworked assets (in progress)_73: 8324423234276280555
+      Reworked assets (in progress)_248: 214157869094220976
+      Reworked assets (in progress)_18: 190485787114346978
+      Reworked assets (in progress)_31: 693804679701151624
+      Reworked assets (in progress)_27: -2847313807150470758
+      Reworked assets (in progress)_230: -4954842806320651499
+      Reworked assets (in progress)_107: -1868762463009186580
+      Reworked assets (in progress)_145: -9104413178333258766
+      Reworked assets (in progress)_82: -25234640750731330
+      Reworked assets (in progress)_34: -1830220100919924347
+      Reworked assets (in progress)_182: 4019032623004070068
+      Reworked assets (in progress)_67: -8043558580671825301
+      Reworked assets (in progress)_115: -5460163634168472645
+      Reworked assets (in progress)_5: 5271263387812777237
+      Reworked assets (in progress)_56: -6580744677996526958
+      Reworked assets (in progress)_258: 1165611221943584614
+      Reworked assets (in progress)_216: -5554947697913604514
+      Reworked assets (in progress)_275: -6988885789994588796
+      Reworked assets (in progress)_72: 1449907266405435430
+      Reworked assets (in progress)_265: -8477006335925381760
+      Reworked assets (in progress)_221: -2742518548344964017
+      Reworked assets (in progress)_233: -2796024062826741218
+      Reworked assets (in progress)_253: -3295992330462694222
+      Reworked assets (in progress)_122: 6069937649743361725
+      Reworked assets (in progress)_199: 7091332522537796633
+      Reworked assets (in progress)_4: -2380702242787143010
+      Reworked assets (in progress)_175: 1910211515719211937
+      Reworked assets (in progress)_201: -6495535783307485502
+      Reworked assets (in progress)_86: -7202903273099421684
+      Reworked assets (in progress)_228: -3523570374026871420
+      Reworked assets (in progress)_99: 2340113725408829153
+      Reworked assets (in progress)_84: -8606422721830508812
+      Reworked assets (in progress)_195: 313093056609172930
+      Reworked assets (in progress)_207: -3342708124155860965
+      Reworked assets (in progress)_62: -5100648292056832033
+      Reworked assets (in progress)_254: -2383354023323393329
+      Reworked assets (in progress)_238: 3297221376731408436
+      Reworked assets (in progress)_14: 7303501675503492501
+      Reworked assets (in progress)_126: -1247205054376836606
+      Reworked assets (in progress)_103: -3922207034212648237
+      Reworked assets (in progress)_11: -6744086384773784063
+      Reworked assets (in progress)_89: 8912189897940553139
+      Reworked assets (in progress)_127: -7399128218309028868
+      Reworked assets (in progress)_150: 3280119592515888212
+      Reworked assets (in progress)_256: -1782986296823947611
+      Reworked assets (in progress)_184: -5524708622142242696
+      Reworked assets (in progress)_151: -5196655656553262129
+      Reworked assets (in progress)_57: -929659705622016799
+      Reworked assets (in progress)_250: 3754936810384882091
+      Reworked assets (in progress)_119: -5618604738212508454
+      Reworked assets (in progress)_141: -2362265512261493187
+      Reworked assets (in progress)_212: 5738487667892301026
+      Reworked assets (in progress)_125: 8050136633694579562
+      Reworked assets (in progress)_114: -1407038013904854039
+      Reworked assets (in progress)_235: -8900332291631735175
+      Reworked assets (in progress)_262: -3137800965935421561
+      Reworked assets (in progress)_177: 8707240656791674486
+      Reworked assets (in progress)_50: 7346481467172099178
+      Reworked assets (in progress)_6: -3613614508032120671
+      Reworked assets (in progress)_37: -5122861223865043565
+      Reworked assets (in progress)_12: 9215910197544219664
+      Reworked assets (in progress)_118: -5298087800925779454
+      Reworked assets (in progress)_120: 3138921238502197364
+      Reworked assets (in progress)_257: -1686118625087941208
+      Reworked assets (in progress)_22: 5781926694770023784
+      Reworked assets (in progress)_66: 919890429416502684
+      Reworked assets (in progress)_215: -6657967372610462332
+      Reworked assets (in progress)_188: 5198460221483992261
+      Reworked assets (in progress)_121: 198541336433428164
+      Reworked assets (in progress)_9: 358792204489190719
+      Reworked assets (in progress)_142: -5593520396477432760
+      Reworked assets (in progress)_226: 2512721591575028816
+      Reworked assets (in progress)_163: -2735376632587991190
+      Reworked assets (in progress)_132: 3917705414496169177
+      Reworked assets (in progress)_102: -855422462506559720
+      Reworked assets (in progress)_259: -2192698608551121237
+      Reworked assets (in progress)_63: 7433927840786594103
+      Reworked assets (in progress)_159: 1188664756675184901
+      Reworked assets (in progress)_69: 1830711990101031346
+      Reworked assets (in progress)_252: 8019734723736149713
+      Reworked assets (in progress)_74: 4547080700354448568
+      Reworked assets (in progress)_213: -8680772187585572880
+      Reworked assets (in progress)_224: -368768442610783507
+      Reworked assets (in progress)_211: 2993592246460496850
+      Reworked assets (in progress)_264: 5179382655925141166
+      Reworked assets (in progress)_19: -721350454181421763
+      Reworked assets (in progress)_242: -4634930204350150505
+      Reworked assets (in progress)_263: 6874862870598479001
+      Reworked assets (in progress)_171: -1744391625250997259
+      Reworked assets (in progress)_23: -1479633073552358275
+      Reworked assets (in progress)_203: -5795117405802522429
+      Reworked assets (in progress)_8: 5425558840593632796
+      Reworked assets (in progress)_100: 5840276568115209573
+      Reworked assets (in progress)_273: -7107535157200747884
+      Reworked assets (in progress)_167: -2516966032739155135
+      Reworked assets (in progress)_90: -4799451532894851281
+      Reworked assets (in progress)_232: -4958456034928582502
+      Reworked assets (in progress)_187: 4488113013217232823
+      Reworked assets (in progress)_35: 3362542114765636881
+      Reworked assets (in progress)_129: 6690492386667089556
+      Reworked assets (in progress)_147: 8623879528999690893
+      Reworked assets (in progress)_42: 7002173806037918710
+      Reworked assets (in progress)_76: -2916124178959688316
+      Reworked assets (in progress)_59: 3643094728452297599
+      Reworked assets (in progress)_77: -8446238520858904886
+      Reworked assets (in progress)_192: 4884721496757654741
+      Reworked assets (in progress)_97: -2675732884590732084
+      Reworked assets (in progress)_0: -1355459729448792536
+      Reworked assets (in progress)_166: 4627953790313581156
+      Reworked assets (in progress)_40: 3218055011172474502
+      Reworked assets (in progress)_78: 3583488499595741851
+      Reworked assets (in progress)_168: -8322426098067313583
+      Reworked assets (in progress)_48: -6141504061707973393
+      Reworked assets (in progress)_134: -1311907938436380637
+      Reworked assets (in progress)_87: 6332207055007984881
+      Reworked assets (in progress)_61: 6592631941385218883
+      Reworked assets (in progress)_197: 2191545992360101992
+      Reworked assets (in progress)_133: 2616182897596329691
+      Reworked assets (in progress)_91: -523340605278319146
+      Reworked assets (in progress)_81: -6128674121498363284
+      Reworked assets (in progress)_240: 5581637148497603173
+      Reworked assets (in progress)_210: 1594497190674479114
+      Reworked assets (in progress)_173: -3246978126162090471
+      Reworked assets (in progress)_29: 7356394536625252286
+      Reworked assets (in progress)_274: 1116877485988894468
+      Reworked assets (in progress)_161: -2541875928866694657
+      Reworked assets (in progress)_181: 2607142214937138771
+      Reworked assets (in progress)_155: 6712967220151661997
+      Reworked assets (in progress)_229: 6807852538852389995
+      Reworked assets (in progress)_247: 8954827457081421358
+      Reworked assets (in progress)_268: 7721726784666883974
+      Reworked assets (in progress)_128: 4805754489317788550
+      Reworked assets (in progress)_39: 6879689304687754837
+      Reworked assets (in progress)_111: 4495493188174462666
+      Reworked assets (in progress)_139: -8594957392526437723
+      Reworked assets (in progress)_71: 6826427856540445982
+      Reworked assets (in progress)_117: -4739381937523387397
+      Reworked assets (in progress)_202: -5460125120524974455
+      Reworked assets (in progress)_241: -8343024906587650263
+      Reworked assets (in progress)_13: 4149904482949536296
+      Reworked assets (in progress)_2: 946180190690439459
+      Reworked assets (in progress)_64: 9020436279289476003
+      Reworked assets (in progress)_15: 2683786056105730667
+      Reworked assets (in progress)_154: -1062770012781042450
+      Reworked assets (in progress)_249: 1230212116603829016
+      Reworked assets (in progress)_149: -4064216910807876545
+      Reworked assets (in progress)_208: 1180974734052542998
+      Reworked assets (in progress)_176: -8854989209733118617
+      Reworked assets (in progress)_189: 2865176351504945914
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

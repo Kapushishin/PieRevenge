@@ -240,7 +240,7 @@ TextureImporter:
       213: 4261158026565930921
     second: Cat_78
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -261,6 +261,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -299,6 +300,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -350,6 +352,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2032,6 +2058,86 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Cat_41: 6320612782459441349
+      Cat_19: -1894480382837893965
+      Cat_60: 4245976881893492449
+      Cat_58: -4179193048741949036
+      Cat_34: 4528807037308982671
+      Cat_36: 6480544853548486614
+      Cat_51: -6086778109050261615
+      Cat_26: -3475643877827781749
+      Cat_28: -6365953978117368079
+      Cat_6: -5790719290395572807
+      Cat_31: -2321064083634948331
+      Cat_48: -5406723967431383547
+      Cat_57: 2944260408255277739
+      Cat_0: -7232521027535748977
+      Cat_18: 8560559198361610151
+      Cat_22: -8204754875465817760
+      Cat_25: 647469393836452682
+      Cat_65: 6216226100279156391
+      Cat_63: -7242906721349329707
+      Cat_76: -2718868010013287828
+      Cat_33: 5726576620025587660
+      Cat_50: -648594460193729847
+      Cat_4: 1385303433935008574
+      Cat_20: -2266017650126556476
+      Cat_39: 9000805011006839553
+      Cat_42: -406289643709612788
+      Cat_47: 6148907470419667089
+      Cat_37: -8090776999470804724
+      Cat_1: 6519482211609779390
+      Cat_46: -7448782783477999769
+      Cat_54: 1838416711592932227
+      Cat_55: -4134344559976840421
+      Cat_61: 4655361552895926238
+      Cat_40: 1452152546080641771
+      Cat_75: 7089058226782481998
+      Cat_74: -3933659143250654065
+      Cat_73: -3394134879945034910
+      Cat_11: 2994892180473864510
+      Cat_66: -2012923807853417099
+      Cat_78: 4261158026565930921
+      Cat_49: -4498044018943161149
+      Cat_68: -7827310292877710488
+      Cat_10: 7319829036119299154
+      Cat_30: 4536118818154837668
+      Cat_3: 4885103838627432399
+      Cat_70: -1549220236562888026
+      Cat_17: -8341688086701222662
+      Cat_24: 890507639600207589
+      Cat_23: 4912840118926588353
+      Cat_29: -4891171618847890832
+      Cat_59: 5060223782479155011
+      Cat_15: -2830888508249258191
+      Cat_45: 616137300095057734
+      Cat_13: -1649553147107817360
+      Cat_62: 6912045468647820726
+      Cat_64: 8837917941309771689
+      Cat_27: 4528571492876826612
+      Cat_71: 6525273861161272634
+      Cat_12: -3448424704574560073
+      Cat_35: -8245319533164181364
+      Cat_38: -8078452821157339239
+      Cat_53: -4857749584454311655
+      Cat_8: 3291272260663919752
+      Cat_5: 1054262377158069458
+      Cat_43: 753612792099465652
+      Cat_21: -2507473980955421304
+      Cat_56: -7059989885867252903
+      Cat_72: -4771207788122948871
+      Cat_44: -6163833931363317055
+      Cat_69: -5948017494252626174
+      Cat_16: -4780159908014737376
+      Cat_77: 8246942387714643534
+      Cat_14: 1084857401860261817
+      Cat_9: 5115001047623075895
+      Cat_32: -5210721929204838113
+      Cat_52: -5552882687374714293
+      Cat_2: -5160327514734206321
+      Cat_67: 3914856567500318619
+      Cat_7: -1215474226491948769
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

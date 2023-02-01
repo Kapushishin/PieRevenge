@@ -303,7 +303,7 @@ TextureImporter:
       213: -5950514610153164207
     second: house_99
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -324,6 +324,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -362,6 +363,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -435,6 +437,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 256
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -2548,6 +2562,107 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      house_58: -4825337370970566758
+      house_54: -8386232459520793593
+      house_21: 4279323706144049897
+      house_14: -2641059568605796158
+      house_86: 7409755128207767481
+      house_10: 8117776094873184575
+      house_25: 124106915415856038
+      house_11: 8394464646228673883
+      house_49: -8982070511100915421
+      house_7: 986476396582447780
+      house_53: -3648405428443916959
+      house_42: -7431828944206269360
+      house_69: -3135838034217927096
+      house_75: -2880323576038958938
+      house_60: 8504605831415782314
+      house_88: 378276532655832693
+      house_32: 3369446855076228593
+      house_41: 5849641839801096286
+      house_2: 575601758146719918
+      house_34: -4566365901998973053
+      house_78: 3812286156251403411
+      house_61: -5889926561267194859
+      house_9: -2015168664109823455
+      house_6: 4886921596215672568
+      house_19: 7571049629451306115
+      house_85: 6508706349916308764
+      house_92: -1913067501780611508
+      house_15: -8256488084435607779
+      house_35: -4244695752201314179
+      house_96: -6321436760025922828
+      house_47: 5011934631851293317
+      house_62: -1732822563139562051
+      house_45: 263825270510447183
+      house_65: -438634213897047647
+      house_27: 8113068288895388051
+      house_48: 2321624105847721357
+      house_70: 8910156877607628680
+      house_57: 8312180331046262534
+      house_26: 5040236938126086928
+      house_64: 285140346617484456
+      house_99: -5950514610153164207
+      house_74: 3851167563361725399
+      house_94: 3237609853288661219
+      house_50: -9017421394347522870
+      house_81: -4662026778743693588
+      house_97: -4152854562791225850
+      house_13: -6774112544649857685
+      house_36: -4249861376430646584
+      house_76: 6214071706478181783
+      house_23: -1262901884133355389
+      house_4: 7377706198654792900
+      house_93: -4903772449504984702
+      house_80: 8997125429462485113
+      house_72: -4633930969559774884
+      house_56: 2124939666082118984
+      house_63: 4775281659802920646
+      house_46: 2162783927736239385
+      house_83: -415717536935968918
+      house_51: 6594044805525956762
+      house_68: 6866582105784742392
+      house_43: -5759492078357312082
+      house_16: -1425630420749943662
+      house_29: -1943517631288930070
+      house_37: 7959783544211440892
+      house_18: -192376643039840949
+      house_71: 8515552279628963099
+      house_66: 805447712965489436
+      house_8: -592144858011753898
+      house_30: -6568140490241397226
+      house_67: -7156248381942778040
+      house_52: -1857818018927210138
+      house_98: -8298065341391123893
+      house_95: -8450368409595618412
+      house_59: 8912521039278950280
+      house_82: -813817815296163307
+      house_24: -3875703725391605398
+      house_84: 3082440667457948601
+      house_31: 1730938722020219759
+      house_90: 8093583251320552484
+      house_0: -1923994175756728024
+      house_40: 833085023719985140
+      house_33: 6840981286097152370
+      house_20: 3440057425021937346
+      house_3: 8131065375128214768
+      house_22: 5334645852879232224
+      house_1: -3211844383458338046
+      house_39: 669107283009774607
+      house_77: -265839628564371967
+      house_91: 7509993268490609059
+      house_89: -6245451626101492840
+      house_87: 5643947796652110362
+      house_28: 1871501760412800866
+      house_44: -6578575950685827700
+      house_55: -389095175236374531
+      house_73: 3938821863914695538
+      house_38: 5595160758739723846
+      house_12: -1922597465690043746
+      house_17: -1155424440685516343
+      house_79: 8843257614487323195
+      house_5: -2153866347550864425
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

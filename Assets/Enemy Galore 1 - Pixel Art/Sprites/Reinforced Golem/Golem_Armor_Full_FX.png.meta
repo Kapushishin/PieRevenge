@@ -201,7 +201,7 @@ TextureImporter:
       213: -8439961075457090570
     second: Golem_Armor_Full_FX_65
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -222,6 +222,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -231,8 +232,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -253,11 +254,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -309,6 +313,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1718,6 +1734,73 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Golem_Armor_Full_FX_49: 8762644879769916076
+      Golem_Armor_Full_FX_3: 2581895881764190331
+      Golem_Armor_Full_FX_12: -1054172000229028521
+      Golem_Armor_Full_FX_18: 8201838440051660995
+      Golem_Armor_Full_FX_43: -2061379301136031501
+      Golem_Armor_Full_FX_5: 8958476001639610255
+      Golem_Armor_Full_FX_22: 6477991706016608188
+      Golem_Armor_Full_FX_47: 608909239458850662
+      Golem_Armor_Full_FX_60: -1455877301585898599
+      Golem_Armor_Full_FX_56: -4267103575218168789
+      Golem_Armor_Full_FX_6: 5547620886807805118
+      Golem_Armor_Full_FX_39: -6779786062005874595
+      Golem_Armor_Full_FX_57: -4581702047778530216
+      Golem_Armor_Full_FX_41: 2534372141088015222
+      Golem_Armor_Full_FX_52: 4829263394173993237
+      Golem_Armor_Full_FX_27: -6541865973901015405
+      Golem_Armor_Full_FX_58: 9095539786894427981
+      Golem_Armor_Full_FX_59: -2896537179862655948
+      Golem_Armor_Full_FX_17: 2854689837118625437
+      Golem_Armor_Full_FX_31: -2488568928139449784
+      Golem_Armor_Full_FX_46: -5615211522960254107
+      Golem_Armor_Full_FX_11: -5740175794845475399
+      Golem_Armor_Full_FX_7: -4170771543233122866
+      Golem_Armor_Full_FX_53: -6725957579778463401
+      Golem_Armor_Full_FX_48: 875539581526185460
+      Golem_Armor_Full_FX_16: 5323791042852093246
+      Golem_Armor_Full_FX_10: -3403308334439189048
+      Golem_Armor_Full_FX_44: -3843940900294628759
+      Golem_Armor_Full_FX_2: 116602491673549920
+      Golem_Armor_Full_FX_54: 809274375885908106
+      Golem_Armor_Full_FX_29: -7637574062689088029
+      Golem_Armor_Full_FX_36: 7564659104588719527
+      Golem_Armor_Full_FX_55: -1067334645104384104
+      Golem_Armor_Full_FX_64: 5887044061115349028
+      Golem_Armor_Full_FX_9: 8661377642604775244
+      Golem_Armor_Full_FX_8: 680890853514005983
+      Golem_Armor_Full_FX_34: 8172814382977650230
+      Golem_Armor_Full_FX_35: -1186408408322994669
+      Golem_Armor_Full_FX_0: 6753996268325372770
+      Golem_Armor_Full_FX_1: -7344197050217420989
+      Golem_Armor_Full_FX_21: -2035136893123937750
+      Golem_Armor_Full_FX_37: 7394362631432132616
+      Golem_Armor_Full_FX_38: 507562888978163061
+      Golem_Armor_Full_FX_15: 2132981188032874165
+      Golem_Armor_Full_FX_30: 710813166902598613
+      Golem_Armor_Full_FX_61: -7748564399159138654
+      Golem_Armor_Full_FX_45: -5165715128601406083
+      Golem_Armor_Full_FX_65: -8439961075457090570
+      Golem_Armor_Full_FX_25: -6161043280285859336
+      Golem_Armor_Full_FX_23: 3863545637185925584
+      Golem_Armor_Full_FX_33: -470556498413517968
+      Golem_Armor_Full_FX_50: 7541593295242489936
+      Golem_Armor_Full_FX_42: -495038541334910322
+      Golem_Armor_Full_FX_14: 1455964538088438572
+      Golem_Armor_Full_FX_28: -1817548520548349154
+      Golem_Armor_Full_FX_32: 5293868444094434329
+      Golem_Armor_Full_FX_62: 8493591197995688240
+      Golem_Armor_Full_FX_13: -6124391862293381214
+      Golem_Armor_Full_FX_40: 121464651282322761
+      Golem_Armor_Full_FX_24: -3753213544737589432
+      Golem_Armor_Full_FX_63: 8538315372623512467
+      Golem_Armor_Full_FX_4: -3893354287743448902
+      Golem_Armor_Full_FX_51: 4087786673554300872
+      Golem_Armor_Full_FX_26: 4653416395845303069
+      Golem_Armor_Full_FX_19: 2069218797181606544
+      Golem_Armor_Full_FX_20: -2461189714425045605
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

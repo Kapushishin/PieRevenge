@@ -7,6 +7,7 @@ public class ClosedDoor : NPCBehavior
     [SerializeField] private GameObject _openedDoor;
     [SerializeField] private TextAsset _questCompleteDialog;
     private Animator _animator;
+    [SerializeField] private int _scoreToContinue;
 
     private void Start()
     {
@@ -30,7 +31,7 @@ public class ClosedDoor : NPCBehavior
 
     private void PeachesVerification()
     {
-        if (SwitchParametres.PeachCounter > 15)
+        if (SwitchParametres.PeachCounter >= _scoreToContinue)
         {
             _textDialog = _questCompleteDialog;
             _openedDoor.SetActive(true);

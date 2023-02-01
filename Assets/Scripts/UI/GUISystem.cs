@@ -5,14 +5,12 @@ using UnityEngine.UI;
 
 public class GUISystem : MonoBehaviour
 {
-    [SerializeField] private HealthBehavior playerHealth;
-    [SerializeField] private Image totalHealthBar;
     [SerializeField] private Image currentHealthBar;
 
     private void Start()
     {
         // Картинка с 10 сердцами в ряд. Закрашивание лишних сердец в зависимости от максимального количества здоровья игрока
-        totalHealthBar.fillAmount = SwitchParametres.HealthCounter / 10;
+        currentHealthBar.fillAmount = SwitchParametres.HealthCounter / 10;
     }
     private void Update()
     {

@@ -231,7 +231,7 @@ TextureImporter:
       213: 1931723373486632580
     second: House (Inside) Tileset_75
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -252,6 +252,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -290,6 +291,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -341,6 +343,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1979,6 +2005,83 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      House (Inside) Tileset_44: -1964311647970651596
+      House (Inside) Tileset_50: 8211348862221340033
+      House (Inside) Tileset_40: 8468516061327237753
+      House (Inside) Tileset_47: -4137142868453179428
+      House (Inside) Tileset_41: -6422780879177872069
+      House (Inside) Tileset_23: 3350817732707708802
+      House (Inside) Tileset_52: 1202594819385536945
+      House (Inside) Tileset_18: -7299168695908859260
+      House (Inside) Tileset_48: -7949457857778679966
+      House (Inside) Tileset_51: -4738695603251221994
+      House (Inside) Tileset_65: 7383760992232377338
+      House (Inside) Tileset_43: -8855747728274831523
+      House (Inside) Tileset_54: 5681948568788415242
+      House (Inside) Tileset_38: -7488131585950917213
+      House (Inside) Tileset_19: -6078693706373324922
+      House (Inside) Tileset_36: -3615530090424279309
+      House (Inside) Tileset_42: 736512690131842954
+      House (Inside) Tileset_11: -9218462736201714329
+      House (Inside) Tileset_61: -53641414151416975
+      House (Inside) Tileset_27: -76010299746020663
+      House (Inside) Tileset_46: 3031826340831855369
+      House (Inside) Tileset_67: -7096288805282713853
+      House (Inside) Tileset_63: -1229598325329588385
+      House (Inside) Tileset_39: 4366942135406307848
+      House (Inside) Tileset_58: -5864880918928468413
+      House (Inside) Tileset_26: -4924824491367421994
+      House (Inside) Tileset_33: -8501191645899712312
+      House (Inside) Tileset_10: 8703253447207815105
+      House (Inside) Tileset_69: -6765202869539950132
+      House (Inside) Tileset_1: 1563307320036490228
+      House (Inside) Tileset_29: -1809612858078215821
+      House (Inside) Tileset_34: 5772709932794490860
+      House (Inside) Tileset_3: 237488177485551727
+      House (Inside) Tileset_72: 766372529396928428
+      House (Inside) Tileset_68: 3275708705807002248
+      House (Inside) Tileset_71: 2266148056954326802
+      House (Inside) Tileset_74: -3143672581645457739
+      House (Inside) Tileset_21: -8307891625663365120
+      House (Inside) Tileset_7: 6265312709998661978
+      House (Inside) Tileset_73: -3164616831225007404
+      House (Inside) Tileset_14: 8712607945244006537
+      House (Inside) Tileset_16: 4126610361280382033
+      House (Inside) Tileset_32: 3024493006755533417
+      House (Inside) Tileset_37: -1418215995765922984
+      House (Inside) Tileset_24: -6506362928820264478
+      House (Inside) Tileset_75: 1931723373486632580
+      House (Inside) Tileset_5: -231154364607514541
+      House (Inside) Tileset_20: 2136073514200996890
+      House (Inside) Tileset_57: -2761618088684119668
+      House (Inside) Tileset_60: 4703954139838800812
+      House (Inside) Tileset_70: 2694042808247984585
+      House (Inside) Tileset_8: 6049567249896758679
+      House (Inside) Tileset_0: -1551027701419309762
+      House (Inside) Tileset_2: 1886272593743738416
+      House (Inside) Tileset_25: -3720279311905753604
+      House (Inside) Tileset_13: -5691469350282230624
+      House (Inside) Tileset_55: -5339835830568674569
+      House (Inside) Tileset_45: -2567866960710171897
+      House (Inside) Tileset_56: 9134388916664090024
+      House (Inside) Tileset_59: 4352967571134653020
+      House (Inside) Tileset_6: 5026472052741364075
+      House (Inside) Tileset_31: -2961806516083316666
+      House (Inside) Tileset_62: 6114689197595659358
+      House (Inside) Tileset_28: 373973002365810229
+      House (Inside) Tileset_49: 7113775987447562312
+      House (Inside) Tileset_64: 987889735876381166
+      House (Inside) Tileset_17: -4043917295295932804
+      House (Inside) Tileset_66: 2273425206508768773
+      House (Inside) Tileset_35: 7864046711015242049
+      House (Inside) Tileset_53: -7724726889237661111
+      House (Inside) Tileset_30: 4388542970154344346
+      House (Inside) Tileset_4: -2550017988782874724
+      House (Inside) Tileset_12: -6205827793420441041
+      House (Inside) Tileset_9: 5130977491610925907
+      House (Inside) Tileset_22: 8633183323289553121
+      House (Inside) Tileset_15: 7655201824034103562
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -57,7 +57,7 @@ TextureImporter:
       213: -6423605263834463869
     second: idle sheet-Sheet_17
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -78,6 +78,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -116,6 +117,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -167,6 +169,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -568,6 +594,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      idle sheet-Sheet_5: 3677159266847545319
+      idle sheet-Sheet_16: -1001250234447512021
+      idle sheet-Sheet_14: 8573700253713788481
+      idle sheet-Sheet_8: 5532852436634238581
+      idle sheet-Sheet_15: 7676116845373998728
+      idle sheet-Sheet_2: -7050135170561960304
+      idle sheet-Sheet_17: -6423605263834463869
+      idle sheet-Sheet_4: 1513770297049294160
+      idle sheet-Sheet_3: -825478908906485022
+      idle sheet-Sheet_0: 5770251550782387183
+      idle sheet-Sheet_6: -6701512078181738702
+      idle sheet-Sheet_12: -8675156796383920428
+      idle sheet-Sheet_1: -4118208772998566661
+      idle sheet-Sheet_10: -6723002668108756082
+      idle sheet-Sheet_11: -4818908735655743886
+      idle sheet-Sheet_7: 8038760012314833929
+      idle sheet-Sheet_9: -8135833663074233968
+      idle sheet-Sheet_13: -754133856595535296
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

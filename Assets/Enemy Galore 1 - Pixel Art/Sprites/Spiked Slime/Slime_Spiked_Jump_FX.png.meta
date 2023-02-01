@@ -27,7 +27,7 @@ TextureImporter:
       213: 5584578538990826843
     second: Slime_Spiked_Jump_FX_10
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -48,6 +48,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -57,8 +58,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -79,11 +80,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -145,6 +149,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -164,7 +180,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 332d836e882dd6860800000000000000
-      internalID: 7524902037825835571
+      internalID: -6841430966232491922
       vertices: []
       indices: 
       edges: []
@@ -185,7 +201,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2ec154e8ba1b8eb40800000000000000
-      internalID: 5469817097825885410
+      internalID: 7307566540620107963
       vertices: []
       indices: 
       edges: []
@@ -227,7 +243,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e68da5e98ca5e01a0800000000000000
-      internalID: -6841430966232491922
+      internalID: 7524902037825835571
       vertices: []
       indices: 
       edges: []
@@ -248,7 +264,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: bb011323d01b96560800000000000000
-      internalID: 7307566540620107963
+      internalID: 5469817097825885410
       vertices: []
       indices: 
       edges: []
@@ -326,6 +342,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Slime_Spiked_Jump_FX_4: 7307566540620107963
+      Slime_Spiked_Jump_FX_9: 2314559302037213156
+      Slime_Spiked_Jump_FX_6: 7524902037825835571
+      Slime_Spiked_Jump_FX_5: 8715150257315831493
+      Slime_Spiked_Jump_FX_8: -1093409250314809533
+      Slime_Spiked_Jump_FX_3: -6841430966232491922
+      Slime_Spiked_Jump_FX_10: 5584578538990826843
+      Slime_Spiked_Jump_FX_7: 5469817097825885410
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

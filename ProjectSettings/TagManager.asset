@@ -14,6 +14,7 @@ TagManager:
   - Wood
   - BG Trigger
   - Rock
+  - Save System
   layers:
   - Default
   - TransparentFX
@@ -27,7 +28,7 @@ TagManager:
   - CanCollect
   - Enemy
   - Interact
-  - 
+  - Wall
   - 
   - 
   - 
@@ -69,9 +70,6 @@ TagManager:
   - name: Props
     uniqueID: 209397053
     locked: 0
-  - name: Enemy
-    uniqueID: 3973058975
-    locked: 0
   - name: Natural Light
     uniqueID: 1941243681
     locked: 0
@@ -81,17 +79,26 @@ TagManager:
   - name: Props 2
     uniqueID: 1999581627
     locked: 0
-  - name: Walls
-    uniqueID: 4186932595
+  - name: Enemy
+    uniqueID: 3973058975
     locked: 0
   - name: Player
     uniqueID: 301403889
     locked: 0
+  - name: Water
+    uniqueID: 1484059721
+    locked: 0
+  - name: mud
+    uniqueID: 1699694007
+    locked: 0
   - name: Grass
     uniqueID: 2651197361
     locked: 0
-  - name: Water
-    uniqueID: 1484059721
+  - name: Walls
+    uniqueID: 4186932595
+    locked: 0
+  - name: Water 2
+    uniqueID: 3243271903
     locked: 0
   - name: UI
     uniqueID: 3793400397

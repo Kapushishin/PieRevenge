@@ -75,7 +75,7 @@ TextureImporter:
       213: 8774905348275153688
     second: Bat_Full_FX_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -197,6 +199,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -724,6 +738,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Bat_Full_FX_9: -6707384251783829511
+      Bat_Full_FX_10: 1694573468260316734
+      Bat_Full_FX_18: 3949110307588363741
+      Bat_Full_FX_21: 8528294481510288391
+      Bat_Full_FX_1: -7120977223757416151
+      Bat_Full_FX_6: -8254278842887924517
+      Bat_Full_FX_19: -5827482758281772987
+      Bat_Full_FX_11: -8512358882342292925
+      Bat_Full_FX_5: -1008485521239601478
+      Bat_Full_FX_23: 8774905348275153688
+      Bat_Full_FX_8: 6024562698239084012
+      Bat_Full_FX_0: 4032922139815680701
+      Bat_Full_FX_17: -6419224965490566578
+      Bat_Full_FX_20: -902100490179856808
+      Bat_Full_FX_14: -6036308086631234778
+      Bat_Full_FX_7: 5089429799192339492
+      Bat_Full_FX_3: 793908799918130221
+      Bat_Full_FX_22: 5993634846087065667
+      Bat_Full_FX_2: 6178313006817361438
+      Bat_Full_FX_4: -3621717497677449654
+      Bat_Full_FX_12: -8287974637670610058
+      Bat_Full_FX_16: -6721645976105140458
+      Bat_Full_FX_13: 2611473343138824385
+      Bat_Full_FX_15: -5167055545809326721
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

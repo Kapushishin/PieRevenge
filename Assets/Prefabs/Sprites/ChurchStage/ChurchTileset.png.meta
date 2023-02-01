@@ -318,7 +318,7 @@ TextureImporter:
       213: -6398891241817510981
     second: ChurchTileset_104
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -339,6 +339,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -377,6 +378,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -428,6 +430,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2676,6 +2702,112 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ChurchTileset_90: -1916904615879086675
+      ChurchTileset_66: -2381581060394693705
+      ChurchTileset_81: 5808535392979057521
+      ChurchTileset_21: 5462916149887990211
+      ChurchTileset_64: -6076795549850514312
+      ChurchTileset_65: 4256729126246731240
+      ChurchTileset_13: 9002997358432114639
+      ChurchTileset_12: 6142918771713726039
+      ChurchTileset_68: -3660436700560897840
+      ChurchTileset_83: -7777925853708983526
+      ChurchTileset_89: -773672850203162574
+      ChurchTileset_72: 4239676899997957223
+      ChurchTileset_10: -7046827423892501073
+      ChurchTileset_102: 1238194429063341075
+      ChurchTileset_20: 2043968068256934791
+      ChurchTileset_1: -8898515535748246610
+      ChurchTileset_17: 3342816522375782258
+      ChurchTileset_40: -563902942643182148
+      ChurchTileset_63: -8723264325389656726
+      ChurchTileset_62: -8496129133545919216
+      ChurchTileset_75: 4974467970648892057
+      ChurchTileset_34: 2425205082475240672
+      ChurchTileset_80: 6224982863896263719
+      ChurchTileset_97: -1884253687462567493
+      ChurchTileset_53: 5374787313898010269
+      ChurchTileset_42: -3343425584659217105
+      ChurchTileset_98: -6789823519434500815
+      ChurchTileset_28: 539622552259867682
+      ChurchTileset_57: -2941777323550907548
+      ChurchTileset_78: -5326368423619827719
+      ChurchTileset_55: 3345484321440751766
+      ChurchTileset_94: -2652563120878726287
+      ChurchTileset_93: 3228100805175804576
+      ChurchTileset_48: 7011634938358460298
+      ChurchTileset_91: 6267528785457224609
+      ChurchTileset_87: -5869198788933507270
+      ChurchTileset_5: 8413168110758411843
+      ChurchTileset_46: 7746268525270597090
+      ChurchTileset_19: -8699595547515446617
+      ChurchTileset_6: 4564093882232591112
+      ChurchTileset_67: 3562204709434245211
+      ChurchTileset_103: 4189998033208621955
+      ChurchTileset_18: 1686371897316993890
+      ChurchTileset_27: 8639539254693084803
+      ChurchTileset_51: -8823286516812152573
+      ChurchTileset_31: 7496900616026827021
+      ChurchTileset_56: -7148435222628372024
+      ChurchTileset_52: -729168564697213409
+      ChurchTileset_61: -2029465475803639910
+      ChurchTileset_96: 8456958312665611004
+      ChurchTileset_77: -5918777047028840562
+      ChurchTileset_35: 5483416840613164283
+      ChurchTileset_38: -1208115722878826284
+      ChurchTileset_9: -6035077593926285372
+      ChurchTileset_79: 5135329491375344876
+      ChurchTileset_49: 1147213872156618816
+      ChurchTileset_86: -1608473550027075568
+      ChurchTileset_60: 5364881675672362623
+      ChurchTileset_30: -4376771297708250781
+      ChurchTileset_22: 9068290716271841773
+      ChurchTileset_58: 6750801784351088337
+      ChurchTileset_101: 6818966308780247568
+      ChurchTileset_43: -7015705613328849279
+      ChurchTileset_71: 8449355626114465947
+      ChurchTileset_23: -2589239947804674809
+      ChurchTileset_25: -7482700992154241011
+      ChurchTileset_92: -2677582314916754814
+      ChurchTileset_16: 2063853224624300906
+      ChurchTileset_15: 7534874347286864147
+      ChurchTileset_100: -8851825268082550606
+      ChurchTileset_45: 478407636036706052
+      ChurchTileset_54: -1550340801227346117
+      ChurchTileset_24: -3569474817021382136
+      ChurchTileset_85: -3253134437727869141
+      ChurchTileset_59: 4672476099923070426
+      ChurchTileset_37: 5916342871726793705
+      ChurchTileset_47: -4015908780586712510
+      ChurchTileset_41: -7175434120725942584
+      ChurchTileset_8: 2928528162314104502
+      ChurchTileset_99: 7498492592197011048
+      ChurchTileset_4: -1612139684713115340
+      ChurchTileset_0: -1866084696381751727
+      ChurchTileset_7: -1390272971092630887
+      ChurchTileset_33: 3227610452033369318
+      ChurchTileset_26: -8528233107308008763
+      ChurchTileset_11: 1983731968474363162
+      ChurchTileset_44: 815003444935625569
+      ChurchTileset_50: -1066944916459023329
+      ChurchTileset_82: -5687223514724253476
+      ChurchTileset_95: -127606580609655794
+      ChurchTileset_70: 1419187136085960855
+      ChurchTileset_88: -3519494832796270295
+      ChurchTileset_104: -6398891241817510981
+      ChurchTileset_29: -5611870519772743224
+      ChurchTileset_32: -7145033226853109813
+      ChurchTileset_3: -7821965042177920072
+      ChurchTileset_74: -8370886713939814509
+      ChurchTileset_73: 5110677829459332728
+      ChurchTileset_2: 1321575515394231013
+      ChurchTileset_36: 4647202200819140519
+      ChurchTileset_84: -4028147689033676652
+      ChurchTileset_69: 5347609695170013650
+      ChurchTileset_14: -6124993469234867499
+      ChurchTileset_39: -469286831354395179
+      ChurchTileset_76: 6404553394650501765
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

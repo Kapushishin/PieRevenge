@@ -1155,7 +1155,7 @@ TextureImporter:
       213: -7759220955900963760
     second: Animals sprites_383
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -1176,6 +1176,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1214,6 +1215,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1265,6 +1267,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
@@ -9352,6 +9378,391 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Animals sprites_35: 2656960121228995816
+      Animals sprites_205: 3850786101536585544
+      Animals sprites_64: 8339615608015408953
+      Animals sprites_116: -4748794717043905729
+      Animals sprites_316: 6858149821000171070
+      Animals sprites_137: 1435011588668642535
+      Animals sprites_156: -8902650454884322784
+      Animals sprites_138: -6033447875184652036
+      Animals sprites_70: -3769240438808989227
+      Animals sprites_203: -3882618037752656493
+      Animals sprites_272: 7065242303860143724
+      Animals sprites_39: -4434121571914354552
+      Animals sprites_117: 66756761980645382
+      Animals sprites_2: -2264475501922167881
+      Animals sprites_181: -7462678494866910188
+      Animals sprites_30: 5113754311156919116
+      Animals sprites_174: -5342575174802980021
+      Animals sprites_263: -7710991447976935811
+      Animals sprites_83: -5358325109287619326
+      Animals sprites_40: -267847878022640435
+      Animals sprites_305: 5974563926285763305
+      Animals sprites_55: 5751389268860401633
+      Animals sprites_43: 3133729924626549843
+      Animals sprites_190: 7029044634173213820
+      Animals sprites_383: -7759220955900963760
+      Animals sprites_12: 7424496844769950006
+      Animals sprites_171: 2845958996015895880
+      Animals sprites_28: -9178423916867500833
+      Animals sprites_170: 1907305320268526463
+      Animals sprites_353: 555379708725894374
+      Animals sprites_290: -8651930941282167275
+      Animals sprites_351: -3782842722215387664
+      Animals sprites_374: 768666548011802913
+      Animals sprites_134: -282964665554780191
+      Animals sprites_159: -8092123155510693993
+      Animals sprites_71: 3287882634649207146
+      Animals sprites_245: -3690993291877734539
+      Animals sprites_298: 6054334366153782792
+      Animals sprites_365: -6071639331026252386
+      Animals sprites_207: 2537367204609393491
+      Animals sprites_327: 3890299247994072763
+      Animals sprites_240: -6021410816580398157
+      Animals sprites_27: 6576882774380752601
+      Animals sprites_284: -6435313079882523935
+      Animals sprites_363: -4396202162460104173
+      Animals sprites_306: -2469705515934699493
+      Animals sprites_82: 889999811810415792
+      Animals sprites_124: 6810229828393088978
+      Animals sprites_286: 7947337189018391578
+      Animals sprites_94: 5857821532723900789
+      Animals sprites_223: -4653794995111654385
+      Animals sprites_247: 1026289754022091438
+      Animals sprites_84: -5954819434905719073
+      Animals sprites_7: -7382726820943244506
+      Animals sprites_109: 8650465398685658709
+      Animals sprites_302: -7989274948991714562
+      Animals sprites_279: -2781433963589699259
+      Animals sprites_154: 365381880567486355
+      Animals sprites_226: 102147062900119510
+      Animals sprites_37: -5866857546146414889
+      Animals sprites_281: 2972899865822457744
+      Animals sprites_16: 2801157995088376938
+      Animals sprites_246: -1826902033538528494
+      Animals sprites_110: 2522984396045688776
+      Animals sprites_100: 8751233414189376527
+      Animals sprites_123: -6826568516232284525
+      Animals sprites_33: 3365933799392923179
+      Animals sprites_220: -1252897151554237126
+      Animals sprites_69: -529376253552366289
+      Animals sprites_153: 7311590349078433790
+      Animals sprites_97: -7453470160447330033
+      Animals sprites_234: -1870693792265587734
+      Animals sprites_18: 6409176871778980104
+      Animals sprites_343: 2671883235013713886
+      Animals sprites_163: -5927964151072030624
+      Animals sprites_336: -4406878927969768552
+      Animals sprites_139: -5660660586685352380
+      Animals sprites_274: -541951750004824159
+      Animals sprites_309: -8119015953127933998
+      Animals sprites_367: 5129566914864731822
+      Animals sprites_330: -2041411915496592407
+      Animals sprites_271: -1937363475253593600
+      Animals sprites_164: 6263630690260044750
+      Animals sprites_328: -6841095533898772524
+      Animals sprites_147: 4821073658150806551
+      Animals sprites_104: -6696170825204242576
+      Animals sprites_260: -2530764324386053845
+      Animals sprites_173: -717816987298185493
+      Animals sprites_61: 3315612908577463101
+      Animals sprites_233: 52103483375625878
+      Animals sprites_144: 6327417685378889231
+      Animals sprites_88: 4254662500863066209
+      Animals sprites_133: 4247731780037295311
+      Animals sprites_219: -999314080290466332
+      Animals sprites_189: -788625623997421490
+      Animals sprites_311: -4691227808118613610
+      Animals sprites_314: 875880261094130554
+      Animals sprites_224: -5120085968313651918
+      Animals sprites_241: -8980061134600496613
+      Animals sprites_25: 9215743576575582538
+      Animals sprites_46: 3551138343736269716
+      Animals sprites_160: -5789272694078290955
+      Animals sprites_129: 6679275363596645299
+      Animals sprites_113: -1450848736327431090
+      Animals sprites_321: -600942672559708564
+      Animals sprites_58: -446988095838190347
+      Animals sprites_276: -8030249936528159351
+      Animals sprites_320: 8044775360599611932
+      Animals sprites_15: -4898937520358974707
+      Animals sprites_299: -8979377928154478277
+      Animals sprites_105: -527956895307834455
+      Animals sprites_319: -7524140383940671621
+      Animals sprites_23: -2631259202791691599
+      Animals sprites_57: -2048820140186328343
+      Animals sprites_312: -7796406523426580842
+      Animals sprites_183: 8458897239532451810
+      Animals sprites_239: -6195109920854203969
+      Animals sprites_369: 7512684015237055374
+      Animals sprites_26: -197425237098786244
+      Animals sprites_185: -2154534310725116800
+      Animals sprites_99: 6880827983601093928
+      Animals sprites_204: 748723174306404636
+      Animals sprites_344: 2052869108651525790
+      Animals sprites_350: 990951177195646167
+      Animals sprites_48: 1385576003966212922
+      Animals sprites_235: 2272669896049112729
+      Animals sprites_210: -731835505540314238
+      Animals sprites_177: 2348041511864502800
+      Animals sprites_143: 47787004119043653
+      Animals sprites_322: -2964970265505987885
+      Animals sprites_293: 3750246310052897613
+      Animals sprites_32: -3306091393108162388
+      Animals sprites_282: -625601650325652604
+      Animals sprites_180: 3560583446683853389
+      Animals sprites_366: -7158838101135181820
+      Animals sprites_277: 6340701893675848973
+      Animals sprites_364: -1951126633018740675
+      Animals sprites_209: -6454181043678555883
+      Animals sprites_8: -3277107878079047485
+      Animals sprites_357: -7267260244984855728
+      Animals sprites_292: 5684103330437587905
+      Animals sprites_227: -1383510839258320017
+      Animals sprites_283: 6798763139325857182
+      Animals sprites_354: 7414416560701299497
+      Animals sprites_258: -4706655069385260345
+      Animals sprites_10: 906337145255750757
+      Animals sprites_257: -6598800296370608597
+      Animals sprites_169: 6433493082707316076
+      Animals sprites_294: 4053272590118294818
+      Animals sprites_132: 2369956088890197867
+      Animals sprites_67: -4732624592837798985
+      Animals sprites_251: 2638640760856458640
+      Animals sprites_355: -8476183150961347405
+      Animals sprites_62: 5548841361471747042
+      Animals sprites_202: -4740125512409079174
+      Animals sprites_222: 6375796713593874181
+      Animals sprites_56: -2764381753157611095
+      Animals sprites_379: -2443551845748027946
+      Animals sprites_371: 484863952061921203
+      Animals sprites_79: -2471559990477731295
+      Animals sprites_86: -5026460661877658703
+      Animals sprites_122: 6080775864180856594
+      Animals sprites_98: -6138222526203647273
+      Animals sprites_266: 7365335615825566115
+      Animals sprites_149: -4994414227629531713
+      Animals sprites_270: 522522637081309202
+      Animals sprites_102: -2220253670998159363
+      Animals sprites_6: 6852843546233694905
+      Animals sprites_192: 5821126416361370109
+      Animals sprites_195: 2468535006617241640
+      Animals sprites_151: -9046543239947163432
+      Animals sprites_158: -8678963982890268961
+      Animals sprites_340: 1167377077604049045
+      Animals sprites_229: 1467224629722869856
+      Animals sprites_228: -258122281295222726
+      Animals sprites_304: 2285166689089388194
+      Animals sprites_212: 7771693825308845298
+      Animals sprites_310: 6587278657720413805
+      Animals sprites_287: 7712202516993592875
+      Animals sprites_49: -6920543239033020365
+      Animals sprites_313: -5074226063126167351
+      Animals sprites_20: 7194861758178006539
+      Animals sprites_101: -8274063099260803140
+      Animals sprites_352: 3017458021284244534
+      Animals sprites_335: 2447829269565135262
+      Animals sprites_303: 2672324262787122003
+      Animals sprites_146: 1261653843188159403
+      Animals sprites_119: -4805229142980895501
+      Animals sprites_72: -227231557325293092
+      Animals sprites_199: -8326462715332453956
+      Animals sprites_308: 1483909777144262095
+      Animals sprites_1: -3904275023010015297
+      Animals sprites_187: 2919674320718809218
+      Animals sprites_236: -8655765450840009027
+      Animals sprites_261: -4232127948974417869
+      Animals sprites_254: 7663831742437081637
+      Animals sprites_78: 6055759394699074091
+      Animals sprites_63: -5901169552342388280
+      Animals sprites_186: -7346379630234338555
+      Animals sprites_230: -636039628519010398
+      Animals sprites_378: 3507854041838735109
+      Animals sprites_275: -3526263808704466941
+      Animals sprites_118: 850529420005450751
+      Animals sprites_136: -1484526821275310805
+      Animals sprites_168: -4257471564171044655
+      Animals sprites_268: -3773933820341749793
+      Animals sprites_31: 1840593878334249850
+      Animals sprites_191: -4996063041015925137
+      Animals sprites_51: 4490025104776872080
+      Animals sprites_4: 4050476093775884555
+      Animals sprites_238: 2064734581789588720
+      Animals sprites_323: 5503975806096383085
+      Animals sprites_373: 5688174424651330385
+      Animals sprites_237: -4810084135700523283
+      Animals sprites_375: -8884122213641583110
+      Animals sprites_42: -4111447605420745450
+      Animals sprites_38: -8131208399961389814
+      Animals sprites_368: 3299682958711673499
+      Animals sprites_165: 2117581594178329467
+      Animals sprites_231: -997725334927348607
+      Animals sprites_111: 2525037125065813360
+      Animals sprites_103: -5198706481620899322
+      Animals sprites_347: 2462208771981776307
+      Animals sprites_296: 8159143590531552632
+      Animals sprites_317: -3397221509887105707
+      Animals sprites_221: -5943263088642318771
+      Animals sprites_17: -7485511183081511975
+      Animals sprites_150: 1624142983025090857
+      Animals sprites_280: -2032815584005848858
+      Animals sprites_53: -4868039298018270228
+      Animals sprites_362: -9099542035433708983
+      Animals sprites_216: 8881240482422738233
+      Animals sprites_269: -4315992615751337920
+      Animals sprites_248: 2525828414593358534
+      Animals sprites_356: -1491082565036558644
+      Animals sprites_288: 7673448425301722352
+      Animals sprites_95: 8537287497303539537
+      Animals sprites_14: 4461831812006661253
+      Animals sprites_148: 724788149096026569
+      Animals sprites_188: -7947731501373101098
+      Animals sprites_218: 8958372647435103007
+      Animals sprites_339: -3121846674546890044
+      Animals sprites_73: -8231986116496390743
+      Animals sprites_252: 4860105673332515941
+      Animals sprites_60: -552937150052409615
+      Animals sprites_89: 1532678348550490228
+      Animals sprites_184: 4936405428882549565
+      Animals sprites_206: 469171226518335320
+      Animals sprites_380: 7511219398583384483
+      Animals sprites_232: 6140438551509303174
+      Animals sprites_21: 8319422796221069956
+      Animals sprites_13: -6103387270209943548
+      Animals sprites_297: -5415553863514880929
+      Animals sprites_47: 1711115720857063000
+      Animals sprites_360: -7771122409061552894
+      Animals sprites_45: 5555452143231612106
+      Animals sprites_332: -3782330136430094789
+      Animals sprites_295: -1026632820297597581
+      Animals sprites_91: -3216922127678109586
+      Animals sprites_300: -4181892630968030798
+      Animals sprites_161: 8355704978951016998
+      Animals sprites_243: -3184878421873931022
+      Animals sprites_250: 8130129946995027692
+      Animals sprites_259: 6497272334314438180
+      Animals sprites_196: 3317910221784323110
+      Animals sprites_372: 6132441011205595650
+      Animals sprites_130: -6851732171508614827
+      Animals sprites_349: 2603398902017231922
+      Animals sprites_3: 4675750176522775515
+      Animals sprites_93: 5608480483728585729
+      Animals sprites_358: -7201434007981451081
+      Animals sprites_382: -4907641628764919126
+      Animals sprites_87: 4805790505152325747
+      Animals sprites_289: -2341012035000452633
+      Animals sprites_249: -3559141887555288721
+      Animals sprites_331: 9137746273649793957
+      Animals sprites_152: 5837089121815116046
+      Animals sprites_242: -959120554146077916
+      Animals sprites_76: -948708029740374981
+      Animals sprites_217: 4668103441021766628
+      Animals sprites_301: 349166316687556287
+      Animals sprites_126: 2117029877445701971
+      Animals sprites_19: 4430857219679832765
+      Animals sprites_125: 5364949128589396193
+      Animals sprites_96: 6997441977774702854
+      Animals sprites_52: -8245086883802967631
+      Animals sprites_225: -9003834430342635993
+      Animals sprites_178: 7546856374387172095
+      Animals sprites_135: 5651827142092427515
+      Animals sprites_74: -4699602335611123126
+      Animals sprites_255: -10594752887954583
+      Animals sprites_215: 6658731184425400201
+      Animals sprites_262: 8685550496859975710
+      Animals sprites_54: 7486275800475827888
+      Animals sprites_278: -4247318372318483554
+      Animals sprites_197: 5820098011010054551
+      Animals sprites_106: 6163665737342823947
+      Animals sprites_145: -6275854393972394223
+      Animals sprites_346: 1799441350063114109
+      Animals sprites_201: -3360582195442536263
+      Animals sprites_50: -6385133295228071340
+      Animals sprites_66: -8275922253779127498
+      Animals sprites_376: -8510857643853108180
+      Animals sprites_264: 4319566818603488569
+      Animals sprites_370: 9113391534769574696
+      Animals sprites_162: -2722989101240544273
+      Animals sprites_324: 618620765698848093
+      Animals sprites_381: 6201658294772426292
+      Animals sprites_176: 3710638219120877815
+      Animals sprites_127: 1700408202911925159
+      Animals sprites_329: -1411742285942443293
+      Animals sprites_41: 596160474424052429
+      Animals sprites_267: -6859654252756993718
+      Animals sprites_194: -7160339218836459323
+      Animals sprites_325: 3514337441248721562
+      Animals sprites_36: -939726288780877096
+      Animals sprites_326: 1966811570561773077
+      Animals sprites_198: -3133405980489914358
+      Animals sprites_9: -7312273591167645169
+      Animals sprites_140: 3335670488377544282
+      Animals sprites_285: 2214799762287910101
+      Animals sprites_115: -3355452324708065063
+      Animals sprites_359: -3202273460132767998
+      Animals sprites_44: 5127560494715559965
+      Animals sprites_108: -6498722959216024221
+      Animals sprites_256: 5745854155392362190
+      Animals sprites_5: -6095663073338454877
+      Animals sprites_75: 666356233771823656
+      Animals sprites_200: -6295529001135476156
+      Animals sprites_24: -5946535285731322600
+      Animals sprites_214: 1234233238405981026
+      Animals sprites_131: 5330313770995354869
+      Animals sprites_155: -8452651344129295387
+      Animals sprites_333: 2010812686732944486
+      Animals sprites_167: 2423967624360708995
+      Animals sprites_318: 59188275612653239
+      Animals sprites_90: 4289029829001089365
+      Animals sprites_175: 8448778620967373165
+      Animals sprites_348: 6755496001040695057
+      Animals sprites_85: 6531396977191001759
+      Animals sprites_80: 4818219232381896131
+      Animals sprites_182: -7695654281660549082
+      Animals sprites_65: -1353920378195698666
+      Animals sprites_112: -3779337779185710757
+      Animals sprites_244: 4545526136149651891
+      Animals sprites_59: 7693888355692353581
+      Animals sprites_157: -4130485779074186886
+      Animals sprites_114: -4155737631925281208
+      Animals sprites_377: -1818423241663777806
+      Animals sprites_172: -185734222822823429
+      Animals sprites_166: 8634116143041611052
+      Animals sprites_341: 8316263879712825930
+      Animals sprites_34: -8327479044975608596
+      Animals sprites_92: 2190679250065157284
+      Animals sprites_11: 8667460983104099927
+      Animals sprites_213: -8151887651495358824
+      Animals sprites_342: 3338825816756018786
+      Animals sprites_120: 5132801340811023229
+      Animals sprites_291: 2977365989018028623
+      Animals sprites_345: 6509447110265854683
+      Animals sprites_68: -2432165748311750139
+      Animals sprites_273: 2900240701913804903
+      Animals sprites_77: -4624961743778959579
+      Animals sprites_29: -7609389410837026336
+      Animals sprites_128: -2467045888660840347
+      Animals sprites_193: -1480304832673104700
+      Animals sprites_141: 1155796016262045688
+      Animals sprites_107: 9109112747376277066
+      Animals sprites_179: -217792225283694018
+      Animals sprites_142: 1297042730840510034
+      Animals sprites_334: -2296961219403023510
+      Animals sprites_315: -3190706762697703551
+      Animals sprites_22: -7224823071882772518
+      Animals sprites_361: 411087505289449173
+      Animals sprites_307: 6897553160737029598
+      Animals sprites_121: 8567761280387948478
+      Animals sprites_81: -3672185014338390391
+      Animals sprites_211: -7272521063415273112
+      Animals sprites_337: 3247701819249533446
+      Animals sprites_265: 8971530926087321371
+      Animals sprites_253: -2566858107931869955
+      Animals sprites_338: 5474806497604879222
+      Animals sprites_208: 4481107992019800071
+      Animals sprites_0: 463971920777409221
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

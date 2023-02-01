@@ -249,7 +249,7 @@ TextureImporter:
       213: -8436840041992733278
     second: Golem_Full_FX_81
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -270,6 +270,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -279,8 +280,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -301,11 +302,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -357,6 +361,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2102,6 +2118,89 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Golem_Full_FX_79: 8699891104013685855
+      Golem_Full_FX_70: -3571661371952786006
+      Golem_Full_FX_12: -7891031483187379648
+      Golem_Full_FX_37: 7924212072017235714
+      Golem_Full_FX_50: 386424185928403603
+      Golem_Full_FX_6: -5113077413453489223
+      Golem_Full_FX_5: 2934975357592511219
+      Golem_Full_FX_35: 1579626273645274035
+      Golem_Full_FX_51: 854790725458591206
+      Golem_Full_FX_81: -8436840041992733278
+      Golem_Full_FX_52: 1111194825595456421
+      Golem_Full_FX_2: 1774762813405840245
+      Golem_Full_FX_27: 7409871330099305326
+      Golem_Full_FX_53: -4526242447088944266
+      Golem_Full_FX_20: -83833119906142487
+      Golem_Full_FX_21: 6018900880778031668
+      Golem_Full_FX_66: 14912893688559727
+      Golem_Full_FX_76: 6933386904571066424
+      Golem_Full_FX_33: -7088083616583975318
+      Golem_Full_FX_25: -3170989243384686883
+      Golem_Full_FX_0: 6526941409322004256
+      Golem_Full_FX_43: 5083544383266706362
+      Golem_Full_FX_28: 1573172041546509334
+      Golem_Full_FX_61: 4466211057638609318
+      Golem_Full_FX_32: -1385264490235359447
+      Golem_Full_FX_45: 584345661501281731
+      Golem_Full_FX_44: -8203839869686152998
+      Golem_Full_FX_39: -3787891799770857397
+      Golem_Full_FX_9: -6211827338972337257
+      Golem_Full_FX_13: 8621232801279253258
+      Golem_Full_FX_49: 3102032554483406613
+      Golem_Full_FX_55: 6269537590655493321
+      Golem_Full_FX_68: 8520221122244823329
+      Golem_Full_FX_4: 7932886745109379937
+      Golem_Full_FX_15: -5770599443616800902
+      Golem_Full_FX_1: -7512624365928424275
+      Golem_Full_FX_67: -7682076733946994090
+      Golem_Full_FX_74: 1514720610037055608
+      Golem_Full_FX_42: 3974549591732795295
+      Golem_Full_FX_48: -5433759255830567430
+      Golem_Full_FX_34: -4437205574058035027
+      Golem_Full_FX_58: -8917206729002503239
+      Golem_Full_FX_80: -4775182451372082445
+      Golem_Full_FX_7: -267057867954128757
+      Golem_Full_FX_24: 4621782941165928186
+      Golem_Full_FX_36: 7982738904498939950
+      Golem_Full_FX_54: 4147965081604435946
+      Golem_Full_FX_29: -8763423666474432346
+      Golem_Full_FX_60: 1299232059609915518
+      Golem_Full_FX_64: -113521273622709725
+      Golem_Full_FX_59: -3079452716795849545
+      Golem_Full_FX_41: -5394569846136209075
+      Golem_Full_FX_17: 3560404113101570365
+      Golem_Full_FX_38: 2502948716651093203
+      Golem_Full_FX_73: 6225414081153962877
+      Golem_Full_FX_30: -5982485274504649943
+      Golem_Full_FX_46: -1471915123602567649
+      Golem_Full_FX_63: -3478813852481071858
+      Golem_Full_FX_18: 2035437369763836205
+      Golem_Full_FX_65: 3816558652176288976
+      Golem_Full_FX_3: -551679241885473761
+      Golem_Full_FX_11: -6979494846022895963
+      Golem_Full_FX_16: -4884275753205001735
+      Golem_Full_FX_19: 5206634405709288919
+      Golem_Full_FX_57: -104508565822126123
+      Golem_Full_FX_69: 4096472716793604320
+      Golem_Full_FX_22: 3966155801165115297
+      Golem_Full_FX_40: 1243271302886087775
+      Golem_Full_FX_71: -4066366377517069425
+      Golem_Full_FX_26: 23307982201231008
+      Golem_Full_FX_56: 6484976830680800969
+      Golem_Full_FX_75: 3653248944582873991
+      Golem_Full_FX_72: 5013443315143515326
+      Golem_Full_FX_62: 6960663836703219420
+      Golem_Full_FX_78: -1074895354635014004
+      Golem_Full_FX_14: 7047886234669847483
+      Golem_Full_FX_31: -3993154694204302873
+      Golem_Full_FX_8: 6004110841436553050
+      Golem_Full_FX_23: -3444749343037057624
+      Golem_Full_FX_47: 1901741425840925454
+      Golem_Full_FX_10: -2068219842928820236
+      Golem_Full_FX_77: -272931674053861726
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -11,5 +11,8 @@ public class ProjectData
     public bool canDash;
     public bool canAttack;
     public List<string> gameObjectsNames;
-    public List<float> player_coordinates;
+    public List<float> playerCoordinates;
+    public Dictionary<string, bool> bgTriggersNamesData;
+    public string scene;
+    public string bgname;
 }

@@ -1,0 +1,87 @@
+.unity-button {
+    width: 100%;
+    height: 15%;
+    margin-bottom: 0;
+    -unity-font-definition: none;
+    -unity-font: url('project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#Arial');
+    -unity-font-style: bold;
+    font-size: 200%;
+    color: rgb(255, 219, 100);
+    -unity-text-align: middle-center;
+    padding-bottom: 0;
+    bottom: 0;
+    top: 0;
+    margin-top: 5%;
+    white-space: normal;
+    background-color: rgb(46, 38, 36);
+    -unity-background-scale-mode: stretch-to-fill;
+    border-left-color: rgba(0, 0, 0, 255);
+    border-right-color: rgba(0, 0, 0, 255);
+    border-top-color: rgba(0, 0, 0, 255);
+    border-bottom-color: rgba(0, 0, 0, 255);
+}
+
+.unity-button:hover {
+    width: 100%;
+    height: 15%;
+    margin-bottom: 0;
+    -unity-font-definition: none;
+    -unity-font: url('project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#Arial');
+    -unity-font-style: bold;
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    padding-bottom: 0;
+    bottom: 0;
+    top: 0;
+    margin-top: 5%;
+    white-space: normal;
+}
+
+.unity-button:active {
+    width: 100%;
+    height: 15%;
+    margin-bottom: 0;
+    -unity-font-definition: none;
+    -unity-font: url('project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#Arial');
+    -unity-font-style: bold;
+    font-size: 200%;
+    color: rgb(255, 255, 255);
+    -unity-text-align: middle-center;
+    padding-bottom: 0;
+    bottom: 0;
+    top: 0;
+    margin-top: 5%;
+    white-space: normal;
+    scale: 1.1 1.1;
+    border-left-color: rgb(161, 83, 121);
+    border-right-color: rgb(161, 83, 121);
+    border-top-color: rgb(161, 83, 121);
+    border-bottom-color: rgb(161, 83, 121);
+}
+
+.unity-button:focus {
+    width: 100%;
+    height: 15%;
+    margin-bottom: 0;
+    -unity-font-definition: none;
+    -unity-font: url('project://database/Library/unity%20default%20resources?fileID=10102&guid=0000000000000000e000000000000000&type=0#Arial');
+    -unity-font-style: bold;
+    font-size: 200%;
+    color: rgb(229, 145, 98);
+    -unity-text-align: middle-center;
+    padding-bottom: 0;
+    bottom: 0;
+    top: 0;
+    margin-top: 5%;
+    white-space: normal;
+    scale: 1.1 1.1;
+    border-left-color: rgb(161, 83, 121);
+    border-right-color: rgb(161, 83, 121);
+    border-top-color: rgb(161, 83, 121);
+    border-bottom-color: rgb(161, 83, 121);
+    border-left-width: 3px;
+    border-right-width: 3px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+}

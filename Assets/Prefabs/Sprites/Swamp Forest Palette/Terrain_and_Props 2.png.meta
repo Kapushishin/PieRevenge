@@ -1131,7 +1131,7 @@ TextureImporter:
       213: 1673819049926452045
     second: Terrain_and_Props 1_375
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -1152,6 +1152,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1190,6 +1191,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1241,6 +1243,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1747,6 +1773,30 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Terrain_and_Props 2_8: -1312993655225303177
+      Terrain_and_Props 2_1: 7614212345987646046
+      Terrain_and_Props 2_10: 5773755293501641553
+      Terrain_and_Props 2_14: -7133635791241026407
+      Terrain_and_Props 2_22: 1063112783609255160
+      Terrain_and_Props 2_2: 1173071131533953496
+      Terrain_and_Props 2_7: -405395612429448764
+      Terrain_and_Props 2_21: -7970610305550775834
+      Terrain_and_Props 2_12: -1602819981090627100
+      Terrain_and_Props 2_17: -4449236114501946354
+      Terrain_and_Props 2_18: -7517628290124439819
+      Terrain_and_Props 2_3: 8799652233176193438
+      Terrain_and_Props 2_9: -35217787421172718
+      Terrain_and_Props 2_6: -4377307627849701714
+      Terrain_and_Props 2_5: -844865101908105299
+      Terrain_and_Props 2_13: -2366386066454264054
+      Terrain_and_Props 2_11: -1632652167659252838
+      Terrain_and_Props 2_4: 6014001940794219246
+      Terrain_and_Props 2_0: 7690600546543916578
+      Terrain_and_Props 2_20: -6572056688481648264
+      Terrain_and_Props 2_15: 6430447978345824087
+      Terrain_and_Props 2_16: 1812784608938094174
+      Terrain_and_Props 2_19: 2508956189732480989
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

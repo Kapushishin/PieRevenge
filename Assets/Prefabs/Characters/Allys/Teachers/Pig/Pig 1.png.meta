@@ -63,7 +63,7 @@ TextureImporter:
       213: 6966842234221777200
     second: Pig 1_19
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -84,6 +84,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -122,6 +123,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -173,6 +175,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -616,6 +642,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Pig 1_4: -824062436406155233
+      Pig 1_14: -3197069695676097224
+      Pig 1_10: -6444313410321246042
+      Pig 1_17: -2178784001761960859
+      Pig 1_11: 1752804672791569721
+      Pig 1_5: -6029063515904119558
+      Pig 1_13: 2423896847885434651
+      Pig 1_2: 9035880451391529017
+      Pig 1_8: -1836280850899970170
+      Pig 1_12: -5882732371076722006
+      Pig 1_18: -7905273233041591297
+      Pig 1_1: -8257420371711918425
+      Pig 1_9: 3376543828819677391
+      Pig 1_15: -4561828256395888701
+      Pig 1_16: -6261323824185495855
+      Pig 1_7: 7061138251428692808
+      Pig 1_3: -1946195632005442236
+      Pig 1_0: -4098283773633671117
+      Pig 1_6: 1487971099648249260
+      Pig 1_19: 6966842234221777200
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

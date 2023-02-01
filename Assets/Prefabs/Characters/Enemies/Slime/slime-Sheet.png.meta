@@ -66,7 +66,7 @@ TextureImporter:
       213: 1516403292026958468
     second: slime-Sheet_20
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -87,6 +87,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -125,6 +126,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -176,6 +178,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 512
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
@@ -640,6 +666,28 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      slime-Sheet_18: 1577109790741768683
+      slime-Sheet_5: 1734891440256307957
+      slime-Sheet_6: 6887022319851403142
+      slime-Sheet_14: 3913231095913793702
+      slime-Sheet_20: 1516403292026958468
+      slime-Sheet_8: 121371861024997490
+      slime-Sheet_10: -2200864171832323305
+      slime-Sheet_1: 5952692474738800764
+      slime-Sheet_9: 3146804172381277489
+      slime-Sheet_4: -8154299252778131244
+      slime-Sheet_15: 4811920900910276441
+      slime-Sheet_2: 4909821198284645373
+      slime-Sheet_17: -4570960877372392886
+      slime-Sheet_0: 3225832317793331946
+      slime-Sheet_13: 4993349697702114157
+      slime-Sheet_7: 5957987307645184366
+      slime-Sheet_11: 9207829615066030709
+      slime-Sheet_12: -7380300888587303819
+      slime-Sheet_3: 4179155057698957012
+      slime-Sheet_19: -2658792678680092322
+      slime-Sheet_16: -7772930111310310504
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

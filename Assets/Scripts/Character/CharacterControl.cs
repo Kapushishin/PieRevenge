@@ -20,6 +20,10 @@ public class CharacterControl : MonoBehaviour
 
     public bool CanMove = true;
 
+    protected GameObject _canvas;
+    protected InkManager _ink;
+
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -28,6 +32,18 @@ public class CharacterControl : MonoBehaviour
 
         playerLayerMask = LayerMask.NameToLayer("Player");
         platformLayerMask = LayerMask.NameToLayer("Platform");
+
+        _canvas = GameObject.Find("Canvas Dialogs");
+        _ink = _canvas.gameObject.GetComponent<InkManager>();
+
+        EventManager.OnCanMove += CanMoveTrue;
+        EventManager.OnCantMove += CanMoveFalse;
+    }
+
+    private void OnDisable()
+    {
+        EventManager.OnCanMove -= CanMoveTrue;
+        EventManager.OnCantMove -= CanMoveFalse;
     }
 
     private void Update()
@@ -53,24 +69,46 @@ public class CharacterControl : MonoBehaviour
             _animator.SetBool("IsDashing", isDashing);
             _animator.SetBool("IsGrounded", isGrounded);
         }
+
+        if (_ink.BlockInteractions)
+        {
+            _animator.SetFloat("Speed", 0f);
+            _animator.SetBool("IsInteractionsBlocked", true);
+        }
+        else _animator.SetBool("IsInteractionsBlocked", false);
     }
 
     private void FixedUpdate()
     {
         // Проверка на землю и платформы
         isGrounded = false;
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, 0.2f, groundLayer);
-        for (int i = 0; i < colliders.Length; i++)
+        isWallSliding = false;
+
+        Collider2D[] collidersGround = Physics2D.OverlapCircleAll(groundCheck.position, 0.1f, groundLayer);
+
+        for (int i = 0; i < collidersGround.Length; i++)
         {
-            if (colliders[i].gameObject != gameObject)
+            if (collidersGround[i].gameObject != gameObject)
             {
                 // берем таг поверхности, на которой стоим
-                tagSurface = colliders[i].gameObject.tag.ToString();
+                tagSurface = collidersGround[i].gameObject.tag.ToString();
                 isGrounded = true;
                 //isJumping = false;
                 isFalling = false;
                 isWallSliding = false;
                 isJumping = false;
+            }
+        }
+
+        Collider2D[] collidersWall = Physics2D.OverlapCircleAll(wallsCheck.position, 0.15f, wallLayer);
+
+        for (int i = 0; i < collidersWall.Length; i++)
+        {
+            if (collidersWall[i].gameObject != gameObject)
+            {
+                isWallSliding = true;
+                Debug.Log(collidersWall[i].gameObject);
+                //WallSliding();
             }
         }
 
@@ -81,12 +119,24 @@ public class CharacterControl : MonoBehaviour
             isJumping = false;
 
         }
-        else if (_rb.velocity.y > 0 && !isGrounded)
+        else if (_rb.velocity.y > 0 && isWallSliding && !isGrounded)
         {
             isJumping = true;
             isFalling = false;
         }
             
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(groundCheck.position, .1f);
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackCheck.position, radiusAttack);
+
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(wallsCheck.position, .15f);
     }
 
     #region Movement
@@ -171,24 +221,6 @@ public class CharacterControl : MonoBehaviour
 
     private void Jump()
     {
-        if (isCanJump)
-        {
-            SwitchParametres.CanJump = true;
-        }
-        else
-        {
-            SwitchParametres.CanJump = false;
-        }
-
-        if (_isCanDoubleJump)
-        {
-            SwitchParametres.CanDoubleJump = true;
-        }
-        else
-        {
-            SwitchParametres.CanDoubleJump = false;
-        }
-
         if (SwitchParametres.CanJump)
         {
             if (isGrounded && !isCrouching)
@@ -290,15 +322,6 @@ public class CharacterControl : MonoBehaviour
     private void Dashing()
     {
         // рывок
-        if (isCanDash)
-        {
-            SwitchParametres.CanDash = true;
-        }
-        else
-        {
-            SwitchParametres.CanDash = false;
-        }
-
         if (SwitchParametres.CanDash)
         {
             if (Input.GetButtonDown("Dash") && canDash)
@@ -332,32 +355,21 @@ public class CharacterControl : MonoBehaviour
     #region Walls sliding
     [Header("Wall slide")]
 
-    [SerializeField] private float speedWallSliding = -1f;
+    [SerializeField] private float speedWallSliding;
     private bool isWallSliding = false;
     [SerializeField] private float distanceToWall;
+    [SerializeField] private Transform wallsCheck;
+    [SerializeField] private LayerMask wallLayer;
 
     private void WallSliding()
     {
         // Скольжение по стенам
-        // Проверка горизонтальным лучом заданной длины, есть ли перед игроком стена
-        // Если да, то замедлять скорость падения
-        Physics2D.queriesStartInColliders = false;
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * transform.localScale.x, distanceToWall);
-        if (hit.collider != null)
+        if (isWallSliding && !isGrounded && _rb.velocity.y < 0)
         {
-            if (!isGrounded && _rb.velocity.y < 0.01f)
-            {
-                if (hit.collider.CompareTag("Wall"))
-                {
-                    _rb.velocity = new Vector2(0, speedWallSliding);
-                    isWallSliding = true;
-                    
-                }
-                else
-                {
-                    isWallSliding = false;
-                }
-            }
+            _rb.velocity = new Vector2(0, speedWallSliding);
+            isWallSliding = true;
+            isFalling = false;
+            isGrounded = false;
         }
     }
     #endregion
@@ -382,33 +394,30 @@ public class CharacterControl : MonoBehaviour
     {
         Collider2D[] attackColliders = Physics2D.OverlapCircleAll(attackCheck.position, radiusAttack, attackLayer);
 
-        if (isCanAttack)
-        {
-            SwitchParametres.CanAttack = true;
-        }
-        else
-        {
-            SwitchParametres.CanAttack = false;
-        }
-
         if (Input.GetButtonDown("Attack") && SwitchParametres.CanAttack)
         {
+            Debug.Log("Персонаж атакует");
 
             if (attackColliders.Length > 0 && canAttack)
             {
                 target = attackColliders[0].GetComponent<IDamageToEnemy>();
                 target.EnemyGetDamaged(this, damage);
+                Debug.Log("Персонаж нанес урон");
+                target = null;
             }
-
             else
             {
                 if (target != null)
                 {
+                    Debug.Log(target);
                     target = null;
+                    Debug.Log("Персонаж не нанес урон, рядом никого нет");
                 }
             }
 
             StartCoroutine(AttackCoroutine());
+
+            _animator.SetBool("IsAttacking", true);
 
             if (attackAnimCondition == 0)
             {
@@ -432,11 +441,24 @@ public class CharacterControl : MonoBehaviour
     {
         canAttack = false;
         isAttacking = true;
+        CanMove = false;
         yield return new WaitForSeconds(attackTime);
         isAttacking = false;
+        _animator.SetBool("IsAttacking", false);
+        CanMove = true;
         yield return new WaitForSeconds(attackCooldown);
         canAttack = true;
     }
 
     #endregion
+
+    private void CanMoveFalse()
+    {
+        CanMove = false;
+    }
+
+    private void CanMoveTrue()
+    {
+        CanMove = true;
+    }
 }

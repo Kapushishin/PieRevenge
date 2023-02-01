@@ -11,7 +11,7 @@ public class PeachBehavior : MonoBehaviour, IInteracteable
     private void Start()
     {
         LoadSprites();
-        var spriteRend = gameObject.GetComponent<SpriteRenderer>();
+        var spriteRend = gameObject.GetComponentInChildren<SpriteRenderer>();
         spriteRend.sprite = _foodSprites[Random.Range(0, _foodSprites.Length)];
     }
 

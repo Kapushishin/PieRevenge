@@ -144,7 +144,7 @@ TextureImporter:
       213: 2285581075736859926
     second: Crab_Full_FX_46
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -165,6 +165,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -174,8 +175,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -196,11 +197,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -252,6 +256,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1262,6 +1278,54 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Crab_Full_FX_13: 2532760549911205632
+      Crab_Full_FX_9: 4119977806082904002
+      Crab_Full_FX_20: -8385728130833230514
+      Crab_Full_FX_35: 2776659080565900591
+      Crab_Full_FX_42: 3277465764251237765
+      Crab_Full_FX_45: 2781439339986316928
+      Crab_Full_FX_5: -7474467811743306646
+      Crab_Full_FX_17: -2642614011347458476
+      Crab_Full_FX_2: -2989997804993835615
+      Crab_Full_FX_30: 402077100083727717
+      Crab_Full_FX_36: -743451368438695
+      Crab_Full_FX_29: -1413250204750855310
+      Crab_Full_FX_31: 5122645827168067529
+      Crab_Full_FX_41: 6830456295098374805
+      Crab_Full_FX_26: -5544947687499173948
+      Crab_Full_FX_21: -3796880412438209202
+      Crab_Full_FX_24: -5688585764401755346
+      Crab_Full_FX_3: -8469797416405215361
+      Crab_Full_FX_12: 4740876748918913810
+      Crab_Full_FX_44: 5873883537323249734
+      Crab_Full_FX_34: -7123878723729968132
+      Crab_Full_FX_37: -2366003308275606298
+      Crab_Full_FX_7: 6734042502740647996
+      Crab_Full_FX_33: 5587196446251493093
+      Crab_Full_FX_43: -6620812245928047624
+      Crab_Full_FX_10: -1959542760478502756
+      Crab_Full_FX_27: 1479640082977738138
+      Crab_Full_FX_1: -4197446653206393682
+      Crab_Full_FX_19: 5994195631008817841
+      Crab_Full_FX_39: -4567213849314361845
+      Crab_Full_FX_0: 9080173539136732707
+      Crab_Full_FX_8: -5995747593104664643
+      Crab_Full_FX_14: -1728484942998651861
+      Crab_Full_FX_40: -3545365322281616800
+      Crab_Full_FX_6: -2989557475334638399
+      Crab_Full_FX_4: -4388668328051825002
+      Crab_Full_FX_22: -6459756130975535394
+      Crab_Full_FX_46: 2285581075736859926
+      Crab_Full_FX_32: -4728387533130541574
+      Crab_Full_FX_38: 415271487617655064
+      Crab_Full_FX_23: -6321268472545852005
+      Crab_Full_FX_11: -1159844225290200420
+      Crab_Full_FX_25: -5033067315390054956
+      Crab_Full_FX_28: -6956077721881788176
+      Crab_Full_FX_15: 1278166167446601143
+      Crab_Full_FX_18: 4219581327632244068
+      Crab_Full_FX_16: 9175894396951214332
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

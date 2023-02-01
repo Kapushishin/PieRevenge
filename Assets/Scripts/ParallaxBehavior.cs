@@ -7,18 +7,20 @@ public class ParallaxBehavior : MonoBehaviour
     [SerializeField, Range(0f, 1f)] float parallaxStr;
     private float temporary, distanceX, distanceY;
 
-    private void Start()
+    private void OnEnable()
     {
         startPosX = transform.position.x;
         startPosY = transform.position.y;
+
         if (GetComponent<SpriteRenderer>())
         {
             length = GetComponent<SpriteRenderer>().bounds.size.x;
         }
-        else if (GetComponent<BoxCollider2D>())
-        {
-            length = GetComponent<BoxCollider2D>().bounds.size.x;
-        }
+    }
+
+    private void OnDisable()
+    {
+        transform.position = new Vector3(startPosX, startPosY, transform.position.z);
     }
 
     private void Update()

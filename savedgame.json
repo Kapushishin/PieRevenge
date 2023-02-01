@@ -1,1 +1,1 @@
-{"hearts":3.0,"peach":1,"canJump":true,"canDoubleJump":false,"canDash":false,"canAttack":false,"gameObjectsNames":["Food (2)"],"player_coordinates":[133.5856,-10.5353165,0.0]}
+{"hearts":3.0,"peach":0,"canJump":true,"canDoubleJump":false,"canDash":false,"canAttack":false,"gameObjectsNames":[],"playerCoordinates":[6.91,-5.38,0.0],"bgTriggersNamesData":{},"scene":"3_House","bgname":null}

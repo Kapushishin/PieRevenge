@@ -8,24 +8,25 @@ public class HealthBehavior : MonoBehaviour, IDamageToPlayer
     private Animator _animator;
     private CharacterSounds _charSounds;
 
-    [SerializeField] public float StartingHealthPlayer;
-    //private bool isDead = false;
     private bool isInvul = false;
     private int playerLayerMask, trapLayerMask, enemyLayerMask;
     [SerializeField] private float framesDuration;
     [SerializeField] private int flashesCount;
     [SerializeField] private GameObject deathParticles;
+    [SerializeField] private AudioSource deathSFX;
 
     [SerializeField] private AudioSource _heartUpSound;
+
+    private SaveLoadSystem _saveLoadSystem;
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
         _charSounds = GetComponent<CharacterSounds>();
-        SwitchParametres.HealthCounter = StartingHealthPlayer;
         playerLayerMask = LayerMask.NameToLayer("Player");
         trapLayerMask = LayerMask.NameToLayer("Trap");
         enemyLayerMask = LayerMask.NameToLayer("Enemy");
+        _saveLoadSystem = GameObject.FindGameObjectWithTag("Save System").GetComponent<SaveLoadSystem>();
     }
 
     private void Start()
@@ -66,28 +67,35 @@ public class HealthBehavior : MonoBehaviour, IDamageToPlayer
             {
                 SwitchParametres.HealthCounter = SwitchParametres.HealthCounter - damage;
                 _animator.SetTrigger("IsHurt");
-                //_charSounds.PlayHurtSound();
                 StartCoroutine(Invulnerability());
+            }
 
-                // Смерть
-                if (SwitchParametres.HealthCounter == 0)
-                {
-                    //isDead = true;
-                    _animator.SetTrigger("IsDead");
-                    Instantiate(deathParticles, transform.position, transform.rotation);
-                    gameObject.SetActive(false);
-                }
+            // Смерть
+            if (SwitchParametres.HealthCounter == 0)
+            {
+                //_animator.SetBool("IsDead", true);
+                //_animator.Play("Player1_Death");
+                _spriteRend.color = Color.clear;
+                Instantiate(deathParticles, transform.position, transform.rotation);
+                deathSFX.Play();
+                GetComponent<CharacterControl>().CanMove = false;
+                Physics2D.IgnoreLayerCollision(playerLayerMask, trapLayerMask, false);
+                Physics2D.IgnoreLayerCollision(playerLayerMask, enemyLayerMask, false);
+                //_spriteRend.color = new Color(_spriteRend.color.r, _spriteRend.color.g, _spriteRend.color.b, 0.0f);
+                Invoke("LoadLastSave", 1.5f);
             }
         }
+    }
+
+    private void LoadLastSave()
+    {
+        GetComponent<CharacterControl>().CanMove = true;
+        _saveLoadSystem.LoadGame();
     }
 
     private void GetHealed()
     {
         _heartUpSound.Play();
-
-        if (SwitchParametres.HealthCounter < StartingHealthPlayer)
-        {
-            SwitchParametres.HealthCounter++;
-        }
+        SwitchParametres.HealthCounter++;
     }
 }

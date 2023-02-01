@@ -108,7 +108,7 @@ TextureImporter:
       213: -6947897104816027989
     second: Rat_Full_FX_34
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -129,6 +129,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -138,8 +139,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -160,11 +161,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -216,6 +220,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -974,6 +990,42 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Rat_Full_FX_29: -362800475983314113
+      Rat_Full_FX_10: 4807302976523773726
+      Rat_Full_FX_16: 1178384562213430967
+      Rat_Full_FX_33: 3344362661536933320
+      Rat_Full_FX_28: 8859220224982575659
+      Rat_Full_FX_34: -6947897104816027989
+      Rat_Full_FX_11: 8580169393291790282
+      Rat_Full_FX_22: 6696078724549562145
+      Rat_Full_FX_14: 6484397934913687566
+      Rat_Full_FX_26: 918186240401323428
+      Rat_Full_FX_12: -5602548871143879945
+      Rat_Full_FX_5: -1760335954127753486
+      Rat_Full_FX_2: -6976368734577034018
+      Rat_Full_FX_7: -4798597732586880503
+      Rat_Full_FX_31: 6086214545257089743
+      Rat_Full_FX_8: -5464407530873240576
+      Rat_Full_FX_6: 9008259505613189132
+      Rat_Full_FX_15: -6722306106482004015
+      Rat_Full_FX_25: -547041454044484690
+      Rat_Full_FX_23: -3392665217969769303
+      Rat_Full_FX_13: 8986176777830439530
+      Rat_Full_FX_17: -6767387555615838607
+      Rat_Full_FX_18: -6541244737237511157
+      Rat_Full_FX_20: 3920722268021096613
+      Rat_Full_FX_32: -4933661959959993802
+      Rat_Full_FX_0: -662263362012534553
+      Rat_Full_FX_21: -8290720668102445841
+      Rat_Full_FX_9: -8208808965833640970
+      Rat_Full_FX_19: -3248027565676316062
+      Rat_Full_FX_4: 14257055450520612
+      Rat_Full_FX_24: -3549006644960421970
+      Rat_Full_FX_1: 2060835626256613373
+      Rat_Full_FX_30: -54649404266332897
+      Rat_Full_FX_3: 705677740778677210
+      Rat_Full_FX_27: -7916709873999875268
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

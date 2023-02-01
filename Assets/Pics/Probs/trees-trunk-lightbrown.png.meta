@@ -219,7 +219,7 @@ TextureImporter:
       213: 21300142
     second: trees-trunk-lightbrown_71
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -240,6 +240,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -278,9 +279,46 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1816,6 +1854,79 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      trees-trunk-lightbrown_27: 21300054
+      trees-trunk-lightbrown_10: 21300020
+      trees-trunk-lightbrown_13: 21300026
+      trees-trunk-lightbrown_16: 21300032
+      trees-trunk-lightbrown_37: 21300074
+      trees-trunk-lightbrown_42: 21300084
+      trees-trunk-lightbrown_53: 21300106
+      trees-trunk-lightbrown_67: 21300134
+      trees-trunk-lightbrown_20: 21300040
+      trees-trunk-lightbrown_15: 21300030
+      trees-trunk-lightbrown_30: 21300060
+      trees-trunk-lightbrown_5: 21300010
+      trees-trunk-lightbrown_28: 21300056
+      trees-trunk-lightbrown_0: 21300000
+      trees-trunk-lightbrown_39: 21300078
+      trees-trunk-lightbrown_25: 21300050
+      trees-trunk-lightbrown_2: 21300004
+      trees-trunk-lightbrown_31: 21300062
+      trees-trunk-lightbrown_57: 21300114
+      trees-trunk-lightbrown_35: 21300070
+      trees-trunk-lightbrown_58: 21300116
+      trees-trunk-lightbrown_63: 21300126
+      trees-trunk-lightbrown_23: 21300046
+      trees-trunk-lightbrown_32: 21300064
+      trees-trunk-lightbrown_26: 21300052
+      trees-trunk-lightbrown_7: 21300014
+      trees-trunk-lightbrown_44: 21300088
+      trees-trunk-lightbrown_59: 21300118
+      trees-trunk-lightbrown_1: 21300002
+      trees-trunk-lightbrown_8: 21300016
+      trees-trunk-lightbrown_60: 21300120
+      trees-trunk-lightbrown_62: 21300124
+      trees-trunk-lightbrown_36: 21300072
+      trees-trunk-lightbrown_18: 21300036
+      trees-trunk-lightbrown_22: 21300044
+      trees-trunk-lightbrown_71: 21300142
+      trees-trunk-lightbrown_12: 21300024
+      trees-trunk-lightbrown_66: 21300132
+      trees-trunk-lightbrown_41: 21300082
+      trees-trunk-lightbrown_68: 21300136
+      trees-trunk-lightbrown_29: 21300058
+      trees-trunk-lightbrown_51: 21300102
+      trees-trunk-lightbrown_38: 21300076
+      trees-trunk-lightbrown_52: 21300104
+      trees-trunk-lightbrown_9: 21300018
+      trees-trunk-lightbrown_47: 21300094
+      trees-trunk-lightbrown_17: 21300034
+      trees-trunk-lightbrown_61: 21300122
+      trees-trunk-lightbrown_54: 21300108
+      trees-trunk-lightbrown_19: 21300038
+      trees-trunk-lightbrown_56: 21300112
+      trees-trunk-lightbrown_49: 21300098
+      trees-trunk-lightbrown_45: 21300090
+      trees-trunk-lightbrown_21: 21300042
+      trees-trunk-lightbrown_11: 21300022
+      trees-trunk-lightbrown_4: 21300008
+      trees-trunk-lightbrown_64: 21300128
+      trees-trunk-lightbrown_50: 21300100
+      trees-trunk-lightbrown_33: 21300066
+      trees-trunk-lightbrown_6: 21300012
+      trees-trunk-lightbrown_3: 21300006
+      trees-trunk-lightbrown_40: 21300080
+      trees-trunk-lightbrown_48: 21300096
+      trees-trunk-lightbrown_70: 21300140
+      trees-trunk-lightbrown_69: 21300138
+      trees-trunk-lightbrown_46: 21300092
+      trees-trunk-lightbrown_55: 21300110
+      trees-trunk-lightbrown_43: 21300086
+      trees-trunk-lightbrown_14: 21300028
+      trees-trunk-lightbrown_34: 21300068
+      trees-trunk-lightbrown_24: 21300048
+      trees-trunk-lightbrown_65: 21300130
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

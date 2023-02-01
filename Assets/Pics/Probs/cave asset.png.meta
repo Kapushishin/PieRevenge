@@ -87,7 +87,7 @@ TextureImporter:
       213: -458893230472235782
     second: cave asset_27
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -108,6 +108,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -146,6 +147,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -197,6 +199,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -808,6 +834,35 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      cave asset_2: -4372740703057024686
+      cave asset_23: -4218722406382785392
+      cave asset_3: 8459983421012606193
+      cave asset_17: -7643528200491144802
+      cave asset_1: 3205424064198057328
+      cave asset_7: 2682379748451032241
+      cave asset_13: 5576908776748392069
+      cave asset_22: -4743204621223559156
+      cave asset_25: -4200479916113400392
+      cave asset_26: 8792016498145117031
+      cave asset_24: -2552409121717247802
+      cave asset_4: 1420980296479256443
+      cave asset_20: -2141822156242748808
+      cave asset_15: 1440322975895908113
+      cave asset_6: 6835609495451476395
+      cave asset_19: 4694870622421207894
+      cave asset_27: -458893230472235782
+      cave asset_8: 568837848637419428
+      cave asset_11: 7616981652441336816
+      cave asset_0: 951404591411694940
+      cave asset_14: -6221710014156174991
+      cave asset_9: 6372781184758194336
+      cave asset_18: 435692360132955311
+      cave asset_12: 1983919068831721508
+      cave asset_5: 9067765394992818142
+      cave asset_21: -8095498147665412676
+      cave asset_16: 3794694605776697110
+      cave asset_10: 4854833828162275451
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

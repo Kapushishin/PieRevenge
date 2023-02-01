@@ -195,7 +195,7 @@ TextureImporter:
       213: 21300126
     second: Shrimp
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -216,6 +216,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -254,9 +255,46 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1624,6 +1662,71 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Sushi: 21300012
+      Olive: 21300118
+      Onion: 21300124
+      Steak: 21300042
+      PickledEggs: 21300120
+      Cookie: 21300000
+      Sardines: 21300106
+      Strawberry: 21300066
+      Chicken: 21300050
+      Brownie: 21300002
+      Grubs: 21300060
+      Peach: 21300068
+      Pineapple: 21300036
+      Marmalade: 21300020
+      Tomato: 21300064
+      Wine: 21300044
+      Moonshine: 21300006
+      Whiskey: 21300008
+      Honey: 21300086
+      Grub: 21300062
+      Boar: 21300018
+      ChickenLeg: 21300100
+      Eggs: 21300032
+      Honeycomb: 21300034
+      FishSteak: 21300114
+      Waffles: 21300098
+      Bug: 21300116
+      Cherry: 21300102
+      Ribs: 21300104
+      PieLemon: 21300074
+      PieApple: 21300076
+      Pickle: 21300078
+      Saki: 21300016
+      MelonWater: 21300096
+      Bread: 21300052
+      Fish: 21300046
+      MelonCantaloupe: 21300094
+      Jerky: 21300088
+      Cheese: 21300048
+      AppleWorm: 21300026
+      Turnip: 21300028
+      PepperRed: 21300056
+      FishFillet: 21300084
+      Potato: 21300030
+      Lemon: 21300070
+      Sashimi: 21300014
+      Jam: 21300022
+      MelonHoneydew: 21300092
+      PiePumpkin: 21300072
+      Bacon: 21300038
+      DragonFruit: 21300108
+      PepperGreen: 21300058
+      Sausages: 21300110
+      Shrimp: 21300126
+      Stein: 21300004
+      Pretzel: 21300080
+      Avocado: 21300112
+      Pepperoni: 21300082
+      PotatoRed: 21300090
+      Beer: 21300040
+      Eggplant: 21300054
+      Roll: 21300122
+      Apple: 21300024
+      Tart: 21300010
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

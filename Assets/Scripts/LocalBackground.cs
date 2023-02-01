@@ -29,6 +29,8 @@ public class LocalBackground : MonoBehaviour
         }
     }
 
+
+
     private List<SpriteRenderer> LoadSprites(GameObject bg)
     {
         int childCount = bg.transform.childCount;
@@ -50,6 +52,7 @@ public class LocalBackground : MonoBehaviour
         if (_currentBG.activeSelf)
         {
             _newBG.SetActive(true);
+            SwitchParametres.BGName = _newBG.name;
 
             for (int i = 0; i < _spritesFade.Count; i++)
             {
@@ -62,9 +65,20 @@ public class LocalBackground : MonoBehaviour
             }
 
             _activation = true;
-        }
 
-        _newTrigger.SetActive(true);
+            _newTrigger.SetActive(true);
+
+            try
+            {
+                Debug.Log(SwitchParametres.bgTriggersNames);
+                SwitchParametres.bgTriggersNames.Add(_newTrigger.name, _newTrigger.activeInHierarchy);
+            }
+            catch
+            {
+                Debug.Log("Error: key + value already added");
+            }
+
+        }
     }
 
     private void Fading()

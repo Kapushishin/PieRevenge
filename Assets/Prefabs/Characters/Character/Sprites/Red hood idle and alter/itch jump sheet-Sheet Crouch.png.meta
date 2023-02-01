@@ -117,7 +117,7 @@ TextureImporter:
       213: 5134744828693583164
     second: itch jump sheet-Sheet 1_18
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -138,6 +138,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -176,6 +177,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -227,6 +229,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -649,6 +675,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      itch jump sheet-Sheet 1_6: -5418997170261316318
+      itch jump sheet-Sheet 1_17: -7979604979129257528
+      itch jump sheet-Sheet 1_0: 3568706418180937573
+      itch jump sheet-Sheet 1_11: 6964520961370833877
+      itch jump sheet-Sheet 1_8: -855139171991960743
+      itch jump sheet-Sheet 1_15: 9075295116727332288
+      itch jump sheet-Sheet 1_18: 5134744828693583164
+      itch jump sheet-Sheet 1_2: -226177109364181249
+      itch jump sheet-Sheet 1_5: 585336226710773430
+      itch jump sheet-Sheet 1_7: -1682812174379988903
+      itch jump sheet-Sheet 1_13: 5701646461177930660
+      itch jump sheet-Sheet 1_16: -3162709606079618253
+      itch jump sheet-Sheet 1_12: -7820456653084987495
+      itch jump sheet-Sheet 1_1: -8863959545169229154
+      itch jump sheet-Sheet 1_10: 5601544575879272559
+      itch jump sheet-Sheet 1_14: 8273297212286455115
+      itch jump sheet-Sheet 1_4: 7659490864801161848
+      itch jump sheet-Sheet 1_9: 9049144843342013725
+      itch jump sheet-Sheet 1_3: 8472692896218361617
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

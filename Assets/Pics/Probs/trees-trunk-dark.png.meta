@@ -219,7 +219,7 @@ TextureImporter:
       213: 21300142
     second: trees-trunk-dark_71
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 1
@@ -240,6 +240,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -278,9 +279,46 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1816,6 +1854,79 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      trees-trunk-dark_50: 21300100
+      trees-trunk-dark_52: 21300104
+      trees-trunk-dark_20: 21300040
+      trees-trunk-dark_40: 21300080
+      trees-trunk-dark_56: 21300112
+      trees-trunk-dark_2: 21300004
+      trees-trunk-dark_27: 21300054
+      trees-trunk-dark_36: 21300072
+      trees-trunk-dark_3: 21300006
+      trees-trunk-dark_5: 21300010
+      trees-trunk-dark_6: 21300012
+      trees-trunk-dark_16: 21300032
+      trees-trunk-dark_41: 21300082
+      trees-trunk-dark_14: 21300028
+      trees-trunk-dark_21: 21300042
+      trees-trunk-dark_29: 21300058
+      trees-trunk-dark_66: 21300132
+      trees-trunk-dark_25: 21300050
+      trees-trunk-dark_43: 21300086
+      trees-trunk-dark_57: 21300114
+      trees-trunk-dark_67: 21300134
+      trees-trunk-dark_7: 21300014
+      trees-trunk-dark_45: 21300090
+      trees-trunk-dark_63: 21300126
+      trees-trunk-dark_26: 21300052
+      trees-trunk-dark_0: 21300000
+      trees-trunk-dark_32: 21300064
+      trees-trunk-dark_33: 21300066
+      trees-trunk-dark_18: 21300036
+      trees-trunk-dark_15: 21300030
+      trees-trunk-dark_51: 21300102
+      trees-trunk-dark_39: 21300078
+      trees-trunk-dark_17: 21300034
+      trees-trunk-dark_59: 21300118
+      trees-trunk-dark_12: 21300024
+      trees-trunk-dark_69: 21300138
+      trees-trunk-dark_37: 21300074
+      trees-trunk-dark_34: 21300068
+      trees-trunk-dark_28: 21300056
+      trees-trunk-dark_47: 21300094
+      trees-trunk-dark_58: 21300116
+      trees-trunk-dark_68: 21300136
+      trees-trunk-dark_22: 21300044
+      trees-trunk-dark_1: 21300002
+      trees-trunk-dark_60: 21300120
+      trees-trunk-dark_54: 21300108
+      trees-trunk-dark_62: 21300124
+      trees-trunk-dark_44: 21300088
+      trees-trunk-dark_38: 21300076
+      trees-trunk-dark_4: 21300008
+      trees-trunk-dark_23: 21300046
+      trees-trunk-dark_53: 21300106
+      trees-trunk-dark_24: 21300048
+      trees-trunk-dark_55: 21300110
+      trees-trunk-dark_35: 21300070
+      trees-trunk-dark_9: 21300018
+      trees-trunk-dark_13: 21300026
+      trees-trunk-dark_64: 21300128
+      trees-trunk-dark_71: 21300142
+      trees-trunk-dark_65: 21300130
+      trees-trunk-dark_10: 21300020
+      trees-trunk-dark_46: 21300092
+      trees-trunk-dark_48: 21300096
+      trees-trunk-dark_30: 21300060
+      trees-trunk-dark_31: 21300062
+      trees-trunk-dark_11: 21300022
+      trees-trunk-dark_49: 21300098
+      trees-trunk-dark_19: 21300038
+      trees-trunk-dark_61: 21300122
+      trees-trunk-dark_42: 21300084
+      trees-trunk-dark_70: 21300140
+      trees-trunk-dark_8: 21300016
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

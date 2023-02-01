@@ -81,7 +81,7 @@ TextureImporter:
       213: 5032925819910729833
     second: Bones_SingleSkull_Full_FX_25
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -102,6 +102,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -111,8 +112,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -133,11 +134,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -189,6 +193,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -758,6 +774,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Bones_SingleSkull_Full_FX_12: 6839144810488139852
+      Bones_SingleSkull_Full_FX_8: -5998807464942425067
+      Bones_SingleSkull_Full_FX_19: -3077724298404951918
+      Bones_SingleSkull_Full_FX_24: -8545700476593456556
+      Bones_SingleSkull_Full_FX_22: -7905085919075872752
+      Bones_SingleSkull_Full_FX_14: -2245986953905319450
+      Bones_SingleSkull_Full_FX_5: 1727649721026453692
+      Bones_SingleSkull_Full_FX_16: 3751383998640466210
+      Bones_SingleSkull_Full_FX_1: -2615776483393717670
+      Bones_SingleSkull_Full_FX_21: -3040815419285606537
+      Bones_SingleSkull_Full_FX_13: 94733793858732773
+      Bones_SingleSkull_Full_FX_3: -1361674942714039931
+      Bones_SingleSkull_Full_FX_10: 8331694922839026331
+      Bones_SingleSkull_Full_FX_6: -6777799188850873287
+      Bones_SingleSkull_Full_FX_23: -7749203613502134513
+      Bones_SingleSkull_Full_FX_18: 1907137458300385678
+      Bones_SingleSkull_Full_FX_9: -7835262892168378925
+      Bones_SingleSkull_Full_FX_15: -7333765376082900085
+      Bones_SingleSkull_Full_FX_4: -1543401789991303314
+      Bones_SingleSkull_Full_FX_11: 2328273101209298353
+      Bones_SingleSkull_Full_FX_2: -1532892713539009075
+      Bones_SingleSkull_Full_FX_17: 6846586854342039535
+      Bones_SingleSkull_Full_FX_0: 4011105186309441619
+      Bones_SingleSkull_Full_FX_25: 5032925819910729833
+      Bones_SingleSkull_Full_FX_20: 3453148837523114798
+      Bones_SingleSkull_Full_FX_7: 3434334999492035288
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

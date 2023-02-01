@@ -81,7 +81,7 @@ TextureImporter:
       213: 3658759569197502516
     second: itch light atk sheet-Sheet_25
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -102,6 +102,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -140,6 +141,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -191,6 +193,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -760,6 +786,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      itch light atk sheet-Sheet_12: 2766062104693011641
+      itch light atk sheet-Sheet_13: 5791533691549964108
+      itch light atk sheet-Sheet_16: -6017025912483386193
+      itch light atk sheet-Sheet_4: -3938885387576592637
+      itch light atk sheet-Sheet_9: -6310249589513894293
+      itch light atk sheet-Sheet_21: -8098486671669236219
+      itch light atk sheet-Sheet_19: 5387966622286939811
+      itch light atk sheet-Sheet_22: 3652160903528359075
+      itch light atk sheet-Sheet_23: 3167367301194551362
+      itch light atk sheet-Sheet_5: -237404116450948234
+      itch light atk sheet-Sheet_18: 8892410262412276329
+      itch light atk sheet-Sheet_25: 3658759569197502516
+      itch light atk sheet-Sheet_7: -6632424953441723456
+      itch light atk sheet-Sheet_1: -197722648407749528
+      itch light atk sheet-Sheet_11: 7445222348565835123
+      itch light atk sheet-Sheet_20: -290777556123790445
+      itch light atk sheet-Sheet_8: 6970961012228358278
+      itch light atk sheet-Sheet_3: 2818805741612557502
+      itch light atk sheet-Sheet_24: -7354107787304230743
+      itch light atk sheet-Sheet_0: -6614591045327113812
+      itch light atk sheet-Sheet_10: 646139053495663635
+      itch light atk sheet-Sheet_14: -7980438174134937577
+      itch light atk sheet-Sheet_15: 7127764068392715779
+      itch light atk sheet-Sheet_6: 3255838767541675546
+      itch light atk sheet-Sheet_2: 5088927301748676831
+      itch light atk sheet-Sheet_17: 5099049043633187805
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

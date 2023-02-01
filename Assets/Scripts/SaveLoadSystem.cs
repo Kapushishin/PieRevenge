@@ -7,16 +7,16 @@ using UnityEngine.SceneManagement;
 
 public class SaveLoadSystem : MonoBehaviour
 {
-    Vector3 player_position;
+    Vector3 playerPosition;
 
     private void Start()
     {
-        DontDestroyOnLoad(this);
+        if (gameObject.name != "Save point" && gameObject.name != "MainUI" && gameObject.name != "PauseMenu") DontDestroyOnLoad(this);  
     }
 
     public void SaveGame()
     {
-        player_position = GameObject.FindGameObjectWithTag("Player").transform.position;
+        playerPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
 
         ProjectData projectData = new ProjectData
         {
@@ -27,7 +27,10 @@ public class SaveLoadSystem : MonoBehaviour
             canDash = SwitchParametres.CanDash,
             canAttack = SwitchParametres.CanAttack,
             gameObjectsNames = SwitchParametres.objectsNames,
-            player_coordinates = new List<float> { player_position.x, player_position.y, player_position.z }
+            playerCoordinates = new List<float> { playerPosition.x, playerPosition.y, playerPosition.z },
+            scene = SceneManager.GetActiveScene().name,
+            bgname = SwitchParametres.BGName,
+            bgTriggersNamesData = SwitchParametres.bgTriggersNames
         };
 
         File.WriteAllText("savedgame.json", JsonConvert.SerializeObject(projectData));
@@ -44,19 +47,67 @@ public class SaveLoadSystem : MonoBehaviour
         SwitchParametres.CanDoubleJump = projectData.canDoubleJump;
         SwitchParametres.CanDash = projectData.canDash;
         SwitchParametres.CanAttack = projectData.canAttack;
-        GameObject.FindGameObjectWithTag("Player").transform.position = 
-            new Vector3(projectData.player_coordinates[0], projectData.player_coordinates[1], projectData.player_coordinates[2]);
+        SwitchParametres.playerPosition = projectData.playerCoordinates;
+        
         SwitchParametres.objectsNames = projectData.gameObjectsNames;
+        SwitchParametres.SceneName = projectData.scene;
+        SwitchParametres.BGName = projectData.bgname;
+        SwitchParametres.bgTriggersNames = projectData.bgTriggersNamesData;
 
-        GameObject.Find("Text score").GetComponent<Text>().text = SwitchParametres.PeachCounter.ToString();
-        SceneObjectsValidator();
+        SceneManager.LoadScene(SwitchParametres.SceneName);
     }
+    
+    public void SavesClearing()
+    {
+        Debug.Log("saves are cleared");
+
+        SwitchParametres.HealthCounter = 3;
+        SwitchParametres.PeachCounter = 0;
+        SwitchParametres.CanJump = false;
+        SwitchParametres.CanDoubleJump = false;
+        SwitchParametres.CanDash = false;
+        SwitchParametres.CanAttack = false;
+        SwitchParametres.playerPosition = new List<float>();
+
+        SwitchParametres.objectsNames = new List<string>();
+        SwitchParametres.SceneName = null;
+        SwitchParametres.BGName = null;
+        SwitchParametres.bgTriggersNames = new Dictionary<string, bool>();
+    }
+    
 
     public void SceneObjectsValidator()
     {
         foreach (string objectName in SwitchParametres.objectsNames)
-        {
             Destroy(GameObject.Find(objectName));
+
+        foreach (var triggerName in SwitchParametres.bgTriggersNames)
+        {
+
+            foreach (var item in TriggersInit.triggers)
+            {
+                if (item != null)
+                {
+                    if (item.name == triggerName.Key)
+                    {
+                        item.SetActive(triggerName.Value);
+                    }
+                }
+            }
+        }
+    }
+
+    public void LoadPlayerPosition()
+    {
+        try
+        {
+            GameObject.FindGameObjectWithTag("Player").transform.position =
+            new Vector3(SwitchParametres.playerPosition[0], SwitchParametres.playerPosition[1], SwitchParametres.playerPosition[2]);
+            GameObject.Find("Text score").GetComponent<Text>().text = SwitchParametres.PeachCounter.ToString();
+        }
+        catch
+        {
+            Debug.Log("Player coordinates error on load");
         }
     }
 }

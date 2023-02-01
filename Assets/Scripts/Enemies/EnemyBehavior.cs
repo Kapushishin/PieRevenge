@@ -67,6 +67,8 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
     {
         // Проверка на землю
         _isGrounded = false;
+        _isAttacking = false;
+
         Collider2D[] colliders = Physics2D.OverlapCircleAll(_groundCheck.position, 0.2f, _groundLayer);
         for (int i = 0; i < colliders.Length; i++)
         {
@@ -163,13 +165,17 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
     // Реализация интерфейса IDamageToEnemy. Поведение при получении урона от игрока
     public void EnemyGetDamaged(CharacterControl player, float damage)
     {
+        Debug.Log("Враг получил по лицу");
+
         if (HealthEnemy > 0)
         {
+            Debug.Log("Враг получил урон");
             HealthEnemy -= damage;
             StartCoroutine(HurtCoroutine());
         }
         if (HealthEnemy == 0)
         {
+            Debug.Log("Враг мертв");
             Dead();
         }
     }
@@ -188,6 +194,11 @@ public abstract class EnemyBehavior : MonoBehaviour, IDamageToEnemy
 
     public virtual void Dead()
     {
+        if (GetComponent<BoxCollider2D>())
+        {
+            GetComponent<BoxCollider2D>().enabled = false;
+        }
+
         _isDead = true;
         _animator.SetBool("Death", true);
         StartCoroutine(Death());

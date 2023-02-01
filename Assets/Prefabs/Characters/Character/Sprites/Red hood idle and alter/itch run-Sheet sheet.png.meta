@@ -75,7 +75,7 @@ TextureImporter:
       213: 6561547331422267949
     second: itch run-Sheet sheet_23
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -96,6 +96,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -134,6 +135,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -185,6 +187,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -712,6 +738,31 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      itch run-Sheet sheet_10: -6933732490325532080
+      itch run-Sheet sheet_18: -2637697214998658993
+      itch run-Sheet sheet_19: 1824404891085255218
+      itch run-Sheet sheet_6: -3055062179459785260
+      itch run-Sheet sheet_3: 2449864240893961817
+      itch run-Sheet sheet_4: -7268729772095714952
+      itch run-Sheet sheet_15: 9208386502430939604
+      itch run-Sheet sheet_2: 2693144985092745722
+      itch run-Sheet sheet_8: -8113457935022190554
+      itch run-Sheet sheet_5: -8811408777393690205
+      itch run-Sheet sheet_11: 2581560455110843129
+      itch run-Sheet sheet_17: 5733297897558765976
+      itch run-Sheet sheet_22: 2652618804364826060
+      itch run-Sheet sheet_23: 6561547331422267949
+      itch run-Sheet sheet_0: 1275204418052530407
+      itch run-Sheet sheet_7: 8053181098892900538
+      itch run-Sheet sheet_14: -1539572799495773211
+      itch run-Sheet sheet_13: -847532475892285932
+      itch run-Sheet sheet_12: 3055154277058142265
+      itch run-Sheet sheet_9: 2332269685077186650
+      itch run-Sheet sheet_21: -5782784123345670626
+      itch run-Sheet sheet_20: 5008866544116521507
+      itch run-Sheet sheet_1: 4616872279825948225
+      itch run-Sheet sheet_16: -6540946964977611090
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

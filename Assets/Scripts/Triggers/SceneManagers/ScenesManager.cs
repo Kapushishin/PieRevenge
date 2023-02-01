@@ -1,10 +1,10 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ScenesManager : MonoBehaviour, IInteracteable
 {
     [SerializeField] private string _textPrompt;
-    [SerializeField] private int _sceneDirection;
     [SerializeField] private AudioSource _openedSound;
     [SerializeField] private GameObject _fading;
     public string PromptText => _textPrompt;
@@ -13,13 +13,13 @@ public class ScenesManager : MonoBehaviour, IInteracteable
     {
         _openedSound.Play();
         _fading.SetActive(true);
-        Invoke("LoadNextScene", 2f);
+        StartCoroutine(LoadSceneCoroutine());
         return true;
     }
 
-    private void LoadNextScene()
-    {
-        var index = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(index + _sceneDirection);
+    private IEnumerator LoadSceneCoroutine()
+    { 
+        yield return new WaitForSeconds(1.5f);
+        GetComponent<SceneLoadTrigger>().LoadNewScene();
     }
 }

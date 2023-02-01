@@ -105,7 +105,7 @@ TextureImporter:
       213: 3404302707359058807
     second: Dog_33
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -126,6 +126,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -164,6 +165,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -215,6 +217,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -952,6 +978,41 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Dog_14: 4551762848083550670
+      Dog_15: -1843356617146800946
+      Dog_25: -5895045103408436388
+      Dog_3: 657091380636090156
+      Dog_13: -1606256662893923289
+      Dog_33: 3404302707359058807
+      Dog_6: -7722096417701234636
+      Dog_5: -5585168921665133713
+      Dog_17: -1095135105990487951
+      Dog_20: 1153186639303412204
+      Dog_32: -3600567090734850144
+      Dog_0: -3994744024693093290
+      Dog_27: 603654718184464619
+      Dog_22: 8789256110201444776
+      Dog_19: 2575706476737698309
+      Dog_31: -4962994384980385232
+      Dog_9: -7135952130405396769
+      Dog_2: 2313711220228016618
+      Dog_10: -1770118719063661511
+      Dog_23: 1557376687008963996
+      Dog_24: 3359498264996517356
+      Dog_30: -3014027980478171637
+      Dog_11: 6554760361367003453
+      Dog_21: -1612889882754415141
+      Dog_7: 8574643074699161086
+      Dog_1: 3704152636332655822
+      Dog_16: 2441435646123217858
+      Dog_26: -1474304963897862659
+      Dog_8: -7837791002170975023
+      Dog_18: 8969130945964454529
+      Dog_12: 5441820675844602474
+      Dog_4: -1168880897593705988
+      Dog_28: -7059256116698406981
+      Dog_29: 4807754580797254604
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

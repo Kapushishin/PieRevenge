@@ -27,6 +27,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3589717704074303244}
   m_RootOrder: 0
@@ -42,6 +43,7 @@ SpriteRenderer:
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -69,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -321908321
-  m_SortingLayer: 3
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -3277107878079047485, guid: 79e8c6d83b8f2c8438b390ffda1f4043, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -111,6 +113,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 126.52, y: -38.713, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3589717703819816525}
   - {fileID: 3589717704236550241}
@@ -119,7 +122,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &3589717704074303245
 Animator:
-  serializedVersion: 3
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -132,6 +135,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
@@ -174,12 +178,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ce1f1df4dbd2f94689d26b100f2f1a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _textDialog: {fileID: 4900000, guid: 99cb44c3d9bbe0945abf77da50cfb3f7, type: 3}
-  _nameNPC: Snek
-  _textPrompt: talk snek
+  _textDialog: {fileID: 4900000, guid: 8605ad1970dc30949a88a8583cf694fe, type: 3}
+  _nameNPC: "\u0417\u043C\u0435\u044F"
+  _textPrompt: "\u041F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
   _isDisableable: 0
   _pickUpSound: {fileID: 3589717704236550242}
-  _parameterType: 2
+  _parameterType: 1
 --- !u!1 &3589717704236550243
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +211,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3589717704074303244}
   m_RootOrder: 1
@@ -220,7 +225,7 @@ AudioSource:
   m_GameObject: {fileID: 3589717704236550243}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 9074244386604755309, guid: 053da4daec8f74143811b7a3f1b03d21, type: 2}
   m_audioClip: {fileID: 8300000, guid: 60976c4bdf37d104c9b4fe16b65a4409, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1

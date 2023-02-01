@@ -84,7 +84,7 @@ TextureImporter:
       213: 1370103462913686679
     second: Slime_Spiked_Full_26
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -105,6 +105,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -114,8 +115,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -136,11 +137,14 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -192,6 +196,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -782,6 +798,34 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Slime_Spiked_Full_3: 540140106925648943
+      Slime_Spiked_Full_11: -1911161726305035259
+      Slime_Spiked_Full_20: 4773254477003170669
+      Slime_Spiked_Full_4: -3686540247359124011
+      Slime_Spiked_Full_10: -6614312805308538352
+      Slime_Spiked_Full_26: 1370103462913686679
+      Slime_Spiked_Full_5: -7500368697047136689
+      Slime_Spiked_Full_2: 4976304455426132218
+      Slime_Spiked_Full_7: -1899831863467539378
+      Slime_Spiked_Full_17: -6402521658054066949
+      Slime_Spiked_Full_19: -8239905495622697324
+      Slime_Spiked_Full_16: 2568858518284430493
+      Slime_Spiked_Full_23: -7957463213478331854
+      Slime_Spiked_Full_24: -3472883477838824793
+      Slime_Spiked_Full_25: 2624113828661962675
+      Slime_Spiked_Full_0: 899315698257640460
+      Slime_Spiked_Full_21: -963872747887498076
+      Slime_Spiked_Full_6: -5946219798680489381
+      Slime_Spiked_Full_9: -4890900451471513074
+      Slime_Spiked_Full_8: -3352209651924543621
+      Slime_Spiked_Full_1: 8985557641834257860
+      Slime_Spiked_Full_22: 3688925277104999775
+      Slime_Spiked_Full_15: -111831838134702157
+      Slime_Spiked_Full_13: 4186094331094652950
+      Slime_Spiked_Full_18: -4626281431166938970
+      Slime_Spiked_Full_12: -341697491132603376
+      Slime_Spiked_Full_14: 5727334454180586134
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

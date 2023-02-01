@@ -81,7 +81,7 @@ TextureImporter:
       213: -5502039888936769233
     second: decorative_obj_25
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -102,6 +102,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -140,6 +141,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -191,6 +193,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -760,6 +786,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      decorative_obj_22: -486363160235436888
+      decorative_obj_3: -830858006723863817
+      decorative_obj_2: -3865615691702928371
+      decorative_obj_21: -930307356115044387
+      decorative_obj_20: 2198691358015970307
+      decorative_obj_17: -769490126978045028
+      decorative_obj_13: 1112293333476690195
+      decorative_obj_15: -6011190912784093691
+      decorative_obj_16: 8008310171013271857
+      decorative_obj_8: 3505341954046943286
+      decorative_obj_12: -952751972215984741
+      decorative_obj_18: 338643826697932801
+      decorative_obj_0: -2023767916532506085
+      decorative_obj_7: -9134449417693661896
+      decorative_obj_10: 6005384315849007658
+      decorative_obj_24: -4166017319972552214
+      decorative_obj_9: 1707672703365030134
+      decorative_obj_19: 8574377597131556641
+      decorative_obj_1: 7668942431699141051
+      decorative_obj_23: -506208812085195198
+      decorative_obj_11: 7893509101633562092
+      decorative_obj_4: -2376944820942771835
+      decorative_obj_6: 4660138730982355035
+      decorative_obj_5: 7657681755328959116
+      decorative_obj_14: -2796373767048124268
+      decorative_obj_25: -5502039888936769233
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
