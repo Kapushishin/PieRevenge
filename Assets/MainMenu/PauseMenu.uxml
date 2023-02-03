@@ -2,10 +2,10 @@
     <Style src="project://database/Assets/MainMenu/mainmenu.uss?fileID=7433441132597879392&amp;guid=67befecb69956c041b7fb7ba5f4ad3a0&amp;type=3#mainmenu" />
     <ui:VisualElement name="Background" style="width: 100%; height: 100%; opacity: 1; background-color: rgba(75, 75, 75, 0.66); visibility: hidden; overflow: visible; display: flex;">
         <ui:VisualElement name="Menu" style="width: 30%; height: 70%; left: 35%; top: 20%; visibility: hidden;">
-            <ui:Button text="RESUME" display-tooltip-when-elided="true" name="Resume" style="-unity-font: url(&apos;project://database/Assets/Prefabs/Fonts/Pixel.ttf?fileID=12800000&amp;guid=5bad1c64e12adad42b677ef42f6b0363&amp;type=3#Pixel&apos;);" />
-            <ui:Button text="LOAD" display-tooltip-when-elided="true" name="Load" style="-unity-font: url(&apos;project://database/Assets/Prefabs/Fonts/Pixel.ttf?fileID=12800000&amp;guid=5bad1c64e12adad42b677ef42f6b0363&amp;type=3#Pixel&apos;);" />
-            <ui:Button text="SETTINGS" display-tooltip-when-elided="true" name="Settings" style="-unity-font: url(&apos;project://database/Assets/Prefabs/Fonts/Pixel.ttf?fileID=12800000&amp;guid=5bad1c64e12adad42b677ef42f6b0363&amp;type=3#Pixel&apos;);" />
-            <ui:Button text="EXIT" display-tooltip-when-elided="true" name="Exit" style="-unity-font: url(&apos;project://database/Assets/Prefabs/Fonts/Pixel.ttf?fileID=12800000&amp;guid=5bad1c64e12adad42b677ef42f6b0363&amp;type=3#Pixel&apos;);" />
+            <ui:Button text="RESUME" display-tooltip-when-elided="true" name="Resume" style="-unity-font: url(&apos;project://database/Assets/Prefabs/Fonts/Pixel.ttf?fileID=12800000&amp;guid=5bad1c64e12adad42b677ef42f6b0363&amp;type=3#Pixel&apos;); font-size: 24%;" />
+            <ui:Button text="LOAD" display-tooltip-when-elided="true" name="Load" style="-unity-font: url(&apos;project://database/Assets/Prefabs/Fonts/Pixel.ttf?fileID=12800000&amp;guid=5bad1c64e12adad42b677ef42f6b0363&amp;type=3#Pixel&apos;); font-size: 24%;" />
+            <ui:Button text="SETTINGS" display-tooltip-when-elided="true" name="Settings" style="-unity-font: url(&apos;project://database/Assets/Prefabs/Fonts/Pixel.ttf?fileID=12800000&amp;guid=5bad1c64e12adad42b677ef42f6b0363&amp;type=3#Pixel&apos;); font-size: 24%;" />
+            <ui:Button text="EXIT" display-tooltip-when-elided="true" name="Exit" style="-unity-font: url(&apos;project://database/Assets/Prefabs/Fonts/Pixel.ttf?fileID=12800000&amp;guid=5bad1c64e12adad42b677ef42f6b0363&amp;type=3#Pixel&apos;); font-size: 24%;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

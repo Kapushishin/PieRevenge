@@ -20,6 +20,7 @@ public class PauseMenu : MonoBehaviour
     private bool _menuIsActive = false;
 
     private InkManager _ink;
+    private bool blockInteractionsLocal = false;
 
     private void Start()
     {
@@ -32,6 +33,10 @@ public class PauseMenu : MonoBehaviour
         if (Input.GetButtonDown("Menu") && !_menuIsActive)
         {
             EventManager.SendCantMove();
+
+            blockInteractionsLocal = _ink.BlockInteractions;
+            _ink.BlockInteractions = true;
+
             _menuIsActive = true;
             visuals = GetComponent<UIDocument>().rootVisualElement;
             visuals.Q<VisualElement>("Background").style.visibility = Visibility.Visible;
@@ -68,9 +73,10 @@ public class PauseMenu : MonoBehaviour
 
     private void ResumeButton()
     {
-        if (_ink.BlockInteractions == false)
+        if (blockInteractionsLocal == false)
         {
             EventManager.SendCanMove();
+            _ink.BlockInteractions = false;
         }
 
         _menuIsActive = false;
