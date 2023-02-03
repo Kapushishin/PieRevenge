@@ -2127,7 +2127,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -17056,8 +17056,8 @@ TextureImporter:
       House (Outside And Inside) Tileset_195: 8627126828184883526
       House (Outside And Inside) Tileset_276: -4336885099542455658
       House (Outside And Inside) Tileset_274: -4208180961763071187
-      House (Outside And Inside) Tileset_375: -6932932650961740328
       House (Outside And Inside) Tileset_672: 5403312310952150867
+      House (Outside And Inside) Tileset_375: -6932932650961740328
       House (Outside And Inside) Tileset_194: 4227876217687923613
       House (Outside And Inside) Tileset_691: 353541713145379667
       House (Outside And Inside) Tileset_313: -1936769171642770460
@@ -17100,9 +17100,9 @@ TextureImporter:
       House (Outside And Inside) Tileset_626: 7272175761934532149
       House (Outside And Inside) Tileset_562: -7742704753712081745
       House (Outside And Inside) Tileset_473: 3890014457462166933
-      House (Outside And Inside) Tileset_388: 8598100856598089075
-      House (Outside And Inside) Tileset_169: -491140109204803608
       House (Outside And Inside) Tileset_392: -5788851647683778687
+      House (Outside And Inside) Tileset_169: -491140109204803608
+      House (Outside And Inside) Tileset_388: 8598100856598089075
       House (Outside And Inside) Tileset_546: -5237170202316053537
       House (Outside And Inside) Tileset_128: 514039640952567905
       House (Outside And Inside) Tileset_269: 7311130248292920276
@@ -17131,10 +17131,10 @@ TextureImporter:
       House (Outside And Inside) Tileset_605: -5711364763933144519
       House (Outside And Inside) Tileset_279: 7592506733738707871
       House (Outside And Inside) Tileset_485: 1325787573800464583
-      House (Outside And Inside) Tileset_4: -6406864504289297766
+      House (Outside And Inside) Tileset_527: 1282336520904693734
       House (Outside And Inside) Tileset_144: 6140884891657009490
       House (Outside And Inside) Tileset_545: -6732116052727359814
-      House (Outside And Inside) Tileset_527: 1282336520904693734
+      House (Outside And Inside) Tileset_4: -6406864504289297766
       House (Outside And Inside) Tileset_305: 876634775895097045
       House (Outside And Inside) Tileset_595: 4021221970645327556
       House (Outside And Inside) Tileset_685: -6220045555344210661
@@ -17166,15 +17166,15 @@ TextureImporter:
       House (Outside And Inside) Tileset_391: -1233627822263687167
       House (Outside And Inside) Tileset_314: -1336481082730987898
       House (Outside And Inside) Tileset_46: 2730947617074454485
-      House (Outside And Inside) Tileset_178: -3781067027609322832
       House (Outside And Inside) Tileset_557: 4143282804379467203
+      House (Outside And Inside) Tileset_349: 7984941589422181135
       House (Outside And Inside) Tileset_34: 1736258867676311526
       House (Outside And Inside) Tileset_662: -6912244951113373780
       House (Outside And Inside) Tileset_65: 2420212030285382213
+      House (Outside And Inside) Tileset_178: -3781067027609322832
       House (Outside And Inside) Tileset_53: -9210478222914387064
       House (Outside And Inside) Tileset_301: -2343708048706911531
       House (Outside And Inside) Tileset_283: -3432303028758516248
-      House (Outside And Inside) Tileset_349: 7984941589422181135
       House (Outside And Inside) Tileset_346: -4846660802900050769
       House (Outside And Inside) Tileset_112: 4050241987926210103
       House (Outside And Inside) Tileset_186: -4736011846587635987
@@ -17205,10 +17205,10 @@ TextureImporter:
       House (Outside And Inside) Tileset_652: -8402703973978324464
       House (Outside And Inside) Tileset_552: -7383069900850631240
       House (Outside And Inside) Tileset_218: -3937223744583958076
-      House (Outside And Inside) Tileset_237: -4935018918963052125
-      House (Outside And Inside) Tileset_614: -577821081921096010
       House (Outside And Inside) Tileset_415: -4033862330041562991
+      House (Outside And Inside) Tileset_614: -577821081921096010
       House (Outside And Inside) Tileset_488: -1801235577279810080
+      House (Outside And Inside) Tileset_237: -4935018918963052125
       House (Outside And Inside) Tileset_620: -8305348927517068985
       House (Outside And Inside) Tileset_241: -7523938323339665681
       House (Outside And Inside) Tileset_325: -752289280881058106
@@ -17223,8 +17223,8 @@ TextureImporter:
       House (Outside And Inside) Tileset_351: -4103766081821526445
       House (Outside And Inside) Tileset_87: 3775563372875335391
       House (Outside And Inside) Tileset_117: -1425654594834128276
-      House (Outside And Inside) Tileset_198: -4045545522139427401
       House (Outside And Inside) Tileset_405: -1617545232799069342
+      House (Outside And Inside) Tileset_198: -4045545522139427401
       House (Outside And Inside) Tileset_111: -1947003530314322856
       House (Outside And Inside) Tileset_625: 2713227207124470605
       House (Outside And Inside) Tileset_113: 6521355862224597837

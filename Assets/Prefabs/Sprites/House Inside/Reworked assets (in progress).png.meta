@@ -864,7 +864,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -6951,12 +6951,12 @@ TextureImporter:
       Reworked assets (in progress)_34: -1830220100919924347
       Reworked assets (in progress)_182: 4019032623004070068
       Reworked assets (in progress)_67: -8043558580671825301
-      Reworked assets (in progress)_115: -5460163634168472645
+      Reworked assets (in progress)_275: -6988885789994588796
       Reworked assets (in progress)_5: 5271263387812777237
       Reworked assets (in progress)_56: -6580744677996526958
       Reworked assets (in progress)_258: 1165611221943584614
       Reworked assets (in progress)_216: -5554947697913604514
-      Reworked assets (in progress)_275: -6988885789994588796
+      Reworked assets (in progress)_115: -5460163634168472645
       Reworked assets (in progress)_72: 1449907266405435430
       Reworked assets (in progress)_265: -8477006335925381760
       Reworked assets (in progress)_221: -2742518548344964017

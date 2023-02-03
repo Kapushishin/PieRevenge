@@ -261,7 +261,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -2006,17 +2006,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      House (Inside) Tileset_44: -1964311647970651596
-      House (Inside) Tileset_50: 8211348862221340033
+      House (Inside) Tileset_9: 5130977491610925907
+      House (Inside) Tileset_22: 8633183323289553121
       House (Inside) Tileset_40: 8468516061327237753
       House (Inside) Tileset_47: -4137142868453179428
       House (Inside) Tileset_41: -6422780879177872069
       House (Inside) Tileset_23: 3350817732707708802
-      House (Inside) Tileset_52: 1202594819385536945
+      House (Inside) Tileset_12: -6205827793420441041
       House (Inside) Tileset_18: -7299168695908859260
       House (Inside) Tileset_48: -7949457857778679966
       House (Inside) Tileset_51: -4738695603251221994
       House (Inside) Tileset_65: 7383760992232377338
+      House (Inside) Tileset_15: 7655201824034103562
       House (Inside) Tileset_43: -8855747728274831523
       House (Inside) Tileset_54: 5681948568788415242
       House (Inside) Tileset_38: -7488131585950917213
@@ -2030,7 +2031,6 @@ TextureImporter:
       House (Inside) Tileset_67: -7096288805282713853
       House (Inside) Tileset_63: -1229598325329588385
       House (Inside) Tileset_39: 4366942135406307848
-      House (Inside) Tileset_58: -5864880918928468413
       House (Inside) Tileset_26: -4924824491367421994
       House (Inside) Tileset_33: -8501191645899712312
       House (Inside) Tileset_10: 8703253447207815105
@@ -2078,10 +2078,10 @@ TextureImporter:
       House (Inside) Tileset_53: -7724726889237661111
       House (Inside) Tileset_30: 4388542970154344346
       House (Inside) Tileset_4: -2550017988782874724
-      House (Inside) Tileset_12: -6205827793420441041
-      House (Inside) Tileset_9: 5130977491610925907
-      House (Inside) Tileset_22: 8633183323289553121
-      House (Inside) Tileset_15: 7655201824034103562
+      House (Inside) Tileset_52: 1202594819385536945
+      House (Inside) Tileset_58: -5864880918928468413
+      House (Inside) Tileset_50: 8211348862221340033
+      House (Inside) Tileset_44: -1964311647970651596
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

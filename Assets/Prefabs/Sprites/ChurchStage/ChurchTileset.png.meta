@@ -348,7 +348,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -2703,7 +2703,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ChurchTileset_90: -1916904615879086675
       ChurchTileset_66: -2381581060394693705
       ChurchTileset_81: 5808535392979057521
       ChurchTileset_21: 5462916149887990211
@@ -2758,15 +2757,15 @@ TextureImporter:
       ChurchTileset_38: -1208115722878826284
       ChurchTileset_9: -6035077593926285372
       ChurchTileset_79: 5135329491375344876
-      ChurchTileset_49: 1147213872156618816
       ChurchTileset_86: -1608473550027075568
-      ChurchTileset_60: 5364881675672362623
+      ChurchTileset_49: 1147213872156618816
       ChurchTileset_30: -4376771297708250781
       ChurchTileset_22: 9068290716271841773
       ChurchTileset_58: 6750801784351088337
       ChurchTileset_101: 6818966308780247568
       ChurchTileset_43: -7015705613328849279
       ChurchTileset_71: 8449355626114465947
+      ChurchTileset_60: 5364881675672362623
       ChurchTileset_23: -2589239947804674809
       ChurchTileset_25: -7482700992154241011
       ChurchTileset_92: -2677582314916754814
@@ -2802,6 +2801,7 @@ TextureImporter:
       ChurchTileset_74: -8370886713939814509
       ChurchTileset_73: 5110677829459332728
       ChurchTileset_2: 1321575515394231013
+      ChurchTileset_90: -1916904615879086675
       ChurchTileset_36: 4647202200819140519
       ChurchTileset_84: -4028147689033676652
       ChurchTileset_69: 5347609695170013650

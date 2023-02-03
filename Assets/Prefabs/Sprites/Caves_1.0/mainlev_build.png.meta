@@ -2745,7 +2745,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -21892,12 +21892,12 @@ TextureImporter:
       mainlev_build_140: -898014483784674056
       mainlev_build_390: -5450473405825028014
       mainlev_build_2: 4116732047829606592
-      mainlev_build_62: 185650568982252781
       mainlev_build_372: -5222837393312486028
-      mainlev_build_818: -6414090032503848360
+      mainlev_build_62: 185650568982252781
       mainlev_build_80: 7485749116562426021
       mainlev_build_158: -4574252233439762538
       mainlev_build_820: 3856008202128291576
+      mainlev_build_818: -6414090032503848360
       mainlev_build_177: 7683894736431861834
       mainlev_build_3: -7326336357586857806
       mainlev_build_1: 3299827337991346678
@@ -22001,8 +22001,8 @@ TextureImporter:
       mainlev_build_16: 4793809925027619598
       mainlev_build_556: -9026913836136474914
       mainlev_build_166: 1509814635208430534
-      mainlev_build_105: 1893958973338952978
       mainlev_build_502: 7334139818226797581
+      mainlev_build_105: 1893958973338952978
       mainlev_build_30: 8018018505268165694
       mainlev_build_113: 1857141846262755982
       mainlev_build_762: 4531171777172864176
@@ -22019,9 +22019,9 @@ TextureImporter:
       mainlev_build_627: -1969569389556527646
       mainlev_build_65: 4833009114772994871
       mainlev_build_344: -2767950513396697950
-      mainlev_build_463: -6614229684566039763
       mainlev_build_767: 8525558758509948041
       mainlev_build_886: -3617489773099394158
+      mainlev_build_463: -6614229684566039763
       mainlev_build_646: 2417845457149146739
       mainlev_build_235: -2467624436362317191
       mainlev_build_215: 6850224626846149294
@@ -22115,21 +22115,21 @@ TextureImporter:
       mainlev_build_329: -7371163087617445308
       mainlev_build_388: -8710172677658614619
       mainlev_build_95: -5093681509209614903
-      mainlev_build_190: 1470085084422770153
       mainlev_build_582: 4367498315647386282
-      mainlev_build_775: -3796842757375944578
+      mainlev_build_190: 1470085084422770153
       mainlev_build_403: -872986532686309160
+      mainlev_build_775: -3796842757375944578
       mainlev_build_486: -8836769995408198156
+      mainlev_build_814: -6330959920564267835
       mainlev_build_29: 4298762268240822466
       mainlev_build_304: 971471911342799385
       mainlev_build_229: -3914308731201591832
-      mainlev_build_535: 4670653986710762009
       mainlev_build_698: 1455216639578695010
-      mainlev_build_14: 5287848188647937112
-      mainlev_build_625: 1447298957478688855
-      mainlev_build_375: 5766726732122824291
-      mainlev_build_814: -6330959920564267835
       mainlev_build_765: -67882125105495832
+      mainlev_build_14: 5287848188647937112
+      mainlev_build_375: 5766726732122824291
+      mainlev_build_625: 1447298957478688855
+      mainlev_build_535: 4670653986710762009
       mainlev_build_608: 6468004467609639578
       mainlev_build_213: -6534705387329452090
       mainlev_build_355: 1290111092050715115
@@ -22166,17 +22166,17 @@ TextureImporter:
       mainlev_build_758: -4425225927071839008
       mainlev_build_894: -3953480563201732268
       mainlev_build_42: -6203975506606115252
-      mainlev_build_185: -3287523895372078028
-      mainlev_build_578: 3057894165306421740
       mainlev_build_630: -680947035556604100
-      mainlev_build_741: 2838026249454058730
-      mainlev_build_764: -2101642535159948565
+      mainlev_build_185: -3287523895372078028
       mainlev_build_864: -362356564394677028
+      mainlev_build_764: -2101642535159948565
+      mainlev_build_578: 3057894165306421740
       mainlev_build_645: -5020642567419085426
       mainlev_build_35: 5611150957856010966
       mainlev_build_103: 5682263992506046472
       mainlev_build_332: 4692566468260702585
       mainlev_build_120: -452824292363831333
+      mainlev_build_741: 2838026249454058730
       mainlev_build_421: 1769001561818179671
       mainlev_build_333: -4280430179795049103
       mainlev_build_137: 8819556367917758189
@@ -22439,9 +22439,9 @@ TextureImporter:
       mainlev_build_622: 2178888318813101983
       mainlev_build_675: 7362626416050359860
       mainlev_build_700: -4770087919037857367
-      mainlev_build_681: -3257852711542706489
-      mainlev_build_843: -8847402516692956362
       mainlev_build_847: -2112610412437730623
+      mainlev_build_843: -8847402516692956362
+      mainlev_build_681: -3257852711542706489
       mainlev_build_123: 8011411075682772375
       mainlev_build_745: 443689562479542979
       mainlev_build_552: 3564357649057259757
@@ -22482,8 +22482,8 @@ TextureImporter:
       mainlev_build_674: -6026138068085568004
       mainlev_build_527: -5181908540380943816
       mainlev_build_200: -7369208443970543839
-      mainlev_build_511: -5369375958435653942
       mainlev_build_708: -1016680108907603218
+      mainlev_build_511: -5369375958435653942
       mainlev_build_69: 4453387152387009208
       mainlev_build_696: 8937814682437925235
       mainlev_build_275: -8983130278226005418

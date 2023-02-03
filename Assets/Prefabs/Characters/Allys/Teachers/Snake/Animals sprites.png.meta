@@ -1185,7 +1185,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -9379,7 +9379,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Animals sprites_35: 2656960121228995816
+      Animals sprites_0: 463971920777409221
       Animals sprites_205: 3850786101536585544
       Animals sprites_64: 8339615608015408953
       Animals sprites_116: -4748794717043905729
@@ -9409,12 +9409,12 @@ TextureImporter:
       Animals sprites_28: -9178423916867500833
       Animals sprites_170: 1907305320268526463
       Animals sprites_353: 555379708725894374
-      Animals sprites_290: -8651930941282167275
-      Animals sprites_351: -3782842722215387664
       Animals sprites_374: 768666548011802913
+      Animals sprites_351: -3782842722215387664
       Animals sprites_134: -282964665554780191
       Animals sprites_159: -8092123155510693993
       Animals sprites_71: 3287882634649207146
+      Animals sprites_290: -8651930941282167275
       Animals sprites_245: -3690993291877734539
       Animals sprites_298: 6054334366153782792
       Animals sprites_365: -6071639331026252386
@@ -9488,9 +9488,9 @@ TextureImporter:
       Animals sprites_276: -8030249936528159351
       Animals sprites_320: 8044775360599611932
       Animals sprites_15: -4898937520358974707
-      Animals sprites_299: -8979377928154478277
-      Animals sprites_105: -527956895307834455
       Animals sprites_319: -7524140383940671621
+      Animals sprites_105: -527956895307834455
+      Animals sprites_299: -8979377928154478277
       Animals sprites_23: -2631259202791691599
       Animals sprites_57: -2048820140186328343
       Animals sprites_312: -7796406523426580842
@@ -9598,11 +9598,11 @@ TextureImporter:
       Animals sprites_38: -8131208399961389814
       Animals sprites_368: 3299682958711673499
       Animals sprites_165: 2117581594178329467
-      Animals sprites_231: -997725334927348607
+      Animals sprites_347: 2462208771981776307
       Animals sprites_111: 2525037125065813360
       Animals sprites_103: -5198706481620899322
-      Animals sprites_347: 2462208771981776307
       Animals sprites_296: 8159143590531552632
+      Animals sprites_231: -997725334927348607
       Animals sprites_317: -3397221509887105707
       Animals sprites_221: -5943263088642318771
       Animals sprites_17: -7485511183081511975
@@ -9611,9 +9611,9 @@ TextureImporter:
       Animals sprites_53: -4868039298018270228
       Animals sprites_362: -9099542035433708983
       Animals sprites_216: 8881240482422738233
-      Animals sprites_269: -4315992615751337920
       Animals sprites_248: 2525828414593358534
       Animals sprites_356: -1491082565036558644
+      Animals sprites_269: -4315992615751337920
       Animals sprites_288: 7673448425301722352
       Animals sprites_95: 8537287497303539537
       Animals sprites_14: 4461831812006661253
@@ -9762,7 +9762,7 @@ TextureImporter:
       Animals sprites_253: -2566858107931869955
       Animals sprites_338: 5474806497604879222
       Animals sprites_208: 4481107992019800071
-      Animals sprites_0: 463971920777409221
+      Animals sprites_35: 2656960121228995816
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
