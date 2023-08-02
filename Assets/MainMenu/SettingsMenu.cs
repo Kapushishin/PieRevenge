@@ -67,7 +67,6 @@ public class SettingsMenu : MonoBehaviour
         _music.value = PlayerPrefs.GetFloat("MusicVolume");
 
         _back.Focus();
-        Debug.Log(_windowmode);
     }
 
     void BackButton()

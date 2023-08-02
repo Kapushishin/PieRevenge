@@ -1,1 +1,1 @@
-{"hearts":3.0,"peach":1,"canJump":true,"canDoubleJump":false,"canDash":false,"canAttack":false,"gameObjectsNames":["Peach (2)"],"playerCoordinates":[6.91,-5.38,0.0],"bgTriggersNamesData":{},"scene":"3_House","bgname":null}
+{"hearts":3.0,"peach":0,"canJump":true,"canDoubleJump":false,"canDash":false,"canAttack":false,"gameObjectsNames":[],"playerCoordinates":[2.86,-3.36,0.0],"bgTriggersNamesData":{},"scene":"5_Rainy Road","bgname":null}
